@@ -1,0 +1,255 @@
+---
+title: "Lab 2 part 2"
+author: "Kristi Gdanetz MacCready"
+date: "8/8/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Interacting with R
+
+### Overview
+
+The basis of programming is writing (coding) instructions for the computer to follow, and then telling the computer to follow (running or executing) those instructions. The instructions (commands) are coded R because it is a common language that both the computer and we can understand. There are two main ways of interacting with R: by using the console or by using script files (plain text or markdown files that contain your code). The console pane (in RStudio, the bottom left panel) is the place where commands written in the R language can be typed and executed immediately by the computer. It is also where the results will be shown for commands that have been executed. You can type commands directly into the console and press Enter to execute those commands, but they will be forgotten when you close the session.
+ 
+Researchers want code and workflows to be reproducible, so it is better to type the commands in the script editor, and save the script. This way, there is a complete record, and anyone (including our future selves) can easily replicate the results.
+ 
+RStudio allows execution of commands directly from the script editor by using the Cmd + Return shortcut (Ctrl + Enter on Windows). The command on the current line in the script (indicated by the cursor) or all of the commands in the currently selected text will be sent to the console and executed when you press Ctrl + Enter. You can find other keyboard shortcuts in the RStudio cheat sheet about the RStudio IDE.
+
+At some point in your analysis you may want to check the content of a variable or the structure of an object, without necessarily keeping a record of it in your script. You can type these commands and execute them directly in the console. RStudio provides the Ctrl + 1 and Ctrl + 2 shortcuts allow you to jump between the script and the console panes.
+ 
+If R is ready to accept commands, the R console shows a > prompt. If it receives a command (by typing, copy+pasting or sent from the script editor using Ctrl + Enter), R will try to execute it, and when ready, will show the results and come back with a new > prompt to wait for new commands.
+
+If the R console shows a + prompt, it means that you haven’t finished entering a complete command. Likely there is a missing ‘closed’ a parentheses or quotation (there are not equal numbers of left- and right-parentheses, or equal numbers of opening and closing quotation marks). When this happens click inside the console window and press Esc; this will cancel the incomplete command and return you to the > prompt.
+
+### Objects vs. variables
+You can get output from R simply by typing math in the console:
+
+```{r}
+3 + 5
+12 / 7
+```
+
+However, to do useful and interesting things, values must be assigned to objects. To create an object, type a name followed by the assignment operator <-, and the value(s) of the object:
+ 
+```{r}
+x <- 3
+```
+ 
+<- is the assignment operator. It assigns values on the right to objects on the left. So, after executing x <- 3, the value of x is 3. The arrow can be read as, “3 goes into x”. 
+
+In RStudio, the shortcut for the assignment operator is: Option + - (push Option at the same time as the - key). For PCs type: Alt + - (push Alt at the same time as the - key).
+ 
+What are known as objects in R are known as variables in many other programming languages. Depending on the context, object and variable can have drastically different meanings. However, in this lesson, the two words are used synonymously. For more information see: https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Objects
+
+When assigning a value to an object, R does not print anything. You can force R to print the value by using parentheses or by typing the object name:
+
+```{r}
+height_in <- 72   #doesn't print anything
+height_in          #typing the name of the object prints
+```
+
+Now that R has height_in in memory, we can do arithmetic with it. For publication purposes, we must convert this height into metric units (height in centimeters is 2.54 times the height in inches):
+
+```{r}
+2.54 * height_in
+```
+ 
+We can also change an object’s value by assigning it a new one. This means that assigning a value to one object does not change the values of other objects For example, let’s store the individual’s height in centimeters in a new object, height_cm:
+
+```{r}
+height_in <- 72
+height_cm <- 2.54 * height_in
+height_cm
+ 
+height_cm <- 2.54 * height_in
+
+# Next change height_cm to 167.44
+height_cm <- 167.44
+
+```
+
+What do you think is the current content of the object height_cm? 182.88 or 167.44?
+What do you think is the current content of the object height_in? 72 or 66?
+
+Objects can be given any name such as x, height_in, butyrate_conc, or subject_id. Object names need to be descriptive but not too long. They cannot start with a number (2x is not valid, but x2 is). R is case sensitive (e.g., subject_id is different from Subject_ID). There are some names that cannot and/or should not be used because they are the names of functions in R (e.g., if, else, for, c, T, list, mean, data, df. If in doubt, check the help menu to see if the name is already in use. 
+
+It is also best to avoid periods (.) within an object name, my_dataset is preferred over my.dataset. There are functions in R with dots in their names for historical reasons, but periods have a special meaning in R (for methods). 
+
+It is easier to keep track of your work when nouns indicate object names, and verbs indicate function names. Be consistent in the styling of your code (where you put spaces, how you name objects, etc.). Using a consistent coding style makes your code clearer to read for your future self or collaborators.
+
+### Comments
+
+The comment character in R is #, anything to the right of a # in a line will be ignored by R. It is useful to leave notes, and explanations in your scripts, these are left with comments. RStudio makes it easy to comment or uncomment a paragraph: after selecting the lines you want to comment, press at the same time on your keyboard Ctrl + Shift + C. If you only want to comment out one line, you can put the cursor at any location of that line (i.e. no need to select the whole line), then press Ctrl + Shift + C.
+
+### Challenge
+What are the values after each statement in the following code block. Enter the answers as comments. 
+```{r}
+mass <- 81.6           # mass?
+age  <- 21             # age?
+mass <- mass * 2.0     # mass?
+age  <- age + 20        # age?
+mass_index <- mass/age # mass_index?
+```
+
+### Functions and their arguments
+
+Functions are used to automate complicated or repetitive sets of commands. Many functions are predefined, or can be made available by importing R packages (more on that later). A function usually takes one or more inputs called arguments. Functions often (but not always) return a value. A typical example would be the function sqrt(). The input (the argument) must be a number, and the return value (in fact, the output) is the square root of that number. An example of a function call is:
+
+```{r}
+b <- sqrt(9)
+```
+
+Here, the value of 9 is given to the sqrt() function, the sqrt() function calculates the square root, and returns the value which is then assigned to the object b. This function is very simple, because it takes just one argument.
+ 
+The return ‘value’ of a function need not be numerical (like that of sqrt()), and it also does not need to be a single item: it can be a set of things, or even a dataset. We’ll see that when we read data files into R.
+ 
+Arguments can be anything, not only numbers or filenames, but also other objects. Exactly what each argument means differs per function, and must be looked up in the documentation (see below). Some functions take arguments which may either be specified by the user, or, if left out, take on a default value: these are called options. Options are typically used to alter the way the function operates, such as whether it ignores ‘bad values’, or what symbol to use in a plot. 
+ 
+Let’s try a function that can take multiple arguments: mean().
+
+```{r}
+mean(9, 10, 11)
+```
+
+Here, we’ve called mean() with just three arguments; 9, 10, and 11, and it has returned the value 9. 
+
+Let's try another example: round().
+
+```{r}
+round(3.14159)
+```
+
+Here, we’ve called round() with just one argument, 3.14159, and it has returned the value 3. That’s because the default is to round to the nearest whole number. If more digits are needed we can determine how to do that by getting information about the round function. We can use args(round) to find what arguments it takes, or look at the help for this function using ?round.
+
+```{r}
+args(round)
+#> function (x, digits = 0) 
+#> NULL
+?round
+```
+
+To display a different number of digits, we can type digits = 2 (or replace 2 with any other number).
+
+```{r}
+round(3.14159, digits = 2)
+```
+
+If you provide the arguments in the exact same order as they are defined on the help page you don’t have to name them:
+
+```{r}
+round(3.14159, 2)
+```
+
+And if you do name the arguments, you can switch their order:
+
+```{r}
+round(digits = 2, x = 3.14159)
+```
+
+It’s good practice to put the non-optional arguments (like the number you’re rounding) first in your function call, and then specify the names of all optional arguments. If you don’t, someone reading your code (including future your) might have to look up the definition of a function with unfamiliar arguments to understand what you’re doing.
+
+### Vectors and data types
+
+A vector is the most common and basic data type in R, and is pretty much the workhorse of R. A vector is composed by a series of values, which can be either numbers or characters. We can assign a series of values to a vector using the c() function. For example we can create a vector of participant weights and assign it to a new object weight_kg:
+
+```{r}
+weight_kg <- c(56.70, 67.13, 70.31, 98.88)
+weight_kg
+```
+
+A vector can also contain characters:
+ 
+```{r}
+ethnicity <- c("Asian", "Black American", "Caucasian", "MENA", "Other")
+ethnicity
+```
+
+The quotes around "Asian", "Black", etc. are essential here. Without the quotes R will assume objects have been created for each group. As these objects don’t exist in R’s memory, there will be an error message.
+ 
+There are many functions that allow you to inspect the content of a vector. length() tells you how many elements are in a particular vector:
+
+```{r}
+length(weight_kg)
+length(ethnicity)
+```
+
+An important feature of a vector, is that all of the elements are the same type of data. The function class() indicates the class (the type of element) of an object:
+
+```{r}
+class(weight_kg)
+class(ethnicity)
+```
+
+The function str() provides an overview of the structure of an object and its elements. It is a useful function when working with large and complex objects:
+
+```{r}
+str(weight_kg)
+str(ethnicity)
+```
+
+You can use the c() function to add other elements to your vector:
+```{r}
+weight_kg <- c(weight_kg, 58.97) # add to the end of the vector
+weight_kg <- c(81.65, weight_kg) # add to the beginning of the vector
+weight_kg
+```
+ 
+In the first line, we take the original vector weight_kg then add value 58.97 to the end of it, and save the result back into weight_kg. Then we add the value 81.65 to the beginning, again saving the result back into weight_kg. We can do this over and over again to grow a vector, or assemble a dataset. As we program, this may be useful to add results that we are collecting or calculating.
+ 
+An atomic vector is the simplest R data type and is a linear vector of a single type. Above, we saw 2 of the 6 main atomic vector types that R uses: "character" and "numeric" (or "double"). These are the basic building blocks that all R objects are built from. The other 4 atomic vector types are:
+
+* "logical" for TRUE and FALSE (the boolean data type)
+* "integer" for integer numbers (e.g., 2L, the L indicates to R that it’s an integer)
+* "complex" to represent complex numbers with real and imaginary parts (e.g., 1 + 4i)
+* "raw" for bitstreams that we won’t discuss further
+
+You can check the type of your vector using the typeof() function and inputting your vector as the argument.
+
+Vectors are one of the many data structures that R uses. Other important ones are lists (list), matrices (matrix), data frames (data.frame), factors (factor), and arrays (array).
+
+### Homework Challenge
+
+We’ve seen that atomic vectors can be of type character, numeric (or double), integer, and logical. But what happens if we try to mix these types in a single vector?
+
+What will happen in each of these examples? (hint: use class() to check the data type of your objects):
+
+```{r}
+num_char <- c(1, 2, 3, "a")
+num_logical <- c(1, 2, 3, TRUE)
+char_logical <- c("a", "b", "c", TRUE)
+tricky <- c(1, 2, 3, "4")
+# Why do you think it happens?
+```
+
+How many values in combined_logical are "TRUE" (as a character) in the following example:
+```{r}
+num_logical <- c(1, 2, 3, TRUE)
+char_logical <- c("a", "b", "c", TRUE)
+combined_logical <- c(num_logical, char_logical)
+```
+
+You’ve probably noticed that objects of different types get converted into a single, shared type within a vector. In R, we call converting objects from one class into another class coercion. These conversions happen according to a hierarchy, whereby some types get preferentially coerced into other types. Can you draw a diagram that represents the hierarchy of how these data types are coerced?
+
+If we want to extract one or several values from a vector, we must provide one or several indices in square brackets. For instance:
+ 
+```{r}
+supplement <- c("Psyllium", "BRMPS", "HiMaize", "Accessible")
+supplement[2]
+supplement[c(3, 2)]
+```
+ 
+We can also repeat the indices to create an object with more elements than the original one:
+
+```{r}
+more_supplement <- supplement[c(1, 2, 3, 2, 1, 4)]
+more_supplement
+```
+ 
+R indices start at 1. Programming languages like Fortran, MATLAB, Julia, and R start counting at 1, because that’s what human beings typically do. Languages in the C family (including C++, Java, Perl, and Python) start at 0.
+
+-----
+end
