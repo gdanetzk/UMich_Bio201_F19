@@ -1,12 +1,13 @@
 ---
 title: "Lab 2 part 2"
 author: "Kristi Gdanetz MacCready"
-date: "8/8/2019"
+date: "9/16/2019"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documents/UMich_Bio201_F19/Lab2/")
 ```
 
 # Interacting with R
@@ -19,7 +20,7 @@ Researchers want code and workflows to be reproducible, so it is better to type 
  
 RStudio allows execution of commands directly from the script editor by using the Cmd + Return shortcut (Ctrl + Enter on Windows). The command on the current line in the script (indicated by the cursor) or all of the commands in the currently selected text will be sent to the console and executed when you press Ctrl + Enter. You can find other keyboard shortcuts in the RStudio cheat sheet about the RStudio IDE.
 
-At some point in your analysis you may want to check the content of a variable or the structure of an object, without necessarily keeping a record of it in your script. You can type these commands and execute them directly in the console. RStudio provides the Ctrl + 1 and Ctrl + 2 shortcuts allow you to jump between the script and the console panes.
+At some point in your analysis you may want to check the content of a variable or the structure of an object, without necessarily keeping a record of it in your script. You can type these commands and execute them directly in the console. RStudio provides the Ctrl + 1 and Ctrl + 2 shortcuts, which allow you to jump between the script and the console panes.
  
 If R is ready to accept commands, the R console shows a > prompt. If it receives a command (by typing, copy+pasting or sent from the script editor using Ctrl + Enter), R will try to execute it, and when ready, will show the results and come back with a new > prompt to wait for new commands.
 
@@ -67,15 +68,13 @@ height_cm
  
 height_cm <- 2.54 * height_in
 
-# Next change height_cm to 167.44
 height_cm <- 167.44
-
 ```
 
 What do you think is the current content of the object height_cm? 182.88 or 167.44?
 What do you think is the current content of the object height_in? 72 or 66?
 
-Objects can be given any name such as x, height_in, butyrate_conc, or subject_id. Object names need to be descriptive but not too long. They cannot start with a number (2x is not valid, but x2 is). R is case sensitive (e.g., subject_id is different from Subject_ID). There are some names that cannot and/or should not be used because they are the names of functions in R (e.g., if, else, for, c, T, list, mean, data, df. If in doubt, check the help menu to see if the name is already in use. 
+Objects can be given any name such as x, height_in, butyrate_conc, or subject_id. Object names need to be descriptive but not too long. They cannot start with a number (2x is not valid, but x2 is). R is case sensitive (e.g., subject_id is different from Subject_ID). There are some names that cannot and/or should not be used because they are the names of functions in R (e.g., if, else, for, c, T, list, mean, data, df). If in doubt, check the help menu to see if the name is already in use. 
 
 It is also best to avoid periods (.) within an object name, my_dataset is preferred over my.dataset. There are functions in R with dots in their names for historical reasons, but periods have a special meaning in R (for methods). 
 
@@ -218,10 +217,10 @@ We’ve seen that atomic vectors can be of type character, numeric (or double), 
 What will happen in each of these examples? (hint: use class() to check the data type of your objects):
 
 ```{r}
-num_char <- c(1, 2, 3, "a")
-num_logical <- c(1, 2, 3, TRUE)
-char_logical <- c("a", "b", "c", TRUE)
-tricky <- c(1, 2, 3, "4")
+num_char <- c(1, 2, 3, "a") #class?
+num_logical <- c(1, 2, 3, TRUE) #class?
+char_logical <- c("a", "b", "c", TRUE) #class?
+tricky <- c(1, 2, 3, "4") #class?
 # Why do you think it happens?
 ```
 
@@ -232,7 +231,7 @@ char_logical <- c("a", "b", "c", TRUE)
 combined_logical <- c(num_logical, char_logical)
 ```
 
-You’ve probably noticed that objects of different types get converted into a single, shared type within a vector. In R, we call converting objects from one class into another class coercion. These conversions happen according to a hierarchy, whereby some types get preferentially coerced into other types. Can you draw a diagram that represents the hierarchy of how these data types are coerced?
+You’ve probably noticed that objects of different types get converted into a single, shared type within a vector. In R, we call converting objects from one class into another class coercion. These conversions happen according to a hierarchy, whereby some types get preferentially coerced into other types. 
 
 If we want to extract one or several values from a vector, we must provide one or several indices in square brackets. For instance:
  
@@ -250,6 +249,21 @@ more_supplement
 ```
  
 R indices start at 1. Programming languages like Fortran, MATLAB, Julia, and R start counting at 1, because that’s what human beings typically do. Languages in the C family (including C++, Java, Perl, and Python) start at 0.
+
+Complete the exercises below, leave answers to comments were appropriate. 
+
+```{r}
+# Build a vector of the study semesters: 
+
+# Build a vector where the supplement consumed matches the order of the study semesters: 
+
+# What type are each of these? 
+```
+
+```{r}
+# Calculate the mean pH for the participant below, round to 1 digit:
+pH <- c("7.5", "6", "7.5", "8", "7.5")
+```
 
 -----
 end
