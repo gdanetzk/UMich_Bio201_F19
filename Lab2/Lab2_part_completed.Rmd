@@ -1,0 +1,111 @@
+---
+title: "Lab 2 part 1"
+author: "Kristi Gdanetz MacCready"
+date: "9/16/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documents/UMich_Bio201_F19/Lab2/")
+```
+
+# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+# Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+# Introduction to RStudio console
+
+### What is R? What is RStudio?
+
+The term “R” is used to refer to both the programming language and the software that interprets the code written using it. RStudio is currently a very popular way to not only write your R code but also to interact with the R software. To function correctly, RStudio needs R and therefore both need to be installed on your computer.
+
+Use of R does not involve lots of pointing and clicking. The learning curve might be steeper than with other statistical software, but with R, the results of your analysis do not rely on remembering a succession of pointing and clicking, but instead on a series of written commands. That’s a good thing! Because, if you want to redo your analysis after you collected more data, you don’t have to remember which button you clicked in which order to obtain your results; you just have to run your script again. Working with scripts makes the steps you used in your analysis clear, and the code you write can be inspected by someone else who can give you feedback and spot mistakes. Working with scripts forces you to have a deeper understanding of what you are doing, and facilitates your learning and comprehension of the methods you use.
+
+### R code is great for reproducibility
+
+Reproducibility is when someone else (including your future self) can obtain the same results from the dataset when using the same analysis. R can integrates with other tools to generate manuscripts from your code (this is useful for those of you who go on to graduate school). If you collect more data, or fix a mistake in your dataset, the figures and the statistical tests in your manuscript are updated automatically. An increasing number of journals and funding agencies expect analyses to be reproducible, so knowing R will give you an edge with these requirements.
+
+### R is interdisciplinary and extensible 
+
+With 10,000+ packages that can be installed to extend its capabilities, R provides a framework that allows you to combine statistical approaches from many scientific disciplines to best suit the analytical framework you need to analyze your data. For instance, R has packages for image analysis, GIS, time series, population genetics, and a lot more.
+
+### R works on data of all shapes and sizes
+
+The skills you learn with R scale easily with the size of your dataset. Whether your dataset has hundreds or millions of lines, it won’t make much difference to you. R is designed for data analysis. It comes with special data structures and data types that make handling of missing data and statistical factors convenient. R can connect to spreadsheets, databases, and many other data formats, on your computer or on the web.
+
+### R produces high-quality graphics
+
+The plotting functionalities in R are endless, and allow you to adjust any aspect of your graph to convey most effectively the message from your data.
+
+### R has a large and welcoming community
+
+Thousands of people use R daily. Many of them are willing to help you through mailing lists and websites such as Stack Overflow, or on the RStudio community. Not only is R free, but it is also open-source and cross-platform. Anyone can inspect the source code to see how R works. Because of this transparency, there is less chance for mistakes, and if you (or someone else) find some, you can report and fix bugs.
+
+### Knowing your way around RStudio
+
+Let’s start by learning about RStudio, which is an Integrated Development Environment (IDE) for working with R. The RStudio IDE open-source product is free under the Affero General Public License (AGPL) v3. We will use RStudio IDE to write code, navigate the files on our computer, inspect the variables we are going to create, and visualize the plots we will generate. RStudio can also be used for other things (e.g., developing packages and writing apps) that we will not cover during this course.
+
+RStudio is divided into 4 “Panes”: the Source for your scripts and documents (top-left, in the default layout), your Environment/History (top-right), your Files/Plots/Packages/Help/Viewer (bottom-right), and the R Console (bottom-left). The placement of these panes and their content can be customized (see menu > Tools > Global Options > Pane Layout).
+ 
+One of the advantages of using RStudio is that all the information you need to write code is available in a single window. Additionally, with many shortcuts, autocompletion, and highlighting for the major file types you use while developing in R, RStudio will make typing easier and less error-prone.
+
+```{r}
+
+```
+
+# Organize your working directory
+
+### Getting started
+
+It is good practice to keep a set of related data, analyses, and text self-contained in a single folder, called the working directory. All of the scripts within this folder can then use relative paths to files that indicate where inside the project each file is located. Working this way makes it a lot easier to move your project around on your computer and share it with others without worrying about whether or not the underlying scripts will still work.
+ 
+RStudio provides a helpful set of tools to do this through its “Projects” interface, which not only creates a working directory for you, but also remembers its location (allowing you to quickly navigate to it) and optionally preserves custom settings and open files to make it easier to resume work after a break. Go through the steps for creating an “R Project” for this tutorial below:
+
+1. Clone the Lab2 GitHub repository: git clone ~/Documents/UMich_Bio201_F19/Lab2
+2. Start RStudio.
+3. Under the File menu, click on New Project. Choose Exisiting Directory, then navigate to the GitHub directory. This will be your working directory for the rest of the day.
+4. Click on Create Project.
+5. (Optional) Set Preferences to ‘Never’ save workspace in RStudio.
+6. Uncheck the option to restore the workspace at start up.
+7. RStudio’s default preferences generally work well, but saving a workspace to .RData can be cumbersome, especially if you are working with larger datasets. To turn that off, go to Tools > ‘Global Options’ and select the ‘Never’ option for ‘Save workspace to .RData on exit.’
+8. RStudio will then ask you to restart the program.
+
+Using a consistent folder structure across your projects will help keep things organized, and will also make it easy to find and/or save things in the future. This can be especially helpful when you have multiple projects. 
+
+Use the ‘raw_data’ folder to store your raw data and/or intermediate datasets you may create for a particular analysis. For the sake of transparency, you should always keep a copy of your raw data accessible and do as much of your data cleanup and preprocessing programmatically (i.e., with scripts, rather than manually) as possible. Separating raw data from processed data is also a good idea. For example, you could have files 'raw_data/W19_breath.txt' and 'raw_data/F19_breath.txt' kept separate from a 'curated_data/AllSem_breath.csv' file generated by the 'code/breath_formatting.Rmd'
+
+You could also create a documents/ directory to keep outlines, drafts, and other texts.
+
+The directory code/ would be the location to keep your R scripts for different analyses or plotting, and potentially a separate folder for any custom functions (we will cover functions later this semester).
+ 
+1. Under the Files tab on the right of the screen, click on New Folder and create a folder named data within your newly created working directory (e.g., ~/Documents/UMich_Bio201_F19/raw_data).  
+2. Repeat these operations to create a curated_data/ and figures/ folders.
+
+### The working directory
+
+The working directory is an important concept to understand. It is the place from where R will be looking for and saving the files. When you write code for your project (which includes setting the working directory), it should refer to files in relation to the root of your working directory and only need files within this structure.
+ 
+Using RStudio projects makes this easy and ensures that your working directory is set properly. If you need to check it, you can enter getwd() in the Console. If for some reason your working directory is not what it should be, you can change it in the RStudio interface by navigating in the file browser where your working directory should be, and clicking on the blue gear icon “More”, and select “Set As Working Directory”. Alternatively you can use setwd("/path/to/working/directory") to reset your working directory. The script you downloaded today includes this line, and as long as you have set your directories to match the example above, you will have no issue. Generally this line is not included in scripts shared with collaborators because it will likely fail on someone else’s computer since the paths will not be exact matches.
+
+```{r}
+setwd() 
+```
+
