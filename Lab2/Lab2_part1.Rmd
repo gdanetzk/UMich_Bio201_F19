@@ -2,7 +2,9 @@
 title: "Lab 2 part 1"
 author: "Kristi Gdanetz MacCready"
 date: "9/16/2019"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -19,17 +21,6 @@ When you click the **Knit** button a document will be generated that includes bo
 ```{r cars}
 summary(cars)
 ```
-
-# Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
 
 # Introduction to RStudio console
 
@@ -51,9 +42,19 @@ With 10,000+ packages that can be installed to extend its capabilities, R provid
 
 The skills you learn with R scale easily with the size of your dataset. Whether your dataset has hundreds or millions of lines, it won’t make much difference to you. R is designed for data analysis. It comes with special data structures and data types that make handling of missing data and statistical factors convenient. R can connect to spreadsheets, databases, and many other data formats, on your computer or on the web.
 
-### R produces high-quality graphics
+# R produces high-quality graphics
 
 The plotting functionalities in R are endless, and allow you to adjust any aspect of your graph to convey most effectively the message from your data.
+
+### Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 ### R has a large and welcoming community
 
@@ -79,7 +80,7 @@ It is good practice to keep a set of related data, analyses, and text self-conta
  
 RStudio provides a helpful set of tools to do this through its “Projects” interface, which not only creates a working directory for you, but also remembers its location (allowing you to quickly navigate to it) and optionally preserves custom settings and open files to make it easier to resume work after a break. Go through the steps for creating an “R Project” for this tutorial below:
 
-1. Clone the Lab2 GitHub repository: git clone ~/Documents/UMich_Bio201_F19/Lab2
+1. Clone the Lab2 GitHub repository. 
 2. Start RStudio.
 3. Under the File menu, click on New Project. Choose Exisiting Directory, then navigate to the GitHub directory. This will be your working directory for the rest of the day.
 4. Click on Create Project.
@@ -105,7 +106,8 @@ The working directory is an important concept to understand. It is the place fro
  
 Using RStudio projects makes this easy and ensures that your working directory is set properly. If you need to check it, you can enter getwd() in the Console. If for some reason your working directory is not what it should be, you can change it in the RStudio interface by navigating in the file browser where your working directory should be, and clicking on the blue gear icon “More”, and select “Set As Working Directory”. Alternatively you can use setwd("/path/to/working/directory") to reset your working directory. The script you downloaded today includes this line, and as long as you have set your directories to match the example above, you will have no issue. Generally this line is not included in scripts shared with collaborators because it will likely fail on someone else’s computer since the paths will not be exact matches.
 
-```{r}
+```{r eval=FALSE, include=FALSE}
+getwd()
 setwd() 
 ```
 

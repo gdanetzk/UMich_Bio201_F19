@@ -74,6 +74,14 @@ height_cm <- 167.44
 What do you think is the current content of the object height_cm? 182.88 or 167.44?
 What do you think is the current content of the object height_in? 72 or 66?
 
+R can also evalute objects, it can determine if their values are equal.
+```{r}
+# Are these values equal?
+height_in == height_cm
+# Are these values different
+height_in != height_cm
+```
+
 Objects can be given any name such as x, height_in, butyrate_conc, or subject_id. Object names need to be descriptive but not too long. They cannot start with a number (2x is not valid, but x2 is). R is case sensitive (e.g., subject_id is different from Subject_ID). There are some names that cannot and/or should not be used because they are the names of functions in R (e.g., if, else, for, c, T, list, mean, data, df). If in doubt, check the help menu to see if the name is already in use. 
 
 It is also best to avoid periods (.) within an object name, my_dataset is preferred over my.dataset. There are functions in R with dots in their names for historical reasons, but periods have a special meaning in R (for methods). 
@@ -210,9 +218,28 @@ You can check the type of your vector using the typeof() function and inputting 
 
 Vectors are one of the many data structures that R uses. Other important ones are lists (list), matrices (matrix), data frames (data.frame), factors (factor), and arrays (array).
 
-### Homework Challenge
+If we want to extract one or several values from a vector, we must provide one or several indices in square brackets. For instance:
+ 
+```{r}
+supplement <- c("Psyllium", "BRMPS", "HiMaize", "Accessible")
+supplement[2]
+supplement[c(3, 2)]
+```
+ 
+We can also repeat the indices to create an object with more elements than the original one:
 
-We’ve seen that atomic vectors can be of type character, numeric (or double), integer, and logical. But what happens if we try to mix these types in a single vector?
+```{r}
+more_supplement <- supplement[c(1, 2, 3, 2, 1, 4)]
+more_supplement
+```
+ 
+R indices start at 1. Programming languages like Fortran, MATLAB, Julia, and R start counting at 1, because that’s what human beings typically do. Languages in the C family (including C++, Java, Perl, and Python) start at 0.
+
+
+### Homework Challenge
+Complete the exercises below, leave answers to comments were appropriate. 
+
+We’ve seen that vectors can be of type character, numeric (or double), integer, and logical. But what happens if we try to mix these types in a single vector?
 
 What will happen in each of these examples? (hint: use class() to check the data type of your objects):
 
@@ -231,26 +258,7 @@ char_logical <- c("a", "b", "c", TRUE)
 combined_logical <- c(num_logical, char_logical)
 ```
 
-You’ve probably noticed that objects of different types get converted into a single, shared type within a vector. In R, we call converting objects from one class into another class coercion. These conversions happen according to a hierarchy, whereby some types get preferentially coerced into other types. 
-
-If we want to extract one or several values from a vector, we must provide one or several indices in square brackets. For instance:
- 
-```{r}
-supplement <- c("Psyllium", "BRMPS", "HiMaize", "Accessible")
-supplement[2]
-supplement[c(3, 2)]
-```
- 
-We can also repeat the indices to create an object with more elements than the original one:
-
-```{r}
-more_supplement <- supplement[c(1, 2, 3, 2, 1, 4)]
-more_supplement
-```
- 
-R indices start at 1. Programming languages like Fortran, MATLAB, Julia, and R start counting at 1, because that’s what human beings typically do. Languages in the C family (including C++, Java, Perl, and Python) start at 0.
-
-Complete the exercises below, leave answers to comments were appropriate. 
+You’ve probably noticed that objects of different types get converted into a single, shared type within a vector. In R, we call converting objects from one class into another class coercion. These conversions happen according to a hierarchy, whereby some types get preferentially coerced into other types. What is the order of the hierarchy? 
 
 ```{r}
 # Build a vector of the study semesters: 
@@ -258,11 +266,16 @@ Complete the exercises below, leave answers to comments were appropriate.
 # Build a vector where the supplement consumed matches the order of the study semesters: 
 
 # What type are each of these? 
+
 ```
 
 ```{r}
-# Calculate the mean pH for the participant below, round to 1 digit:
-pH <- c("7.5", "6", "7.5", "8", "7.5")
+# Calculate the mean pH for each participant below, round to 2 digits. Evaluate if these values equal.
+
+pH_1 <- c("7.75", "6", "7.5", "8", "7.75")
+
+pH_2 <- c("8", "7.25", "7.25", "7.75", "7.5", "7.25")
+
 ```
 
 -----
