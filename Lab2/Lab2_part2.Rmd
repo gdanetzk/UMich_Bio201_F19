@@ -263,11 +263,20 @@ You’ve probably noticed that objects of different types get converted into a s
 ```{r}
 # Build a vector of the study semesters: 
 
-# Build a vector where the supplement consumed matches the order of the study semesters: 
+# Build a vector where the supplements consumed matches the order of the study semesters: 
 
 # What type are each of these? 
 
 ```
+
+```{r}
+# Build a vector of the typical age of college students:
+
+# Confirm this is numeric
+
+# Convert this vector to character:
+```
+
 
 ```{r}
 # Calculate the mean pH for each participant below, round to 2 digits. Evaluate if these values equal.
