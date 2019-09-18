@@ -1,0 +1,441 @@
+---
+title: 'Lab 4: Tidy data part 2'
+author: "Kristi Gdanetz MacCready"
+date: "9/30/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documents/UMich_Bio201_F19/")
+```
+
+# Load packages
+```{r Load packages, eval=TRUE, echo=TRUE, message=FALSE, warning=FALSE, results='hide'}
+library(tidyverse)
+library(readxl)
+library(cowplot)
+set.seed(7)
+```
+
+# Import data
+Import the curated dataset we generated last week, verify that all column names are in snake case, and any measurements include units. 
+```{r}
+scfa_data <- read_delim(file = "Lab3/curated_data/scfa_indv_qc.txt",
+                        delim = "\t", col_names = TRUE, trim_ws = TRUE, 
+                        na = c("", "NA")) 
+summary(scfa_data)
+```
+
+# Calculations across rows
+
+Problem: We want to determine the average increase in SCFA concentrations to determine which supplements had a greater butyrogenic effect, however the dataset we are using contains multiple individual measurements per participant. There are multiple combinations of functions to complete this task. 
+
+Many data analysis tasks can be approached using the split-apply-combine paradigm: 
+
+* split the data into groups
+* apply some analysis to each group
+* combine the results. 
+
+Depending on the number of groups and type of analysis this can become repetitive, and could make the code quite long. We’ll use the more concise approach using dplyr’s group_by() function.
+
+### Group + Summarise 
+
+group_by() is often used together with summarize(), which collapses each group into a single-row summary of that group. group_by() takes as arguments the column names that contain the categorical variables for which you want to calculate the summary statistics. So to compute the mean butyrate concentration by semester:
+
+```{r}
+scfa_data %>%
+  group_by(semester) %>%
+  summarize(mean_butyrate = mean(butyrate_mmol_kg, na.rm = TRUE))
+```
+
+Not all participants consumed the same supplement for a given semester, and some participants did not consume a supplement at all. It is not a meaningful summary statistic to keep these participants together when calculating a mean. To do this calculation; group by multiple columns:
+
+```{r}
+scfa_data %>%
+  group_by(semester, supplement_consumed) %>%
+  summarize(mean_butyrate = mean(butyrate_mmol_kg, na.rm = TRUE))
+```
+
+When grouping both by semester and supplement_consumed, the first row is for individuals that a butyrate measurement could not be determined (this could be due to a concentration below the limit of detection on the HPLC, or there was an issue with the integrity of the sample, or there was an issue with the sample collection protocol). You may notice that the last column does not contain NA but NaN (which refers to “Not a Number”). 
+
+To avoid this, we can remove the missing values for butyrate before we attempt to calculate the summary statistics on butyrate. Because the missing values are removed first, we can omit na.rm = TRUE when computing the mean:
+
+```{r}
+scfa_data %>%
+  filter(!is.na(butyrate_mmol_kg)) %>%
+  group_by(semester, supplement_consumed) %>%
+  summarize(mean_butyrate = mean(butyrate_mmol_kg))
+```
+
+In the examples above the resulting output is long enough that you can click through the rows. Once you are more comfortable with summary functions, you may want to print fewer data. Use the function head() for a default of 6 rows to display:
+
+```{r}
+scfa_data %>%
+  filter(!is.na(butyrate_mmol_kg)) %>%
+  group_by(semester, supplement_consumed) %>%
+  summarize(mean_butyrate = mean(butyrate_mmol_kg)) %>%
+  head()
+```
+
+Once these data are grouped, it is possible to summarize multiple variables at the same time (and not necessarily on the same variable). For instance, add a column calculating the standard deviation for each group, and another column to count the number of observations:
+
+```{r}
+scfa_data %>%
+ filter(!is.na(butyrate_mmol_kg)) %>%
+  group_by(semester, supplement_consumed) %>%
+  summarize(mean_butyrate = mean(butyrate_mmol_kg), 
+            sd_butyrate = sd(butyrate_mmol_kg), 
+            n_butyrate = n())
+```
+
+It is sometimes useful to rearrange the result of a query to inspect the values. For instance, sort on mean_butyrate to put the highest concentrations first:
+
+```{r}
+scfa_data %>%
+  filter(!is.na(butyrate_mmol_kg)) %>%
+  group_by(semester, supplement_consumed) %>%
+  summarize(mean_butyrate = mean(butyrate_mmol_kg), 
+            sd_butyrate = sd(butyrate_mmol_kg), 
+            n_butyrate = n()) %>%
+  arrange(-mean_butyrate) #drop "-" to put lowest first 
+```
+
+### Challenge 4.1 
+Apply the group and summarise functions to determine the mean concentration of all three SCFAs for each participant, during each week of the study. Can you do this without creating any intermediate data frames? 
+
+```{r}
+# write code here
+
+```
+
+
+# Reshaping data
+
+In the spreadsheet lesson, we discussed how to structure our data leading to the four rules defining a tidy dataset:
+
+* Each variable has its own column
+* Each observation has its own row
+* Each value must have its own cell
+* Each type of observational unit forms a table
+
+Here we examine the fourth rule: Each type of observational unit forms a table.
+ 
+The data we have used has a value (column) for study week since this is a ‘measured’ characteristic of each sample; as discussed previously this is long-formatted data. However, sometimes we are interested in calculating the difference in SCFA concentrations (or other measurements) between weeks of the study, how is this accomplished in long format? It isn’t. The data frame should be converted to a wide format, then calculations can be performed across columns. Each row of the wide table will contain measurements associated with both weeks. This means the values of butyrate concentrations during weeks 1 and 3 would become the names of column variables. The opposite transformation would be to convert column names into values of a variable. We can do these transformations with two tidyr functions, spread() and gather().
+
+### Spread
+
+spread() takes three principal arguments: 
+
+* the data
+* the key column variable whose values will become new column names.
+* the value column variable whose values will fill the new column variables.
+
+Optional arguments include ‘fill’ which, if included, fills in missing values with the value provided. Use spread() to widen the data frame by study week. Inspect the result, can you determine what happened here? 
+
+```{r}
+scfa_wkly %>%
+  spread(study_week, mean_butyrate)
+```
+
+To simplify the output, filter by SCFA of interest before spreading. We use filter() and select() to subset our data to observations and variables of interest. We use the pipes as before too.
+
+```{r}
+scfa_wkly %>%
+  select(participant_id, semester, supplement_consumed, study_week, mean_butyrate) %>% #drop extra columns
+  filter(study_week == "week1" | study_week == "week3") %>% #drop extra weeks
+  spread(study_week, mean_butyrate)
+```
+
+Notice there are some columns containing NAs, we cannot calculate a difference if the data for one of the weeks are missing, remove those using na.omit() on these columns. 
+
+This yields a data frame where the observations for each week are spread across multiple columns. Now use mutate to calculate the difference between weeks, and save as a new data frame.
+
+```{r}
+butyrate_wide <- scfa_wkly %>%
+  select(participant_id, semester, supplement_consumed, study_week, mean_butyrate) %>% #drop extra columns
+  filter(study_week == "week1" | study_week == "week3") %>% #drop extra weeks
+  spread(study_week, mean_butyrate) %>% #convert to wide format
+  na.omit(week1, week3) %>% #drop NAs from select columns
+  mutate(delta_butyrate = week3 - week1) #calculate difference 
+
+head(butyrate_wide)
+```
+
+Create a wide data frame for the other SCFAs.
+```{r}
+# copy+paste and edit code chunk for acetate
+
+```
+
+```{r}
+# copy+paste and edit code chunk for propionate
+
+```
+
+### Challenge 4.2
+We are interested in the average difference of fecal butyrate by supplement type, how would you do this? 
+```{r}
+# write code here
+```
+
+Repeat this process for each SCFA. How would you plot your results? 
+```{r}
+# copy+paste and edit code chunk for acetate
+```
+
+```{r}
+# copy+paste and edit code chunk for propionate
+```
+
+```{r}
+# copy+paste and edit code chunks for plots
+```
+
+These plots are fine, however they could be graphed more efficiently with facets. This introduces a new problem: combining data frames.
+
+
+### Join
+
+Joins are used to combine or merge two data frames. There are several flavors of join functions, each matching specific columns in the data to be joined. Most useful is the inner_join function which joins two data frames based on a column that they have in common and if a sample or group is missing from one of the data frames, it is excluded from the joined data frame. 
+
+There may be some scenarios in which you want to retain the data without a match, this can be accomplished with a full_join, which returns all matches and non-matches. We know there are measurements missing from some semesters (e.g. prior to 2018 pH data was not collected), this might be a scenario where a full join is useful. The dplyr package has two additional join functions; “left_join” and “right_join”, which will merge the data frames using the sample identifiers found in the left or right data frame being joined. Type ?join into the console to see more details. 
+
+Use the three data frames you created in the section above (wide formatted for each SCFA) to practice joins. We can check the results of our joins by identifying the number of rows and participants in each data frame before and after the join. 
+
+```{r}
+nrow(acetate_wide) #rows in data frame
+n_distinct(acetate_wide$participant_id) #number of participants, should equal number rows
+
+nrow(butyrate_wide) 
+n_distinct(butyrate_wide$participant_id) 
+
+nrow(propionate_wide)
+n_distinct(propionate_wide$participant_id)
+```
+
+Execute an inner join and check the results. Check the column names of the resulting data frame, what issues do you see? 
+```{r}
+# execute join
+join1 <- inner_join(acetate_wide, butyrate_wide,
+                    by = c("participant_id", "semester", "supplement_consumed"))
+# check results
+nrow(join1)
+n_distinct(join1$participant_id)
+# check column names
+colnames(join1)
+```
+
+Before joining, rename the week columns for each SCFA. We also need to set the grouping variables within the join function so we do not duplicate the categorical participant information. 
+
+Execute a full join and check the results. 
+```{r}
+# rename columns in butyrate df
+butyrate_wide <- butyrate_wide %>%
+  rename(but_wk1 = week1,
+         but_wk3 = week3)
+
+# rename columns in acetate df 
+acetate_wide <- acetate_wide %>%
+  rename(ace_wk1 = week1,
+         ace_wk3 = week3)
+
+# execute join
+join2 <- full_join(acetate_wide, butyrate_wide,
+                    by = c("participant_id", "semester", "supplement_consumed"))
+
+# check results 
+nrow(join2)
+n_distinct(join2$participant_id)
+colnames(join2)
+```
+
+
+We have joined two of our three data frames, we can use pipes to join the third, and save as a new object. Don't forget to update the column names in the propionate dataframe. Note the types of joins used below, why were these selected? Change the types of joins, how does this effect the results?
+```{r}
+# rename columns in propionate df 
+propionate_wide <- propionate_wide %>%
+  rename(pro_wk1 = week1,
+         pro_wk3 = week3)
+
+# execute join
+join3 <- inner_join(acetate_wide, butyrate_wide,
+                   by = c("participant_id", "semester", "supplement_consumed")) %>%
+  full_join(propionate_wide, 
+            by = c("participant_id", "semester", "supplement_consumed"))
+
+# check results 
+nrow(join3)
+n_distinct(join3$participant_id)
+colnames(join3)
+```
+
+### Challenge 4.3  
+
+Part 1: Join and update the column names of the three SCFA wide data frames, calculate the weekly total SCFA for each participant, calculate the difference in total SCFA across weeks.
+```{r}
+# write code here
+```
+
+Part 2: Plot the change in total SCFA for each semester, faceting for each supplement consumed. Clean up the axes and labels. Extra challenge: Can you use pipes to execute Parts 1 and 2 as one long command?
+```{r}
+# write code here
+```
+
+
+### Gather
+
+Often collaborators collect and enter data in a wide formatted spreadsheet, which is understandable since it is a little easier for humans to read, however we need the data in long format for analysis. Additionally, after the differences were calculated and the wide data frames were joined (just completed in the section above), we need to return the data frame to long format to use facets for multiple SCFAs (all SCFA measurments should be in one column with an column describing the type). We can complete this with gather(), the opposite of the spread() function. 
+
+gather() takes four principal arguments:
+
+* the data
+* the key column variable we wish to create from column names.
+* the values column variable we wish to create and fill with values associated with the key.
+* the names of the columns we use to fill the key variable (or to drop).
+
+In this situation we are gathering the multiple columns and turning them into a pair of new variables. One variable represents the column names as values, and the other variable contains the values/measurements previously found under each column name.
+
+```{r}
+total_scfas %>%
+  select(-ends_with("_wk1"), -ends_with("_wk3")) %>%
+  rename(acetate = delta_acetate,
+         butyrate = delta_butyrate, 
+         propionate = delta_propionate, 
+         total = delta_total) %>% 
+  gather(key = SCFA, value = wkly_diff,
+         acetate, butyrate, propionate, total)
+```
+
+Let's repeat this for indivual week measurements, instead of the difference. 
+```{r}
+total_scfas %>%
+  select(-starts_with("delta_")) %>%
+  gather(key = SCFA_wk, value = SCFA_concentration,
+         ace_wk1, ace_wk3, but_wk1, but_wk3, pro_wk1, pro_wk3, total_wk1, total_wk3)
+```
+
+Notice that the variable in the SCFA_wk indicate the SCFA and the study week, we want these information as separate columns. Remember it took us multiple steps to generate the wide data frame, so it will require multiple steps, to recreate the long data frame with the transformed data. 
+```{r}
+# acetate long
+ace_long <- total_scfas %>%
+  #drop diff columns & extra SCFAs
+  select(-starts_with("delta_"), -starts_with("but_"), -starts_with("pro_"), -starts_with("total")) %>% 
+  rename(week1 = ace_wk1,
+         week3 = ace_wk3) %>% #convert weeks to consistent format for join
+  gather(key = study_week, value = acetate, week1, week3)
+```
+
+```{r}
+# copy+paste and edit code here to create but_long
+but_long <-
+  
+```
+
+```{r}
+# copy+paste and edit code here to create pro_long
+pro_long <- 
+  
+```
+
+Check the dimensions of the three long data frames you just created, select the appropriate type of join, and create a new data frame called scfa_long. 
+```{r}
+scfa_long <- 
+```
+
+Remember we want one column for study week and one column for the SCFA measurements, so we need to use gather() one more time.
+```{r}
+scfa_long <- scfa_long %>%
+  gather(key = scfa, value = concentration_mmol_kg,
+         acetate, butyrate, propionate)
+```
+
+Now that the data are in long format, calculate the weekly mean for each SCFA per participant. Make use of the code from the section above, just swap out the variables for the data frames and column names. 
+```{r}
+# copy+paste and edit code here
+wkly_means <- scfa_long %>%
+  
+```
+
+Now that the data are in long format, let's create a more meaningful plot than the one created in Challenge 4.3
+```{r}
+p1 <- scfa_long %>%
+  ggplot(aes(x = supplement_consumed, y = concentration_mmol_kg, semester, scfa)) +
+  geom_jitter(aes(color = scfa)) +
+  facet_grid(scfa~., scales = "free") + 
+  ylab("SCFA concentration (mmol/kg)") +
+  xlab("Supplement consumed") +
+  theme(legend.position = "none",
+        axis.text.x = element_text(angle = 90, 
+                                   hjust = 1, 
+                                   vjust = 0.5))
+p1
+```
+Notice here we are assigning the plot to an object. Then we have to call that object to view the plot. Assigning plots to objects is a necessary step if we want to save the plots.
+
+### Export data
+
+Save this wide data frame to the curated data directory.
+```{r}
+write_delim(scfa_wide, path = "curated_data/scfa_wide.txt", delim = "\t")
+```
+
+
+# Challenge 4.4
+In preparation for the next section on graphics, we will prepare and export a curated version of the data set. Let’s start by removing participants for which pH and BSS are missing:
+```{r}
+# import pH data
+pH_data <- read_delim(file = "Lab4/raw_data/pH_indv.txt",
+                        delim = "\t", col_names = TRUE, trim_ws = TRUE, 
+                        na = c("", "NA")) %>%
+  rename_all(tolower)
+
+# filter to remove bad measurements based on outside list
+pH_bad <- read_delim(file = "Lab4/raw_data/pH_bad.txt",
+                        delim = "\t", col_names = TRUE, trim_ws = TRUE, 
+                        na = c("", "NA")) %>% #import list of samples with date discrepencies 
+  rename_all(tolower)
+
+pH_qc <- pH_data %>%
+  filter(!sample_id %in% pH_bad$sample_id) %>% #drop samples in bad list
+  group_by() %>%
+  summarise() #calculate weekly average
+dim(pH_qc)
+```
+
+```{r}
+# import BSS
+BSS_data <- read_delim(file = "Lab4/raw_data/BSS_indv.txt",
+                        delim = "\t", col_names = TRUE, trim_ws = TRUE, 
+                        na = c("", "NA")) %>%
+  rename_all(tolower)
+
+BSS_qc <- BSS_data %>%
+  filter(bristol_numeric >= 1 & bristol_numeric <= 7) %>% #filter to remove measurements outside of scale
+  group_by() %>%
+  summarise() #calculate weekly average 
+dim(BSS_qc)
+```
+
+Select the appropriate type of join to retain participants with either pH or BSS measurements. 
+```{r}
+pH_BSS_wkly <- join(pH_qc, BSS_qc,
+                    by = c()) %>%
+  mutate() #round avgs to reflect sig figs
+```
+
+To make sure that everyone has the same data set, check the number of rows and columns by typing dim().
+```{r}
+dim(pH_BSS_wkly)
+```
+If you do not have 748 rows and 4 columns, review your code with your neighbors, can you identify what went wrong?
+
+Now that the data are ready, save it as a CSV file in the curated_data directory.
+```{r}
+write_delim(pH_BSS_wkly, path = "Lab4/curated_data/pH_BSS_wkly.txt", 
+            delim = "\t", col_names = TRUE)
+```
+
+
+-----
+end
