@@ -18,6 +18,7 @@ The ggplot2 package or just “ggplot” as it is commonly known, is a powerful 
 ```{r Load packages, eval=TRUE, echo=TRUE, message=FALSE, warning=FALSE, results='hide'}
 library(tidyverse)
 library(readxl)
+library(broom)
 library(cowplot)
 set.seed(7)
 ```
@@ -26,13 +27,12 @@ set.seed(7)
 
 ggplot2 functions like data in the ‘long’ format, i.e., a column for every dimension, and a row for every observation. Well-structured data will save you lots of time when making figures with ggplot2. Tidying up the data is one of the biggest hurdles to learning R, so you will practice this for the next several weeks. 
 
+### Homework 3.4
 ```{r}
-scfa_qc <- read_delim(file = "processed_data/SCFA_wkly.txt", 
+scfa_qc <- read_delim(file = "curated_data/SCFA_wkly.txt", 
                         delim = "\t", escape_double = FALSE, trim_ws = TRUE, na=c("NA"),
                         col_types = list())
-```
 
-```{r}
 # drop median columns
 
 # keep only individuals who consumed full starch dose
@@ -55,36 +55,33 @@ ggplot(data = <DATA>,
 ```
 
 # Types of plots
-use the ggplot() function and bind the plot to a specific data frame using the data argument
-```{r}
+Use the ggplot() function and bind the plot to a specific data frame using the "data" argument:
+```{r include=FALSE}
 ggplot(data = scfa_qc)
 ```
 
-define a mapping (using the aesthetic (aes) function), by selecting the variables to be plotted and specifying how to present them in the graph, e.g. as x/y positions or characteristics such as size, shape, color, etc.
-
+Define a mapping (using the aesthetic (aes) function), by selecting the variables to be plotted and specifying how to present them in the graph, e.g. as x/y positions or characteristics such as size, shape, color, etc.
 ```{r}
 ggplot(data = scfa_qc, 
        mapping = aes(x = participant_id, 
-                     y = butyrate_mmol_kg))
+                     y = butyrate_mean_mmol_kg))
 ```
 
-add ‘geoms’ – graphical representations of the data in the plot (points, lines, bars). ggplot2 offers many different geoms; you will use some common ones today, including:
-
-```{r}
+We set the axes, however we still have to tell R how we want the data values added. This is accomplished with ‘geoms’ – graphical representations of the data in the plot (points, lines, bars). ggplot2 offers many different geoms; you will use some common ones today, including:
+```{r eval=FALSE, include=FALSE}
 geom_point() #for scatter plots, dot plots, etc.
 geom_boxplot() #for, well, boxplots!
 geom_line() #for trend lines, time series, etc.  
-geom_jitter() #for
-geom_col() #for
+geom_jitter() #for representation of all points in a group
+geom_col() #for bar graphs, don't confuse with geom_bar()
 ```
 
 To add a geom to the plot use the + operator. Because you have two continuous variables, let’s use geom_point() first: 
-
 ```{r}
-ggplot(data = scfa_qc, 
+ggplot(data = scfa_qc, #call dataset
        mapping = aes(x = participant_id, 
-                     y = butyrate_mmol_kg)) +
-  	geom_point()
+                     y = butyrate_mean_mmol_kg)) + #assign data to axes
+  	geom_point() #type of plot 
 ```
 
 The + in the ggplot2 package is particularly useful because it allows you to modify existing ggplot objects. This means you can easily set up plot templates and conveniently explore different types of plots, so the above plot can also be generated with code like this:
@@ -93,115 +90,135 @@ The + in the ggplot2 package is particularly useful because it allows you to mod
 # Assign plot to a variable
 plot1 <- ggplot(data = scfa_qc, 
        mapping = aes(x = participant_id, 
-                     y = butyrate_mmol_kg))
+                     y = butyrate_mean_mmol_kg))
 # Draw the plot
 plot1 + geom_point()
 ```
 
-Anything you put in the ggplot() function can be seen by any geom layers that you add (i.e., these are universal plot settings). This includes the x- and y-axis mapping you set up in aes().
+Anything you put in the ggplot() function can be seen by any geom layers that you add (i.e., these are universal plot settings). This includes the x- and y-axis mapping called in aes().
 
 You can also specify mappings for a given geom independently of the mappings defined globally in the ggplot() function.
 
-The + sign used to add new layers must be placed at the end of the line containing the previous layer. If, instead, the + sign is added at the beginning of the line containing the new layer, ggplot2 will not add the new layer and will return an error message.
+The + sign used to add new layers must be placed at the end of the line containing the previous layer. If instead the + sign is added at the beginning of the line containing the new layer, ggplot2 will not add the new layer and will return an error message.
 
 ```{r eval=FALSE, include=FALSE}
 # This is the correct syntax for adding layers
-surveys_plot +
+plot1 +
   	geom_point()
  
 # This will not add the new layer and will return an error message
-surveys_plot 
+plot1 
   + geom_point()
 ```
 
 # Customization + themes
+
 Take a look at the ggplot2 cheat sheet, and think of ways you could improve the plot.
 The axes names are informative, however they contain the underscores found in the column names. We can update these and add a title to the figure:
-
 ```{r}
 ggplot(data = scfa_qc, 
        mapping = aes(x = participant_id, 
-                     y = butyrate_mmol_kg, 
+                     y = butyrate_mean_mmol_kg, 
                      color = study_week)) +
     geom_point() +
-    labs(title = "Butyrate concentrations of individuals",
+    labs(title = "Mean butyrate concentrations of individuals",
          x = "Individuals",
          y = "Fecal butyrate (mmol/kg)") 
 ```
 
-Note that it is also possible to change the fonts of your plots. Remember you installed the cowplot package, this removes the gray background and increases the default font sizes in figures automatically. In the end there is less code to write! 
+Note that it is also possible to change the fonts of the plots. Remember we installed the cowplot package, this removes the gray background and increases the default font sizes in figures automatically. In the end there is less code to write! 
 
 After our manipulations, you may notice that the values on the x-axis are still not properly readable. Let’s change the orientation of the labels and adjust them vertically and horizontally so they don’t overlap. You can use a 90-degree angle, or experiment to find the appropriate angle for diagonally oriented labels:
 
 ```{r}
+# flip x and y axes
 ggplot(data = scfa_qc, 
        mapping = aes(x = participant_id, 
-                     y = butyrate_mmol_kg, 
+                     y = butyrate_mean_mmol_kg, 
                      color = study_week)) +
     geom_point() +
-    labs(title = "Butyrate concentrations of individuals",
+    labs(title = "Mean butyrate concentrations of individuals",
+         x = "Individuals",
+         y = "Fecal butyrate (mmol/kg)") +
+    coord_flip()
+```
+
+```{r}
+# change angle of axis labels
+ggplot(data = scfa_qc, 
+       mapping = aes(x = participant_id, 
+                     y = butyrate_mean_mmol_kg, 
+                     color = study_week)) +
+    geom_point() +
+    labs(title = "Mean butyrate concentrations of individuals",
          x = "Individuals",
          y = "Fecal butyrate (mmol/kg)") +
     theme(axis.text.x = element_text(angle = 90, hjust = 0.5, vjust = 0.5))
 ```
 
+In reality the individual particpant IDs are published in figures for research journals, so let's hide them: 
+```{r}
+# hide x-axis tick labels
+ggplot(data = scfa_qc, 
+       mapping = aes(x = participant_id, 
+                     y = butyrate_mean_mmol_kg, 
+                     color = study_week)) +
+    geom_point() +
+    labs(title = "Mean butyrate concentrations of individuals",
+         x = "Individuals",
+         y = "Fecal butyrate (mmol/kg)") +
+    theme(axis.text.x = element_blank())
+```
+
+These are some basic manipulations using a scatter plot as an example, what if switch our type of plot?
+```{r}
+ggplot(data = scfa_qc, 
+       mapping = aes(x = participant_id, 
+                     y = butyrate_mean_mmol_kg, 
+                     color = study_week)) +
+    geom_line() +
+    labs(title = "Mean butyrate concentrations of individuals",
+         x = "Individuals",
+         y = "Fecal butyrate (mmol/kg)") +
+    theme(axis.text.x = element_blank())
+```
+ ggplot can't make sense of this data structure for a line plot. We have to modifiy the data assigned to each axis, and as mentioned in the error message above, we need to set a group. 
+```{r}
+ggplot(data = scfa_qc, 
+       mapping = aes(x = study_week, 
+                     y = butyrate_mean_mmol_kg, 
+                     color = supplement_consumed,
+                     group = participant_id)) +
+    geom_line() +
+    labs(title = "Mean butyrate concentrations of individuals",
+         x = NULL,
+         y = "Fecal butyrate (mmol/kg)") 
+```
+
+As with the scatter plot, there are a lot of lines (data points) here, and it is difficult to see patterns. One way we can deal with this is subsetting the data and creating plots with those subsets. Another strategy is summarising the data futher (e.g., calculate the mean for each supplement) and plot fewer values; we will cover that topic next week. 
+
 # Arranging plots
 In the section above you created a figure for just the butyrate data. The data frame contains measurements for two other SCFA, acetate and propionate, you also calculated the total SCFA. We would like to create figures for each of these, four figures total. 
+
 ### Generate individual plots
-Recreate the figure above for each SCFA. Utilize copy and paste to reduce the amount of typing. 
+### Homework 3.5
+Recreate the scatter plot from the above for each SCFA. Identify descriptive axis labels, make each plot a different color. Utilize copy and paste to reduce the amount of typing. Assign each figure to a new object. Website with some named colors: http://sape.inf.usi.ch/quick-reference/ggplot2/colour 
 ```{r}
-plot_ace <- ggplot(data = scfa_qc,
-       mapping = aes(x = participant_id, 
-                     y = acetate_mmol_kg, 
-                     color = "red")) +
-    geom_point() +
-    labs(x = "Individuals",
-         y = "Fecal Acetate (mmol/kg)") +
-    theme(axis.text.x = element_text(angle = 90, 
-                                     hjust = 0.5, 
-                                     vjust = 0.5))
+plot_ace <- ggplot()
 ```
 
 ```{r}
-plot_but <- ggplot(data = scfa_qc,
-       mapping = aes(x = participant_id, 
-                     y = butyrate_mmol_kg, 
-                     color = "green")) +
-    geom_point() +
-    labs(x = "Individuals",
-         y = "Fecal butyrate (mmol/kg)") +
-    theme(axis.text.x = element_text(angle = 90, 
-                                     hjust = 0.5, 
-                                     vjust = 0.5))
+plot_but <- ggplot()
 ```
 
 ```{r}
-plot_pro <- ggplot(data = scfa_qc,
-       mapping = aes(x = participant_id, 
-                     y = propionate_mmol_kg, 
-                     color = "orange")) +
-    geom_point() +
-    labs(x = "Individuals",
-         y = "Fecal propionate (mmol/kg)") +
-    theme(axis.text.x = element_text(angle = 90, 
-                                     hjust = 0.5, 
-                                     vjust = 0.5))
+plot_pro <- ggplot()
 ```
 
 ```{r}
-plot_tot <- ggplot(data = scfa_qc,
-       mapping = aes(x = participant_id, 
-                     y = total_scfa, 
-                     color = "blue")) +
-    geom_jitter() +
-    labs(x = "Individuals",
-         y = "Total fecal SCFAs (mmol/kg)") +
-    theme(axis.text.x = element_text(angle = 90, 
-                                     hjust = 0.5, 
-                                     vjust = 0.5))
+plot_tot <- ggplot()
 ```
 
-Be sure to adjust the axes, and aesthetics. Assign each figure to a new object. 
 
 ### Combine plot panels 
 
@@ -215,86 +232,82 @@ plot_grid(plot_ace, plot_but, plot_pro, plot_tot,
 
 # Faceting
 
-In the section above you created multiple plots, and combined them into one larger multi-panel figure. These functions are useful if individual panels require a lot of customization, or are generated from different data frames. However if you have a tidy data set you can create a multi-panel figure with one function. The faceting function uses the provided argument, usually a factor (more on factors below) which is a categorical group that describes one characteristic of each datum. Under the hood the data is subset by these factors, and an individual panel is created for each. 
+In the section above you created multiple plots, and combined them into one larger multi-panel figure. These functions are useful if individual panels require a lot of customization, or are generated from different data frames. However if you have a tidy data set you can create a multi-panel figure with one function added to the ggplot call. The faceting function uses the provided argument, usually a factor (more on factors next week) which is a categorical group that describes one characteristic/measurement of each datum. Under the hood the data is subset by these factors, and an individual panel is created for each. 
 
-### Without favets 
-Subset the data frame for week 1 then week 3 of the study, you are only going to use the total SCFA measurements.
-
-
+### Without facets 
+Subset the data frame for week 1 then week 3 of the study, plot the total SCFA measurements. Notice in the code below we pipe the filtered data frame directly to ggplot. We do not have to create additional dataframes, and use up a lot of memory.
 ```{r}
 plot_wk1 <- scfa_qc %>%
   filter(study_week == "week1") %>%
-  ggplot(mapping = aes(x = participant_id, 
-                     y = total_scfa, 
-                     color = "black")) +
-    geom_jitter() +
-    labs(x = "Individuals",
+  ggplot(aes(x = participant_id, 
+             y = total_mmol_kg)) +
+    geom_point(color = "black") +
+    labs(title = "Week 1",
+         x = "Individuals",
          y = "Total fecal SCFAs (mmol/kg)") +
-    theme(axis.text.x = element_text(angle = 90, 
-                                     hjust = 0.5, 
-                                     vjust = 0.5))
+    theme(axis.text.x = element_blank(),
+          legend.position = "none")
 
 plot_wk3 <- scfa_qc %>%
   filter(study_week == "week3") %>%
-  ggplot(mapping = aes(x = participant_id, 
-                     y = total_scfa, 
-                     color = "black")) +
-    geom_jitter() +
-    labs(x = "Individuals",
+  ggplot(aes(x = participant_id, 
+             y = total_mmol_kg)) +
+    geom_point(color = "black") +
+    labs(title = "Week 3",
+         x = "Individuals",
          y = "Total fecal SCFAs (mmol/kg)") +
-    theme(axis.text.x = element_text(angle = 90, 
-                                     hjust = 0.5, 
-                                     vjust = 0.5))
+    theme(axis.text.x = element_blank(),
+          legend.position = "none")
 
 plot_grid(plot_wk1, plot_wk3, 
           nrow = 1, ncol = 2)
 ```
 
 ### With facets
-Use the code above as a temple to create a jitter plot. We need to pass some additional arguments to aesthetics without assignment them to an axis: supplement_consumed, semester, study_week.
+Use the code above as a template to create a scatter plot. We need to pass some additional arguments to aesthetics without assignment them to an axis: supplement_consumed, semester, study_week.
 
 The new function added to the plot code here is “facet_wrap”. Open the help documentation and explore the default behavior and optional arguments.
 
 ```{r}
 plot_f <- scfa_qc %>%
-  ggplot(mapping = aes(x = participant_id, 
-                     y = total_scfa, 
-                     semester, study_week, supplement_consumed)) +
-  geom_jitter() +
+  #filter(study_week == "week1" | study_week == "week3") %>%
+  ggplot(aes(x = participant_id, 
+             y = total_mmol_kg, 
+             study_week)) +
+  geom_point(aes(color = study_week)) +
   facet_grid(~study_week) + 
   labs(x = "Individuals",
        y = "Total fecal SCFAs (mmol/kg)") +
-  theme(axis.text.x = element_text(angle = 90, 
-                                     hjust = 0.5, 
-                                     vjust = 0.5))
+  theme(axis.text.x = element_blank(),
+        legend.position = "none")
+
+plot_f
 ```
 
-Complete any additional customizations to make the figure easy to read. Compare the facetted figure with the version you generated above where each panel was created manually. What differences in the layout of the figure do you notice?
+Complete any additional customizations to make the figure easy to read. Compare the facetted figure with the version you generated above where each panel was created manually. What differences in the layout of the figure do you notice? Write your answer in the bold block below:
 
-Challenge: 
+> ** enter answer here ** 
+
+### Homework 3.6
+Plot the mean butyrate concentration for week 3 vs. semester. In this plot, each facet should be one of the supplement types consumed during the study. Modify the plot settings so all labels are descriptive and easy to read. Tip: read the help documentation for facet_grid and modify some of the default arguments. 
 ```{r}
-scfa_qc %>%
-  filter(supplement_consumed == " ") + 
-  ggplot(mapping = aes(x = participant_id, 
-                       y = total_scfa, 
-                       semester, study_week, supplement_consumed)) +
-  geom_jitter() +
-  facet_grid() + 
-  labs(x = "",
-       y = "") +
-  theme()
+plot3.6 <- scfa_qc %>%
+  filter() %>%
+  ggplot()
 ```
 
 # Exporting plots
 
-As with other topics covered in this course, there are multiple ways to save or export the graphics created in RStudio. For one-off figures use the mouse interactively to save the figure. However when completing a long analysis, especially with a dataset that is updated regularly (new data is added each semester to the undergrad cohort), it is best practice to explicitly code the figure export. This allows you to save and compare versions of the same figures. 
+As with other topics covered in this course, there are multiple ways to achieve the goal, including saving or exporting the graphics created in RStudio. For one-off figures use the mouse interactively to save the figure. However when completing a long analysis, especially with a dataset that is updated regularly (e.g., new data is added each semester to the undergrad cohort), it is the best practice to explicitly code the figure save/export. This allows you to save and compare versions of the same figures. In the directory for lab 3 create a folder called "figures". Save the plot you created in the facet section. 
 
 ```{r}
+# preferred save method with cowplot
 save_plot(filename = "figures/facet_plot.pdf",
           plot = plot_f,
           nrow = 1, ncol = 2, 
           base_aspect_ratio = 1.1)
 
+# option to save with ggplot functions 
 ggplot2::ggsave(filename = "facet_plot.tiff",
                 path = "figures/",
                 device = "tiff",

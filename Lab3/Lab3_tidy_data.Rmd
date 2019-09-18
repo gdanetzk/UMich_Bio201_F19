@@ -21,9 +21,11 @@ Hidden arguments, having default operations that new learners are not aware of.
 
 There are several other useful packages that are part of the tidyverse or are written to work well with the tidyverse. Install and load these packages: readxl, broom, cowplot. 
 
-```{r Load packages, eval=TRUE, echo=TRUE, message=FALSE, warning=FALSE, results='hide'}
+```{r Load packages, message=FALSE, warning=FALSE, include=FALSE, results='hide'}
 library(tidyverse)
 library(readxl)
+library(broom)
+library(cowplot)
 set.seed(7)
 ```
 
@@ -44,34 +46,33 @@ scfa_wkly <- read_delim(file = "raw_data/SCFA_wkly.txt",
                         col_types = list())
 ``` 
 
-
+The abbreviated output below gives the first several columns and the first ten rows of the data frame. You’ll notice that at the bottom of the output, it tells us additional rows and columns. In addition, the output tells us the variable type of each column.
 
 ```{r}
-scfa_wkly
-
+# remove import data frame from global environment 
 rm(scfa_wkly)
 ```
 
-The abbreviated output gives the first ten columns and the first ten rows of the data frame. You’ll notice that at the top of the output, it tells us that there are X rows and X columns. The column headings for the X columns that weren’t outputted are listed at the bottom of the output. It also indicates that X rows were not included in the output. In addition, the output tells us what type of variable each column contains. For example, the tube_wt column contains dbl or double precision numbers and the Participant_ID column contains chr or character values. You’ll also notice that zero values have a lighter color and that any NAs are red. These features are all meant to improve the visualization of the data.
-
-This is referred to as a “tibble”. Tibbles tweak some of the behaviors of the data frame objects you introduced last week. The data structure is very similar to a data frame. For our purposes the only differences are that:
-
-* In addition to displaying the data type of each column under its name, it only prints the first few rows of data and only as many columns as fit on one screen.
-* Columns of class character are never converted into factors.
-
 ### Import with excel files
+
+We'll repeat the import using a different function, and review the output. 
 ```{r}
 scfa_indv <- read_excel("raw_data/SCFA_data.xlsx",
                         sheet = "SCFA_indv", col_names = TRUE, trim_ws = TRUE, 
                         na = c("", "NA", "-----")) 
 ```
 
+This output is similar to what we created above, we can see the dimensions (rows and columns) and type of each variable. For example, the tube_wt column contains dbl or double precision numbers and the Participant_ID column contains chr or character values. You’ll also notice that zero values have a lighter color and any NAs are red. These features are all meant to improve the visualization of the data.
+
+This format is referred to as a “tibble”. Tibbles tweak some of the default behaviors of data frame objects. You can think of a data frame as several vectors group together into a spreadsheet. Accessing or modifying individual columns of a tibble or data frame is very similar to the manipulations on vectors. Going forward we will almost exclusively be working with tibbles/data frames. 
+
 
 # Exploring data
 
-Let’s dig into the data to think about how we’d like to use it to answer our research questions. Whenever you read in a data frame, there are a few things to complete to get a handle on your data. First, as we’ve already done, entering the name of the data frame at the prompt will tell us a lot of information. We might also want to access individual chunks of those data. 
+Yay, finally! Let’s dig into the data to think about how we’d like to use it to answer our research questions. Whenever you read in a data frame, there are a few things to complete to get a handle on your data. First, as we’ve already done, entering the name of the data frame at the prompt will tell us a lot of information. We might also want to access individual chunks of those data. 
 
 ### Summary functions
+The functions below can provide useful information about a data frame. Run each on the data frame `scfa_indv`. Briefly describe what each function tells you about the data frame. 
 ```{r eval=FALSE, include=FALSE}
 nrow()
 ncol()
@@ -90,9 +91,9 @@ Take a moment to look at the columns represented in the data frame and the infor
 ```{r}
 summary(scfa_indv)
 
-select(scfa_indv, "ht_in")
-scfa_indv$ht_in
-scfa_indv[["ht_in"]]
+select(scfa_indv, "Ht_in")
+scfa_indv$Ht_in
+scfa_indv[["Ht_in"]]
 scfa_indv[[5]]
 ```
 
@@ -102,7 +103,7 @@ The first three options are pretty solid, the last option is a bit of a hassle s
 scfa_indv$Age <- na_if(scfa_indv$Age, 0)
 ```
 
-Running summary(scfa_indv) again, you see that the range for the “Age” column is more reasonable now. We’d like to look at the values for our columns that contain character values, but they’re obfuscated. One way to check this out is with the count command
+Running `summary(scfa_indv)` again, you see that the range for the “Age” column is more reasonable now. We’d like to look at the values for our columns that contain character values, but they’re obfuscated. One way to check this out is with the count command
 
 ```{r}
 count(scfa_indv, Supplement_consumed)
@@ -118,22 +119,22 @@ scfa_indv[["Supplement_consumed"]] <- recode(.x=scfa_indv[["Supplement_consumed"
 
 ### Column names
 
-Look back at the column names in the scfa_wkly data frame, notice that some names are in title case (e.g., “Participant_ID”) and others are in all lower case (e.g., “tube_wt”). Also, some of the column names may not make sense if you are not familiar with the types of SCFAs measured. Some of the column names contain spaces, while others use underscores. Let’s fix these issues to make using the data easier.
+Look again at the column names in the scfa_indv data frame, notice that some names are in title case (e.g., “Participant_ID”) and others are in all lower case (e.g., “tube_wt”). Also, some of the column names may not make sense if you are not familiar with the types of SCFAs measured. Some of the column names contain spaces, while others use underscores. Let’s fix these issues to make using the data easier.
 
 ```{r}
 colnames(scfa_indv)
 ```
 
-There are two problems with the name “tube_wt”; the capitalization is inconsistent with the other columns and it may not be immediately clear what “tube_wt” means. We have many options for how to name things. “tube_wt” could be written as “Tube_wt”, “TubeWt”, “tube.wt”, “tube_weight”, etc. Additionally, when was this weight collected; before or after the sample was added to the tube? 
+There are two problems with the name “tube_wt”; the capitalization is inconsistent with the other columns and it may not be immediately clear what “tube_wt” means. We have many options for how to name things. “tube_wt” could be written as “Tube_wt”, “TubeWt”, “tube.wt”, “tube_weight”, etc., but as discussed we will use snake case in this course. Additionally, when was this weight collected; before or after the sample was added to the tube? 
 
 ```{r}
 scfa_indv <- rename(scfa_indv, sample_wt_g = tube_wt)
 ```
 
-The general preference in the R world is to use lowercase lettering and to separate words in a name with an underscore (i.e. _). This is called “snake case”. Having a consistent capitalization strategy may seem a bit pedantic, but it makes it easier to keep the names straight when you don’t have to remember capitalization. We can convert the column names to lower case using the rename_all() function in the dplyr package with the tolower() function. Conversely, if you wanted everything in all caps, you could use the toupper() function.
+Notes about snake case:
+The general preference in the R world is to use lowercase lettering and to separate words in a name with an underscore (i.e. _). This is called “snake case”. Having a consistent capitalization strategy may seem a bit pedantic, but it makes it easier to keep the names straight when you don’t have to remember capitalization. 
 
-Use the rename function in the dplyr package to rename individual column names, similar to using the recode function to correct the data entry typos. 
-
+We can convert the column names to lower case using the rename_all() function in the dplyr package with the tolower() function. Conversely, if you wanted everything in all caps, you could use the toupper() function. Use the rename function in the dplyr package to rename individual column names, similar to using the recode function to correct the data entry typos. 
 ```{r}
 scfa_indv <- rename_all(scfa_indv, tolower)
 ```
@@ -198,20 +199,16 @@ scfa_indv2 <- filter(scfa_indv, sample_wt_g > 0.10)
 but_data <- select(scfa_indv2, 
                    participant_id, study_week, supplement_consumed, butyrate_mM, notes)
 ```
-
 This is readable, but can clutter up your workspace with lots of objects that you have to name and keep track of individually. 
 
 You can also nest functions (i.e. one function inside another).
-
 ```{r}
 but_data <- select(filter(scfa_indv, sample_wt_g > 0.10), 
                    participant_id, study_week, supplement_consumed, butyrate_mM, notes)
 ```
-
 This is handy, but can be difficult to read if more than a couple functions are nested, as R evaluates the expression from the inside out (in this case, filtering, then selecting).
 
-The last option, pipes, are a recent addition to R. Pipes let you take the output of one function and send it directly to the next, which is useful when you need to do many things to the same dataset. Pipes in R look like %>% and are made available via the magrittr package, installed automatically with dplyr. If you use RStudio, you can type the pipe with the shortcut: Cmd + Shift + M on a Mac (Ctrl + Shift + M if you have a PC).
-
+The last option, pipes, are a recent addition to R. Pipes let you take the output of one function and send it directly to the next, which is useful when you need to do many things to the same dataset. Pipes in R look like `%>%` and are made available via the magrittr package, installed automatically with tidyverse (via dyplr). If you use RStudio, you can type the pipe with the shortcut: Cmd + Shift + M on a Mac (Ctrl + Shift + M on a PC).
 ```{r}
 scfa_indv %>%
   filter(sample_wt_g > 0.10) %>% 
@@ -223,20 +220,9 @@ In the above code, the pipe sent the scfa_indv dataset first through filter() to
 
 Some may find it helpful to read the pipe like the word “then”. For instance, in the above example, the data frame scfa_indv, was filtered for rows with samples with a weight > 0.10, then the columns participant_id, study_week, supplement_consumed, butyrate_mM, and notes were selected. The dplyr functions by themselves are somewhat simple, but by combining them into linear workflows with the pipe, more complex manipulations of data frames are accomplished.
 
-### Challenge 3.1 
+### Homework 3.1 
 ```{r}
-scfa_indv %>%
-  filter(sample_wt_g > 0.10 & sample_wt_g < 1.00) %>% 
-  filter(notes != "frozen >24hrs") %>%
-  select(participant_id, study_week, supplement_consumed, butyrate_mM, notes)
 
-f18_but_rps <- scfa_indv %>%
-  filter(semester == "fall2018", 
-         study_week != "week4",
-         supplement_consumed == "BRMPS",
-         notes != "frozen >24hrs", 
-         sample_wt_g > 0.10 & sample_wt_g < 1.00) %>%
-  select(participant_id, study_week, supplement_consumed, butyrate_mM, -notes)
 ```
 
 
@@ -254,23 +240,18 @@ mutate(scfa_indv, sample_kg = sample_wt_g / 1000)
 You can also create a second new column based on the first new column within the same call of mutate():
 
 ```{r}
-mutate(scfa_indv,
-       sample_kg = sample_wt_g / 1000, 
-       acetate_mmol_kg = (acetate_mM*0.002)/sample_kg) 
+mutate(scfa_indv, #dataframe to use
+       sample_kg = sample_wt_g / 1000, #first column modified with mutate
+       acetate_mmol_kg = (acetate_mM*0.002)/sample_kg) #second column modified with mutate
 ```
 
 If this runs off your screen and you just want to see the first few rows, you can use a pipe to view the head() of the data. (Pipes work with non-dplyr functions, too, as long as the dplyr or magrittr package is loaded).
 
-```{r}
-# 1 kg = 2.205 pounds
-# 1 m = 35.274 inches 
-```
-
-### Challenge 3.2
+### Homework 3.2
 Do the following as one long series of commands using pipes:
 
-* Rename columns as described above
-* Convert measurements from US Customary to metric units 
+* Rename columns as described in sections above (snake case, units)
+* Convert measurements from US Customary to metric units (1 kg = 2.205 pounds, 1 m = 35.274 inches )
 * Round participant height and weight to 0 decimal
 * Subset for samples within the weight limits 
 * Subset for samples that were frozen within 24 hours
@@ -282,41 +263,39 @@ Do the following as one long series of commands using pipes:
 
 ```{r}
 scfa_indv_qc <- scfa_indv %>%
-  rename_all(tolower) %>%
-  rename(race_ethnicity = "race/ethnicity",
-         sample_wt_g = tube_wt, 
-         acetate_mM = ace, 
-         butyrate_mM = but,
-         propionate_mM = pro)%>% 
-  mutate(participant_id = toupper(participant_id),
-         age = na_if(age, 0),
-         ht_cm = round((ht_in*2.54), digits = 0),
-         wt_kg = round((wt_lbs/2.205), digits = 0)) %>%
-  filter(use_data == "yes",
-         notes != "frozen >24hrs", 
-         sample_wt_g > 0.10 & sample_wt_g < 1.00) %>%
-  mutate(sample_kg = sample_wt_g / 1000) %>%
-  mutate(acetate_mmol_kg = round(((acetate_mM*0.002)/sample_kg), digits = 2),
-         butyrate_mmol_kg = round(((butyrate_mM*0.002)/sample_kg), digits = 2),
-         propionate_mmol_kg = round(((propionate_mM*0.002)/sample_kg), digits = 2),
-         total_scfa = round((acetate_mmol_kg + butyrate_mmol_kg + propionate_mmol_kg), digits = 2)) %>%
-  select(-use_data, -ht_in, -wt_lbs, -ends_with("_mM"), -sample_kg, -sample_wt_g, -notes)
 ```
 
 Swap your code with your neighbor, does their code run on your computer? Are the outputs the same?
-
 
 # Export data frame
 
 After curating, extracting information, or summarising raw data, researchers often want to export these curated data sets to save them for future use or to share them with collaborators. Similar to the read_delim() function used for reading CSV or TSV files into R, there is a write_delim() function that generates files from data frames. 
 
-Before using write_delim(), create a new folder, curated_data, in the working directory to store this curated dataset; curated datasets should not be stored in the same directory as raw data. It’s good practice to keep them separate. As stated previously, the raw_data folder should only contain the raw, unaltered data. The code in this section will generate the contents of the curated_data directory, so the files curated_data contains can be recreated if necessary. 
+Before using write_delim(), create a new folder, curated_data, in the Lab3 working directory to store this curated dataset; curated datasets should not be stored in the same directory as raw data. It’s good practice to keep them separate. As stated previously, the raw_data folder should only contain the raw, unaltered data. The code in this section will generate the contents of the curated_data directory, so the files curated_data contains can be recreated if necessary. 
 
 ```{r}
 write_delim(scfa_indv_qc, path = "curated_data/scfa_indv_qc.txt", delim = "\t")
 ```
 
 Remember the importance of leaving the raw data raw. Our manipulations of the scfa_indv data frame have not altered raw_data/scfa_data.xlsx. Now the cleaned up data frame to is ready share with collaborators or to use in Lab 4 next week, and all the code contained in this Rmarkdown document serves as a log of the changes made to the raw data. 
+
+### Homework 3.3
+
+Impor the scfa_wkly dataset. Complete the following QC measures as one long series of commands using pipes:
+
+* Rename columns to match style conventions
+* Keep data from study weeks 1 or 3
+* Filter for individuals who were quantity compliant
+* Calculate the mean and median total SCFAs
+
+```{r}
+scfa_wkly_qc <- scfa_wkly %>%
+```
+
+Export this curated data frame:
+```{r}
+write_delim()
+```
 
 
 -----
