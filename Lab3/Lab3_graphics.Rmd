@@ -29,6 +29,7 @@ ggplot2 functions like data in the ‘long’ format, i.e., a column for every d
 
 ### Homework 3.4
 ```{r}
+# import curated data set, save as new data frame 
 scfa_qc <- read_delim(file = "curated_data/SCFA_wkly.txt", 
                         delim = "\t", escape_double = FALSE, trim_ws = TRUE, na=c("NA"),
                         col_types = list())
@@ -49,6 +50,7 @@ ggplot graphics are built step by step by adding new elements. Adding layers in 
 
 To build a ggplot, you will use the following basic template that can be used for different types of plots:
 ```{r eval=FALSE, include=FALSE}
+# don't run this
 ggplot(data = <DATA>, 
        mapping = aes(<MAPPINGS>)) + 
   <GEOM_FUNCTION>()
@@ -114,7 +116,7 @@ plot1
 # Customization + themes
 
 Take a look at the ggplot2 cheat sheet, and think of ways you could improve the plot.
-The axes names are informative, however they contain the underscores found in the column names. We can update these and add a title to the figure:
+The axis names are informative, however they contain the underscores found in the column names. We can update these and add a title to the figure:
 ```{r}
 ggplot(data = scfa_qc, 
        mapping = aes(x = participant_id, 
@@ -126,9 +128,9 @@ ggplot(data = scfa_qc,
          y = "Fecal butyrate (mmol/kg)") 
 ```
 
-Note that it is also possible to change the fonts of the plots. Remember we installed the cowplot package, this removes the gray background and increases the default font sizes in figures automatically. In the end there is less code to write! 
+Note that it is also possible to change the fonts of the plots. Remember we installed the cowplot package, this removes the default gray background and increases the default font sizes in figures automatically. In the end there is less code to write! 
 
-After our manipulations, you may notice that the values on the x-axis are still not properly readable. Let’s change the orientation of the labels and adjust them vertically and horizontally so they don’t overlap. You can use a 90-degree angle, or experiment to find the appropriate angle for diagonally oriented labels:
+After our manipulations, you may notice that the values on the x-axis are still not properly readable. Let’s change the orientation of the labels and adjust them vertically and horizontally to try to improve visibility. You can use a 90-degree angle, or experiment to find the appropriate angle for diagonally oriented labels:
 
 ```{r}
 # flip x and y axes
@@ -142,6 +144,7 @@ ggplot(data = scfa_qc,
          y = "Fecal butyrate (mmol/kg)") +
     coord_flip()
 ```
+Not much better, eh?
 
 ```{r}
 # change angle of axis labels
@@ -155,8 +158,9 @@ ggplot(data = scfa_qc,
          y = "Fecal butyrate (mmol/kg)") +
     theme(axis.text.x = element_text(angle = 90, hjust = 0.5, vjust = 0.5))
 ```
+Rotating on the x-axis isn't really any better than swapping the x- and y- axes.
 
-In reality the individual particpant IDs are published in figures for research journals, so let's hide them: 
+In reality the individual particpant IDs are not published in figures for research journals, so let's hide them: 
 ```{r}
 # hide x-axis tick labels
 ggplot(data = scfa_qc, 
@@ -169,8 +173,7 @@ ggplot(data = scfa_qc,
          y = "Fecal butyrate (mmol/kg)") +
     theme(axis.text.x = element_blank())
 ```
-
-These are some basic manipulations using a scatter plot as an example, what if switch our type of plot?
+So the axes are cleaned up, but there are still so many data points here, it is impossible to draw any conclusions. These are some basic manipulations using a scatter plot as an example to improve the basic appearance of a plot. Our issue here is that we didn't choose an optimal plot type for our volume data, what if switch our type of plot?
 ```{r}
 ggplot(data = scfa_qc, 
        mapping = aes(x = participant_id, 
@@ -185,24 +188,24 @@ ggplot(data = scfa_qc,
  ggplot can't make sense of this data structure for a line plot. We have to modifiy the data assigned to each axis, and as mentioned in the error message above, we need to set a group. 
 ```{r}
 ggplot(data = scfa_qc, 
-       mapping = aes(x = study_week, 
-                     y = butyrate_mean_mmol_kg, 
-                     color = supplement_consumed,
-                     group = participant_id)) +
+       mapping = aes(x = study_week, #switch from participant_id
+                     y = butyrate_mean_mmol_kg, #remains the same
+                     color = supplement_consumed, #switch from study_week
+                     group = participant_id)) + #this is a new argument 
     geom_line() +
     labs(title = "Mean butyrate concentrations of individuals",
          x = NULL,
          y = "Fecal butyrate (mmol/kg)") 
 ```
 
-As with the scatter plot, there are a lot of lines (data points) here, and it is difficult to see patterns. One way we can deal with this is subsetting the data and creating plots with those subsets. Another strategy is summarising the data futher (e.g., calculate the mean for each supplement) and plot fewer values; we will cover that topic next week. 
+As with the scatter plot, there are a lot of lines (each connecting an individual data point) here, and it is difficult to see patterns. One way we can deal with this is subsetting the data and creating plots with those subsets. Another strategy is summarising the data futher (e.g., calculate the mean for each supplement) and plot fewer values; we will cover that topic next week. 
 
 # Arranging plots
 In the section above you created a figure for just the butyrate data. The data frame contains measurements for two other SCFA, acetate and propionate, you also calculated the total SCFA. We would like to create figures for each of these, four figures total. 
 
 ### Generate individual plots
 ### Homework 3.5
-Recreate the scatter plot from the above for each SCFA. Identify descriptive axis labels, make each plot a different color. Utilize copy and paste to reduce the amount of typing. Assign each figure to a new object. Website with some named colors: http://sape.inf.usi.ch/quick-reference/ggplot2/colour 
+Recreate the scatter plot from the above for each SCFA. Identify descriptive axis labels, make each plot a different color. Utilize copy and paste to reduce the amount of typing. Assign each figure to a new object. Website with some named ggplot colors: http://sape.inf.usi.ch/quick-reference/ggplot2/colour 
 ```{r}
 plot_ace <- ggplot()
 ```
@@ -232,7 +235,7 @@ plot_grid(plot_ace, plot_but, plot_pro, plot_tot,
 
 # Faceting
 
-In the section above you created multiple plots, and combined them into one larger multi-panel figure. These functions are useful if individual panels require a lot of customization, or are generated from different data frames. However if you have a tidy data set you can create a multi-panel figure with one function added to the ggplot call. The faceting function uses the provided argument, usually a factor (more on factors next week) which is a categorical group that describes one characteristic/measurement of each datum. Under the hood the data is subset by these factors, and an individual panel is created for each. 
+In the section above you created multiple plots, and combined them into one larger multi-panel figure. These functions are useful if individual panels require a lot of customization, or are generated from different data frames. However if you have a tidy data set you can create a multi-panel figure with one function added to the ggplot call. The faceting function uses the provided argument, usually a factor (more on factors next week) which is a categorical group that describes one characteristic/measurement of each data point. Under the hood the data is subset by these factors, and an individual panel is created for each factor. 
 
 ### Without facets 
 Subset the data frame for week 1 then week 3 of the study, plot the total SCFA measurements. Notice in the code below we pipe the filtered data frame directly to ggplot. We do not have to create additional dataframes, and use up a lot of memory.
@@ -264,16 +267,16 @@ plot_grid(plot_wk1, plot_wk3,
 ```
 
 ### With facets
-Use the code above as a template to create a scatter plot. We need to pass some additional arguments to aesthetics without assignment them to an axis: supplement_consumed, semester, study_week.
+We will use the code above as a template to create a scatter plot. We need to pass some additional arguments to aesthetics without assigning them to an axis: supplement_consumed, semester, study_week.
 
 The new function added to the plot code here is “facet_wrap”. Open the help documentation and explore the default behavior and optional arguments.
 
 ```{r}
 plot_f <- scfa_qc %>%
-  #filter(study_week == "week1" | study_week == "week3") %>%
+  filter(study_week == "week1" | study_week == "week3") %>%
   ggplot(aes(x = participant_id, 
              y = total_mmol_kg, 
-             study_week)) +
+             study_week, supplement_consumed, semester)) +
   geom_point(aes(color = study_week)) +
   facet_grid(~study_week) + 
   labs(x = "Individuals",
@@ -289,9 +292,9 @@ Complete any additional customizations to make the figure easy to read. Compare 
 > ** enter answer here ** 
 
 ### Homework 3.6
-Plot the mean butyrate concentration for week 3 vs. semester. In this plot, each facet should be one of the supplement types consumed during the study. Modify the plot settings so all labels are descriptive and easy to read. Tip: read the help documentation for facet_grid and modify some of the default arguments. 
+Plot the mean butyrate concentration for week 3 versus semester. In this plot, each facet should be one of the supplement types consumed during the study. Modify the plot settings so all labels are descriptive and easy to read. Tip: read the help documentation for facet_grid and modify some of the default arguments. 
 ```{r}
-plot3.6 <- scfa_qc %>%
+plot3_6 <- scfa_qc %>%
   filter() %>%
   ggplot()
 ```
@@ -313,6 +316,12 @@ ggplot2::ggsave(filename = "facet_plot.tiff",
                 device = "tiff",
                 plot = plot_f,
                 dpi = "retina")
+```
+
+### Homework 3.7
+Export plot 3.6 
+```{r}
+
 ```
 
 -----
