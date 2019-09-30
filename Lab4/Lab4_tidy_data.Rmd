@@ -396,6 +396,7 @@ save_plot()
 
 
 ### Filter and export other sample data 
+
 In preparation for the next section on graphics, we will prepare and export a curated version of the data set. Let’s start by removing participants for which pH and BSS are missing:
 ```{r}
 # import pH data
