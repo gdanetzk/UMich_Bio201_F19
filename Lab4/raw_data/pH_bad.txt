@@ -1,0 +1,71 @@
+Sample_ID	date_timestamp	Date_collected	Date_submitted	pH_timestamp	Participant_ID	pH_date	pH	Sample_number	Comments	pH_check	Flag
+U514_5	2/9/18 15:52	2/9/18	2/9/18	2/8/18 19:11	U514	2/8/18	6	5	NA	-	pH date mismatch
+U515_7	2/15/18 22:03	2/14/18	2/15/18	1/22/18 22:41	U515	1/22/18	6.8	7	"I accidentally used the #7 tube instead of the #1 tube.  I hope that will be alright, since I am not taking the starch.  From now on, I know to use the right tube for the correct number.  I'm so sorry!"	-	pH date mismatch
+U518_9	2/16/18 9:54	2/16/18	2/16/18	2/18/18 12:57	U518	2/17/18	5.2	9	"Forgot to take pH during 9th sample, so I took it the day after the sample. Also, the pH strip did not match any of the colors. It seemed to be more acidic than 5.2"	-	pH date mismatch
+U534_4	2/8/18 11:54	2/7/18	2/8/18	2/6/18 17:29	U534	2/5/18	5.6	4	NA	-	pH date mismatch
+U535_9	2/15/18 15:52	2/15/18	2/15/18	2/16/18 10:03	U535	2/16/18	5.2	9	I actually took pH separate from any samples I submitted to the lab. I didn’t have a pH kit when I was taking my last sample. I also think the pH might have been a 5.0 because it seemed to not be quite the right color on the scale but I put the closest color that was represented.	-	pH date mismatch
+U536_2	1/24/18 11:32	1/23/18	1/24/18	1/22/18 13:40	U536	1/22/18	6.8	2	NA	-	pH date mismatch
+U538_4	2/7/18 17:13	2/5/18	2/7/19	2/6/18 10:51	U538	2/6/18	7.2	4	NA	-	pH date mismatch
+U538_6	1/21/18 20:53	1/21/18	2/21/18	1/22/18 15:23	U538	1/22/18	7.2	6	I wasn't able to measure the pH the same day the was taken	-	pH date mismatch
+U538_9	2/16/18 15:37	2/15/18	2/11/18	2/16/18 15:35	U538	2/15/16	6.4	9	NA	-	pH date mismatch
+U542_9	2/19/18 19:11	2/17/18	2/19/18	2/16/18 21:06	U542	2/16/18	6.8	9	NA	-	pH date mismatch
+U546_2	1/22/18 20:22	1/22/18	1/22/18	1/24/18 18:11	U546	1/24/18	6	2	"This is the pH taken with the new, corrected 2 because the first spilled liquid from the tube. Please disregard the other pH that is connected to 2"	-	pH date mismatch
+U546_2	1/24/18 20:40	1/24/18	1/24/18	1/22/18 20:23	U546	1/22/18	6	2	NA	-	pH date mismatch
+U553_2	1/22/18 11:47	1/21/18	1/21/18	1/23/18 0:54	U553	1/22/18	6.2	2	NA	-	pH date mismatch
+U553_4	2/5/18 11:41	2/4/18	2/5/18	2/3/18 13:24	U553	2/3/18	6.6	4	NA	-	pH date mismatch
+U553_7	2/14/18 11:47	2/13/18	2/14/18	2/12/18 22:52	U553	2/12/18	6.3	7	NA	-	pH date mismatch
+U556_7	2/16/18 14:05	2/16/18	2/16/18	2/15/18 12:31	U556	2/15/18	6.4	7	NA	-	pH date mismatch
+U559_1	1/25/18 12:35	1/24/18	1/25/18	1/24/18 23:51	U559	1/23/18	6.4	1	pH was between 6.4 and 6.8 approximately.	-	pH date mismatch
+U573_6	2/13/18 10:08	2/12/18	2/13/18	2/8/18 21:29	U573	2/8/18	5.2	6	NA	-	pH date mismatch
+U573_7	2/14/18 11:28	2/13/18	2/14/18	2/13/18 20:18	U573	2/18/18	5.6	7	NA	-	pH date mismatch
+U576_1	1/23/18 18:03	1/22/18	1/23/18	1/26/18 0:15	U576	1/24/18	7.2	1	NA	-	pH date mismatch
+U576_1	1/26/18 0:13	1/24/18	1/25/18	1/23/18 18:04	U576	1/23/18	6.8	1	NA	-	pH date mismatch
+U578_6	2/14/18 18:03	2/9/18	2/10/18	2/9/18 17:08	U578	2/8/18	6.8	6	"in between 6.8-7.2, more like 6.8"	-	pH date mismatch
+U561_1	1/23/18 15:36	1/22/18	1/23/18	1/22/18 12:48	U561	1/22/98	6	1	NA	-	pH date mismatch
+U575_4	2/7/18 11:12	2/6/18	2/7/18	2/4/18 22:49	U575	2/4/18	5.6	4	NA	-	pH date mismatch
+U756_1	2/4/19 9:16	2/3/19	2/4/19	1/28/19 9:43	U756	1/28/13	7	1	"spilled some of the buffer solution before the was taken, need to redo"	-	pH date mismatch
+U795_1	2/7/19 11:37	1/27/19	1/28/19	1/29/19 14:15	U795	1/20/19	5.75	1	NA	-	pH date mismatch
+U795_1	2/7/19 11:37	1/27/19	1/28/19	2/7/19 11:33	U795	2/7/19	5.75	1	1 pH	-	pH date mismatch
+U735_1	2/1/19 11:06	2/1/19	2/1/19	2/1/19 10:51	U735	1/31/19	6	1	NA	-	pH date mismatch
+U741_1	1/28/19 12:07	1/27/19	1/28/19	1/28/19 12:09	U741	1/27/18	6.25	1	NA	-	pH date mismatch
+U754_1	2/1/19 13:57	1/28/19	1/29/19	1/23/18 21:50	U754	1/23/18	6.8	1	NA	-	pH date mismatch
+U757_1	2/1/19 15:05	1/31/19	2/1/19	1/29/19 18:46	U757	1/29/19	5.75	1	NA	-	pH date mismatch
+U770_1	1/28/19 17:41	1/27/19	1/28/19	1/27/19 12:34	U770	2/1/19	7.5	1	NA	-	pH date mismatch
+U795_2	2/7/19 11:39	1/31/19	2/1/19	2/7/19 11:34	U795	2/7/19	7.25	2	NA	-	pH date mismatch
+U739_2	1/27/19 10:35	1/27/19	1/27/19	1/27/19 9:24	U739	12/30/19	6.5	2	NA	-	pH date mismatch
+U746_2	1/29/19 17:58	1/29/19	1/29/19	1/29/19 14:13	U746	1/28/19	6.5	2	NA	-	pH date mismatch
+U754_2	2/1/19 14:00	1/29/19	1/29/19	1/29/19 17:41	U754	1/28/19	7.5	2	NA	-	pH date mismatch
+U769_2	1/29/19 13:08	1/29/19	1/29/19	2/4/19 10:59	U769	2/4/19	7.5	2	"I meant to submit this with my first two samples, but I forgot to before."	-	pH date mismatch
+U769_2	1/29/19 13:08	1/29/19	1/29/19	2/4/19 11:00	U769	2/4/19	8	2	NA	-	pH date mismatch
+U770_2	1/28/19 17:43	1/28/19	1/28/19	1/29/19 21:33	U770	1/29/19	7.5	2	This is from the second of my 2. Because the my 1 couldn't be used but already submit the info for 1 and 2. So the first 2 that I submit will be my 1 and the pH of this one will from my 2.	-	pH date mismatch
+U774_2	2/1/19 14:57	2/1/19	2/1/19	1/29/19 18:18	U774	1/29/19	7.25	2	NA	-	pH date mismatch
+U779_2	2/1/19 15:05	1/31/19	2/1/19	1/29/19 11:16	U779	1/29/19	7.5	2	NA	-	pH date mismatch
+U760_3	2/6/19 8:58	2/3/19	2/4/19	2/1/19 18:11	U760	2/1/19	8	3	NA	-	pH date mismatch
+U760_3	2/6/19 8:58	2/3/19	2/4/19	2/3/19 16:40	U760	2/2/19	8	3	NA	-	pH date mismatch
+U795_3	2/7/19 11:41	2/4/19	2/5/19	2/7/19 11:35	U795	2/7/19	5.75	3	NA	-	pH date mismatch
+U703_3	1/29/19 16:20	1/29/19	1/29/19	2/1/19 14:06	U703	1/30/19	6.75	3	NA	-	pH date mismatch
+U780_3	2/1/19 14:58	2/1/19	2/1/19	2/4/19 15:27	U780	1/29/19	6.75	3	NA	-	pH date mismatch
+U754_4	2/4/19 16:57	1/4/19	1/4/19	2/4/19 16:04	U754	1/3/19	7.5	4	NA	-	pH date mismatch
+U794_4	2/6/19 15:00	2/5/19	2/6/19	2/6/19 15:05	U794	2/4/19	7.5	4	NA	-	pH date mismatch
+U716_4	2/3/19 14:03	2/2/19	2/3/19	2/13/19 9:28	U716	2/13/19	6	4	"This was taken with the ""#5."" Aka my 5th sample, but I took the first #4 before the sampling period began. I emailed you about this, but I'm just assuming the first #4 will be discarded and this will be the real #4. That's why I labeled this as being taken with #4 (even though I already submitted a pH for #4)."	-	pH date mismatch
+U702_5	2/14/19 11:09	2/14/19	2/14/19	2/18/19 17:47	U702	2/18/19	8	5	NA	-	pH date mismatch
+U707_5	2/17/19 20:43	2/16/19	2/17/19	2/16/19 15:32	U707	2/15/19	8	5	NA	-	pH date mismatch
+U722_5	2/4/19 16:06	2/4/19	2/4/19	2/13/19 14:19	U722	2/11/19	7.25	5	NA	-	pH date mismatch
+U737_5	2/12/19 16:33	1/11/19	1/12/19	2/12/19 16:32	U737	2/11/19	7.5	5	NA	-	pH date mismatch
+U799_5	2/14/19 12:44	2/13/19	2/13/19	2/14/19 12:45	U799	2/14/19	5.5	5	NA	-	pH date mismatch
+U702_6	2/15/19 15:00	2/15/19	2/15/19	2/18/19 17:49	U702	2/18/19	8	6	NA	-	pH date mismatch
+U752_6	2/14/19 16:03	2/13/19	2/14/19	2/14/19 16:05	U752	2/14/18	7.25	6	NA	-	pH date mismatch
+U779_6	2/14/19 15:45	2/13/19	2/14/19	2/13/19 14:29	U779	1/13/19	6	6	NA	-	pH date mismatch
+U722_7	2/21/19 16:24	2/20/19	2/21/19	2/15/19 11:59	U722	2/15/19	6.75	7	NA	-	pH date mismatch
+U735_7	2/13/19 16:45	2/14/19	2/14/19	2/13/19 16:45	U735	2/13/19	5	7	NA	-	pH date mismatch
+U735_7	2/14/19 11:58	2/14/19	2/14/19	2/13/19 16:45	U735	2/13/19	5	7	NA	-	pH date mismatch
+U737_7	2/15/19 19:23	1/14/19	1/15/19	2/15/19 19:23	U737	2/14/19	7.5	7	NA	-	pH date mismatch
+U750_7	2/22/19 18:11	2/21/19	2/22/19	2/22/19 18:14	U750	2/19/19	6.5	7	NA	-	pH date mismatch
+U754_7	2/14/19 10:56	2/13/19	2/14/19	2/15/19 14:04	U754	2/15/19	7.5	7	NA	-	pH date mismatch
+U769_7	2/20/19 11:13	2/19/19	2/20/19	2/18/19 19:51	U769	2/27/19	6.75	7	NA	-	pH date mismatch
+U769_7	2/20/19 11:13	2/19/19	2/20/19	2/18/19 19:52	U769	2/18/19	6.75	7	NA	-	pH date mismatch
+U770_7	2/16/19 18:00	2/15/19	2/15/19	2/16/19 18:03	U770	2/16/19	7	7	NA	-	pH date mismatch
+U775_7	2/12/19 11:46	2/12/19	2/12/19	2/11/19 14:39	U775	2/11/19	6	7	NA	-	pH date mismatch
+U708_8	2/18/19 0:15	2/19/19	2/19/19	2/18/19 15:06	U708	2/17/19	7.5	8	NA	-	pH date mismatch
+U775_8	2/14/19 12:05	2/13/19	2/14/19	2/15/19 12:58	U775	2/15/19	6.75	8	10Real!!! Last of the 2nd sampling session	-	pH date mismatch
+U775_8	2/14/19 12:07	2/14/19	2/14/19	2/15/19 12:58	U775	2/15/19	6.75	8	10Real!!! Last of the 2nd sampling session	-	pH date mismatch
