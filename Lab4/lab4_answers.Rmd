@@ -1,0 +1,183 @@
+---
+title: "Lab 4 answer key"
+author: "Kristi Gdanetz MacCready"
+date: "9/11/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Today we will start working with some of the other measurements associated with the microbiome samples; breath gases, pH, and bristol stool scores. 
+
+```{r}
+# Import the file
+scfa_wkly <- read_delim("~/Box Sync/Schmidt_Lab/Bio201_teaching/Protocol_Rmd_docs/Lab5/raw_data/SCFA_wkly_v05.txt", 
+                        delim = "\t", col_names = TRUE, trim_ws = TRUE, na = c("NA")) %>%
+  rename_all(tolower) %>%
+  mutate(semester = factor(semester,
+                           levels=c("Winter2015", "Fall2015", 
+                                    "Winter2016", "Fall2016", 
+                                    "Winter2017", "Fall2017", 
+                                    "Winter2018", "Fall2018", 
+                                    "Winter2019"), ordered = TRUE))
+```
+
+### Homework 4.1 
+Apply the group and summarise functions to determine the mean concentration of all three SCFAs for each participant, during each week of the study. Can you do this without creating any intermediate data frames? 
+
+```{r}
+# write code here
+scfa_wkly <- scfa_data %>%
+  group_by(participant_id, study_week, semester, supplement_consumed) %>%
+  summarize(mean_acetate = mean(acetate_mmol_kg, na.rm = TRUE), 
+            mean_butyrate = mean(butyrate_mmol_kg, na.rm = TRUE), 
+            mean_propionate = mean(propionate_mmol_kg, na.rm = TRUE))
+```
+
+### Spread 
+### Homework 4.2
+Code for each SCFA
+```{r}
+butyrate_wide <- scfa_wkly %>%
+  select(participant_id, semester, supplement_consumed, study_week, butyrate_mean) %>% #drop extra columns
+  filter(study_week == "week1" | study_week == "week3") %>% #drop extra weeks
+  spread(study_week, butyrate_mean) %>% #convert to wide format
+  na.omit(week1, week3) %>% #drop NAs from select columns
+  mutate(delta_butyrate = week3 - week1) %>% #calculate difference 
+  rename(but_wk1 = week1,
+         but_wk3 = week3)
+
+head(butyrate_wide)
+```
+
+Create a wide data frame for the other SCFAs.
+```{r}
+# copy+paste and edit code chunk for acetate
+acetate_wide <- scfa_wkly %>%
+  select(participant_id, semester, supplement_consumed, study_week, acetate_mean) %>% #drop extra columns
+  filter(study_week == "week1" | study_week == "week3") %>% #drop extra weeks
+  spread(study_week, acetate_mean) %>% #convert to wide format
+  na.omit(week1, week3) %>% #drop NAs from select columns
+  mutate(delta_acetate = week3 - week1) %>% #calculate difference 
+  rename(ace_wk1 = week1,
+         ace_wk3 = week3)
+
+head(acetate_wide)
+```
+
+```{r}
+# copy+paste and edit code chunk for propionate
+propionate_wide <- scfa_wkly %>%
+  select(participant_id, semester, supplement_consumed, study_week, propionate_mean) %>% #drop extra columns
+  filter(study_week == "week1" | study_week == "week3") %>% #drop extra weeks
+  spread(study_week, propionate_mean) %>% #convert to wide format
+  na.omit(week1, week3) %>% #drop NAs from select columns
+  mutate(delta_propionate = week3 - week1) %>% #calculate difference 
+   rename(pro_wk1 = week1,
+         pro_wk3 = week3)
+
+head(propionate_wide)
+```
+
+### Homework 4.3
+We are interested in the average difference of fecal butyrate by supplement type, how would you do this? 
+```{r}
+# write code here
+but_diff <- butyrate_wide %>%
+  group_by(supplement_consumed) %>%
+  summarise(delta_mean_but = mean(delta_butyrate, na.rm = TRUE))
+```
+
+Repeat this process for each SCFA. How would you plot your results? 
+```{r}
+# copy+paste and edit code chunk for acetate
+ace_diff <- acetate_wide %>%
+  group_by(supplement_consumed) %>%
+  summarise(delta_mean_ace = mean(delta_acetate, na.rm = TRUE))
+```
+
+```{r}
+# copy+paste and edit code chunk for propionate
+prop_diff <- propionate_wide %>%
+  group_by(supplement_consumed) %>%
+  summarise(delta_mean_pro = mean(delta_propionate, na.rm = TRUE))
+```
+
+```{r}
+# copy+paste and edit code chunks for plots
+ggplot(but_diff, aes(x = supplement_consumed,
+                     y = delta_mean_but)) +
+  geom_jitter()
+```
+
+These plots are fine, however they could be graphed more efficiently with facets. This introduces a new problem: combining data frames.
+
+### Join
+### Homework 4.4 
+Part 1: Join and update the column names of the three SCFA wide data frames, calculate the weekly total SCFA for each participant, calculate the difference in total SCFA across weeks.
+```{r}
+total_scfas <- inner_join(acetate_wide, butyrate_wide,
+                   by = c("participant_id", "semester", "supplement_consumed")) %>%
+  full_join(propionate_wide, 
+            by = c("participant_id", "semester", "supplement_consumed")) %>%
+  mutate(total_wk1 = ace_wk1 + but_wk1 + pro_wk1,
+         total_wk3 = ace_wk3 + but_wk3 + pro_wk3,
+         delta_total = total_wk3 - total_wk1)
+```
+
+Part 2: Plot the change in total SCFA for each semester, faceting for each supplement consumed. Clean up the axes and labels. Extra challenge: Can you use pipes to execute Parts 1 and 2 as one long command?
+```{r}
+ggplot(data = total_scfas,
+       aes(x = supplement_consumed, y = delta_total, color = semester)) +
+  geom_point() +
+  facet_grid(~semester, scales = "free")
+```
+
+
+### Gather
+### Homework 4.5 
+```{r}
+# copy+paste and edit code here to create but_long
+but_long <- total_scfas %>%
+  select(-starts_with("delta_"), -starts_with("ace_"), -starts_with("pro_"), -starts_with("total")) %>% 
+  rename(week1 = but_wk1,
+         week3 = but_wk3) %>% 
+  gather(key = study_week, value = butyrate, week1, week3)
+```
+
+```{r}
+# copy+paste and edit code here to create pro_long
+pro_long <- total_scfas %>%
+  #drop diff columns & extra SCFAs
+  select(-starts_with("delta_"), -starts_with("ace_"), -starts_with("but_"), -starts_with("total")) %>% 
+  rename(week1 = pro_wk1,
+         week3 = pro_wk3) %>% #convert weeks to consistent format for join
+  gather(key = study_week, value = propionate, week1, week3)
+```
+
+Check the dimensions of the three long data frames you just created, select the appropriate type of join, and create a new data frame called scfa_long. 
+```{r}
+scfa_long <- full_join(ace_long, but_long,
+                       by = c("participant_id", "semester", "supplement_consumed", "study_week")) %>%
+  full_join(pro_long, by = c("participant_id", "semester", "supplement_consumed", "study_week"))
+```
+
+Now that the data are in long format, calculate the weekly mean for each SCFA per participant. Make use of the code from the section above, just swap out the variables for the data frames and column names. 
+```{r}
+# copy+paste and edit code here
+wkly_means <- scfa_long %>%
+  group_by(participant_id, semester, supplement_consumed, study_week, scfa) %>%
+  summarise(mean_scfa= mean(concentration_mmol_kg))
+```
+
+
+### Export
+```{r}
+write_delim(total_scfas, path = "~/Box Sync/Schmidt_Lab/Bio201_teaching/Protocol_Rmd_docs/Lab5/raw_data/scfa_wide.txt",
+            delim = "\t", na = "NA", col_names = TRUE)
+```
+
+### Homework 4.6
+
