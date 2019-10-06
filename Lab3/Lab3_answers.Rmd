@@ -1,0 +1,181 @@
+---
+title: "Lab3_answers"
+author: "Kristi Gdanetz MacCready"
+date: "9/23/2019"
+output: html_document
+---
+
+
+# Lab 3
+
+# Exploring data 
+
+### Summary functions
+The functions below can provide useful information about a data frame. Run each on the data frame `scfa_indv`. 
+```{r eval=FALSE, include=FALSE}
+nrow(scfa_indv) #4078 rows
+ncol(scfa_indv) #19 cols
+dim(scfa_indv) #4078 19
+colnames(scfa_indv) #ppt id thru notes
+rownames(scfa_indv) #a bunch of numbers
+glimpse(scfa_indv) #dimensions, colnames, type, preview of values
+str(scfa_indv) #like glimpse but shorter and cleaner output 
+```
+
+### Homework 3.1
+Filter the scfa_indv data frame for data from Fall 2018, only include study weeks 1 and 3, subset for BRMPS, drop any samples that do not meet the freeze time limits, or are not within the weight range. Keep columns with participant and sample data and butyrate measurements. 
+```{r}
+scfa_indv %>%
+  filter(sample_wt_g > 0.10 & sample_wt_g < 1.00) %>% 
+  filter(notes != "frozen >24hrs") %>%
+  select(participant_id, study_week, supplement_consumed, butyrate_mM, notes)
+
+f18_but_rps <- scfa_indv %>%
+  filter(semester == "fall2018", 
+         study_week != "week4",
+         supplement_consumed == "BRMPS",
+         notes != "frozen >24hrs", 
+         sample_wt_g > 0.10 & sample_wt_g < 1.00) %>%
+  select(participant_id, study_week, supplement_consumed, butyrate_mM, -notes)
+```
+
+### Homework 3.2
+
+```{r}
+scfa_indv_qc <- scfa_indv %>%
+  #rename_all(tolower) %>%
+  rename(race_ethnicity = "race/ethnicity",
+         #sample_wt_g = tube_wt, 
+         #acetate_mM = ace, 
+         #butyrate_mM = but,
+         #propionate_mM = pro
+         )%>% 
+  mutate(participant_id = toupper(participant_id),
+         age = na_if(age, 0),
+         ht_cm = round((ht_in*2.54), digits = 0),
+         wt_kg = round((wt_lbs/2.205), digits = 0)) %>%
+  filter(use_data == "yes",
+         notes != "frozen >24hrs", 
+         sample_wt_g > 0.10 & sample_wt_g < 1.00) %>%
+  mutate(sample_kg = sample_wt_g / 1000) %>%
+  mutate(acetate_mmol_kg = round(((acetate_mM*0.002)/sample_kg), digits = 2),
+         butyrate_mmol_kg = round(((butyrate_mM*0.002)/sample_kg), digits = 2),
+         propionate_mmol_kg = round(((propionate_mM*0.002)/sample_kg), digits = 2),
+         total_scfa = round((acetate_mmol_kg + butyrate_mmol_kg + propionate_mmol_kg), digits = 2)) %>%
+  select(-use_data, -ht_in, -wt_lbs, -ends_with("_mM"), -sample_kg, -sample_wt_g, -notes)
+```
+
+### Homework 3.3
+```{r}
+scfa_wkly_qc <- read_excel("raw_data/SCFA_data.xlsx",
+                        sheet = "SCFA_wkly", col_names = TRUE, trim_ws = TRUE, 
+                        na = c("", "NA", "-----")) %>%
+  rename_all(tolower) %>%
+  filter(study_week == "week1" | study_week == "week3") %>%
+  filter(quantity_compliant == "yes") %>%
+  mutate(total_mean = acetate_mean + butyrate_mean + propionate_mean,
+         total_median = acetate_median + butyrate_median + propionate_median)
+```
+
+Export this curated data frame:
+```{r}
+write_delim(scfa_wkly_qc, path = "curated_data/scfa_wkly_qc.txt", delim = "\t")
+```
+
+
+# Graphics
+
+### import and format
+### Homework 3.4
+```{r}
+# import curated data set, save as new data frame 
+scfa_qc <- read_delim(file = "curated_data/SCFA_wkly.txt", 
+                        delim = "\t", escape_double = FALSE, trim_ws = TRUE, na=c("NA"),
+                        col_types = list()) %>%
+  rename_all(tolower) %>% #covert columns to snake case 
+  select(-ends_with("_median")) %>% #drop median columns 
+  filter(quantity_compliant == "yes") %>% #keep only individuals who consumed full starch dose
+  rename(acetate_mean_mmol_kg = acetate_mean,
+         butyrate_mean_mmol_kg = butyrate_mean,
+         propionate_mean_mmol_kg = propionate_mean) %>% #add units to SCFA measurements 
+  mutate(total_mmol_kg = acetate_mean_mmol_kg + butyrate_mean_mmol_kg + propionate_mean_mmol_kg) #calculate total SCFA
+```
+
+
+### Homework 3.5
+Recreate the scatter plot from the above for each SCFA. Identify descriptive axis labels, make each plot a different color. Utilize copy and paste to reduce the amount of typing. Assign each figure to a new object. 
+```{r}
+plot_ace <- ggplot(data = scfa_qc,
+       mapping = aes(x = participant_id, 
+                     y = acetate_mean_mmol_kg)) +
+    geom_point(color = "firebrick") +
+    labs(x = "Individuals",
+         y = "Fecal Acetate (mmol/kg)") +
+    theme(axis.text.x = element_blank(),
+          legend.position = "none")
+```
+
+```{r}
+plot_but <- ggplot(data = scfa_qc,
+       mapping = aes(x = participant_id, 
+                     y = butyrate_mean_mmol_kg)) +
+    geom_point(color = "forestgreen") +
+    labs(x = "Individuals",
+         y = "Fecal butyrate (mmol/kg)") +
+    theme(axis.text.x = element_blank(),
+          legend.position = "none")
+```
+
+```{r}
+plot_pro <- ggplot(data = scfa_qc,
+       mapping = aes(x = participant_id, 
+                     y = propionate_mean_mmol_kg)) +
+    geom_point(color = "salmon") +
+    labs(x = "Individuals",
+         y = "Fecal propionate (mmol/kg)") +
+  theme(axis.text.x = element_blank(),
+        legend.position = "none")
+```
+
+```{r}
+plot_tot <- ggplot(data = scfa_qc,
+       mapping = aes(x = participant_id, 
+                     y = total_mmol_kg)) +
+    geom_point(color = "dodgerblue") +
+    labs(x = "Individuals",
+         y = "Total fecal SCFAs (mmol/kg)") +
+    theme(axis.text.x = element_blank(),
+        legend.position = "none")
+```
+
+### Homework 3.6
+Plot the mean butyrate concentration for week 3 vs. semester. In this plot, each facet should be one of the supplement types consumed during the study. Modify the plot settings so all labels are descriptive and easy to read. Tip: read the help documentation for facet_grid and modify some of the default arguments. 
+```{r}
+plot3_6 <- scfa_qc %>%
+  filter(study_week == "week3") %>%
+  ggplot(aes(x = semester, 
+             y = butyrate_mean_mmol_kg,
+             supplement_consumed, 
+             study_week)) +
+  geom_point(aes(color = supplement_consumed)) +
+  facet_grid(~supplement_consumed,
+             scales = "free", space = "free_x") + 
+  labs(x = "Semester",
+       y = "Fecal butyrate (mmol/kg)") +
+  theme(legend.position = "none",
+        axis.text.x = element_text(angle = -90, hjust = 0))
+plot3_6
+```
+
+### Homework 3.7
+Export plot 3.6 
+```{r}
+save_plot(filename = "figures/plot3_6.pdf",
+          plot = plot3_6,
+          nrow = 1, ncol = 2, 
+          base_aspect_ratio = 1.1)
+```
+
+
+-----
+end
