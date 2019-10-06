@@ -106,7 +106,7 @@ ggplot(data = df4, aes(x = samples, #plot data frame
 
 Import the data frame you generated last week that has the mean weekly SCFAs. Import both long and wide formats of these data. During import convert column names to snake case.  
 ```{r include=FALSE}
-scfa_long <- read_delim("~/Box Sync/Schmidt_Lab/Bio201_teaching/Protocol_Rmd_docs/Lab5/raw_data/SCFA_wkly_long.txt", 
+scfa_long <- read_delim("Lab5/curated_data/SCFA_wkly_long.txt", 
                         delim = "\t", col_names = TRUE, trim_ws = TRUE, na = c("NA")) %>%
   rename_all(tolower) %>%
   mutate(semester = factor(semester,
@@ -117,7 +117,7 @@ scfa_long <- read_delim("~/Box Sync/Schmidt_Lab/Bio201_teaching/Protocol_Rmd_doc
                                     "Winter2019"), ordered = TRUE))
   
 
-scfa_wide <- read_delim("~/Box Sync/Schmidt_Lab/Bio201_teaching/Protocol_Rmd_docs/Lab5/raw_data/SCFA_wkly_wide.txt", 
+scfa_wide <- read_delim("Lab5/curated_data/SCFA_wkly_wide.txt", 
                         delim = "\t", col_names = TRUE, trim_ws = TRUE, na = c("NA")) %>%
   rename_all(tolower) %>%
   mutate(semester = factor(semester,
