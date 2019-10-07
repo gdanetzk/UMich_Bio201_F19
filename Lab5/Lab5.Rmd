@@ -320,7 +320,7 @@ Repeat the process to conduct the paired t-test for the 1xdaily group. Remember 
 ```
 
 # Homework 5.2
-Generate plots to determine if methane, acetate, propionate increased during week 3 of the study. Generate plot to determine if pH decreased during week 3 of the study. 
+Generate plots to determine if methane, acetate, propionate increased during week 3 of the study. Generate plot to determine if pH decreased during week 3 of the study. Save plots to folder called `figures`. 
 ```{r}
 # breath methane
 ```
@@ -446,7 +446,7 @@ summary(aov_results)
 
 
 # Homework 5.5
-Repeat the processing of checking assumptions to conduct ANOVA on delta acetate and propionate. Write your interpretations of the results as a comment after the statistical tests.
+Repeat the processing of checking assumptions to conduct ANOVA on delta acetate and propionate. Create a plot for delta acetate and propionate. Save plots to folder called `figures`. Decide if you should proceed with conducting the ANOVA. Write your interpretations of the results as a comment after the statistical tests.
 ```{r}
 # acetate
 ```
