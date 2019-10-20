@@ -152,40 +152,105 @@ histogram()
 bartlett.test()
 ```
 
-Last week each ANOVA you conducted should have resulted in a non-significant result (approx p >= 0.15). Run the code for the ANOVA below, here we have a small p-value, this means at least one of our groups is significantly different from the others. To identify which group is different we have to run a pos-hoc test (an additional test). We will use Tukey's Honestly Significant Difference (HSD).
+Last week each ANOVA you conducted should have resulted in a non-significant result (approx p >= 0.15). Run the code for the plot and ANOVA below. 
 
 ```{r}
-# data import + format for week 1 butyrate concentrations between supplements
-# know assumptions are already met 
+# know assumptions are already met
+scfa_long %>%
+  filter(study_week == "week1",
+         #semester != "Winter2015"
+         ) %>%
+  ggplot(aes(x = semester,
+             y = butyrate_mean, 
+             color = semester)) +
+  geom_violin() + 
+  geom_jitter() + 
+  xlab(NULL) +
+  ylab("Week 1 butyrate (mmol/kg)") + 
+  theme(legend.position = "none",
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
 
-# ANOVA on week 1 concentrations
+# ANOVA 
+aov_wk1 <- aov(butyrate_mean ~ semester, scfa_long)
+summary(aov_wk1)
+```
 
-# Tukey on week 1
+Here we have a small p-value, this means at least one of our groups is significantly different from the others. To identify which group is different we have to run a pos-hoc test (an additional test). We will use Tukey's Honestly Significant Difference (HSD).
 
-# filter Tukey output, create data frame, save data frame as a table 
+```{r}
+# conduct Tukey's HSD test 
+tuk_wk1 <- tidy(TukeyHSD(aov_wk1)) %>%
+  mutate(adj.p.value = round(adj.p.value, digits = 2)) %>%
+  filter(adj.p.value <= 0.10) #filter Tukey output for significant results 
+
+# save data frame of results to file 
+write_delim(tuk_wk1, path = "~/Box Sync/Schmidt_Lab/Bio201_teaching/Protocol_Rmd_docs/Lab6/curated_data/tuk_wk1.txt",
+            delim = "\t", col_names = TRUE, quote = FALSE)
 ```
 
 ### Kruskall-Wallace
 
-If you have a data set that is clearly non-normal (such as the breath methane data), and want to ask a similar question (e.g., Does the breath methane differ during week 3 for individuals consuming different supplements?) we need to use a non-parametric test. The non-parametric companion to an ANOVA is the Kruskall-Wallace test. 
+If you have a data set that is clearly non-normal (such as the breath methane data), and want to ask a similar question as we asked with ANOVAs last week (e.g., Does the breath methane differ during week 3 for individuals consuming different supplements?), we need to use a non-parametric test. The non-parametric companion to an ANOVA is the Kruskall-Wallace test. 
 
 Last week you should have checked assumptions on breath methane and determined that it was non-normal, so an ANOVA would not be an appropriate test to use to determine if the week 3 breath methane concentrations differed between supplements consumed.
 
 ```{r}
+# import methane data 
+breath_wkly <- read_delim("~/Box Sync/Schmidt_Lab/Bio201_teaching/Protocol_Rmd_docs/Lab5/curated_data/breath_wkly.txt", 
+                        delim = "\t", col_names = TRUE, trim_ws = TRUE, na = c("NA")) %>%
 # format methane data
-# remove non-compliant individuals 
+  rename_all(tolower) %>%
+  filter(study_week == "week3",
+         quantity_compliant == "yes") %>% #remove non-compliant individuals
+  mutate(semester = factor(semester,
+                           levels=c("Winter2015", "Fall2015", 
+                                    "Winter2016", "Fall2016", 
+                                    "Winter2017", "Fall2017", 
+                                    "Winter2018", "Fall2018", 
+                                    "Winter2019"), ordered = TRUE))
+# plot
+breath_wkly %>%
+  ggplot(aes(x = supplement_consumed, 
+             y = ch4_mean, 
+             color = supplement_consumed)) + 
+  geom_violin() + 
+  geom_jitter() + 
+  xlab(NULL) + 
+  ylab("Breath methane (ppm)") + 
+  theme(legend.position = "none",
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+
 # run the test
-kruskal.test()
+kruskal.test(supplement_consumed ~ ch4_mean, breath_wkly)
 ```
 
-The interpretation for Kruskall-Wallace is similar to an ANOVA...
+The interpretation for Kruskall-Wallace is similar to an ANOVA; small p-value indicates at least one group is different from the others. 
 
 ### Homework 6.1
-* Write hypotheses to answer the question... 
-* Which statistical test(s) would you use to answer the question?
+
+* Write hypotheses to answer the question; do hydrogen breath levels differ between particiapnts consuming fiber supplements? Create a plot of hydrogen levels:
+```{r}
+# hypothesis: 
+
+# plot 
+breath_wkly 
+```
+
+* Which assumptions need checked for the statistical test(s)? Check the assumptions in the space below:
 ```{r}
 
 ```
+
+* Which statistical test(s) would you use to answer the question? Conduct the appropriate statistical test(s):
+```{r}
+
+```
+
+* What is the answer to the question? Write your conclusions:
+```{r}
+# conclusion 
+```
+
 
 # Correlations
 
