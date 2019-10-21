@@ -1,0 +1,570 @@
+---
+title: "Lab5 Answers"
+author: "Kristi Gdanetz MacCready"
+date: "10/7/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documents/UMich_Bio201_F19/")
+```
+
+# Load packages
+
+```{r Load packages, eval=TRUE, echo=TRUE, message=FALSE, warning=FALSE, results='hide'}
+library(tidyverse)
+library(readxl)
+library(broom)
+library(cowplot)
+library(agricolae)
+set.seed(7)
+```
+
+
+
+# Homework 5.1
+Repeat the process to conduct the paired t-test for the 1xdaily group. Remember to check the assumptions. Write your conclusions regarding the test as a comment at the end of the code block. 
+```{r}
+# copy + paste code, and update column and dataframes names to run test
+
+# Check assumptions for each week of the 1xdaily groups 
+wk1_1x <- butyrate_long %>%
+  filter(study_week == "week1", 
+         supplement_consumed == "BRMPS", 
+         frequency == "1xdaily") 
+shapiro.test(wk1_1x$butyrate_mean) 
+ggplot(wk1_1x, aes(x = butyrate_mean)) + geom_histogram()
+
+wk3_1x <- butyrate_long %>%
+  filter(study_week == "week3", 
+         supplement_consumed == "BRMPS", 
+         frequency == "1xdaily") 
+shapiro.test(wk3_1x$butyrate_mean) 
+ggplot(wk3_1x, aes(x = butyrate_mean)) + geom_histogram()
+
+# join these data frames back together
+x1_df <- inner_join(x = wk1_1x, y = wk3_1x,
+                    by = c("participant_id", "frequency", 
+                           "semester", "supplement_consumed", "quantity_compliant")) %>%
+  rename(butyrate_mean_wk1 = butyrate_mean.x,
+         butyrate_mean_wk3 = butyrate_mean.y) %>%
+  select(-starts_with("study_week"))
+
+# code to run paired t-test 
+t.test(x = x1_df$butyrate_mean_wk1, y = x1_df$butyrate_mean_wk3, 
+       alternative = "less", paired = TRUE) #p-value = 0.2367
+
+wilcox.test(x = x1_df$butyrate_mean_wk1, 
+            y = x1_df$butyrate_mean_wk3, 
+            alternative = "less", paired = TRUE) #p-value = 0.2269
+```
+
+# Homework 5.2
+Generate plots to determine if methane, acetate, propionate increased during week 3 of the study for inidivduals who consumed BRMPS. Generate plot to determine if pH decreased during week 3 of the study. 
+
+### Methane
+```{r}
+# import data 
+breath_wkly <- read_delim("~/Box Sync/Schmidt_Lab/Bio201_teaching/Protocol_Rmd_docs/Lab5/curated_data/breath_wkly.txt", 
+                        delim = "\t", col_names = TRUE, trim_ws = TRUE, na = c("NA")) %>%
+  rename_all(tolower) %>%
+  mutate(semester = factor(semester,
+                           levels=c("Winter2015", "Fall2015", 
+                                    "Winter2016", "Fall2016", 
+                                    "Winter2017", "Fall2017", 
+                                    "Winter2018", "Fall2018", 
+                                    "Winter2019"), ordered = TRUE))
+
+# plot
+breath_wkly %>%
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>%
+  ggplot(aes(x = study_week, y = ch4_mean, color = study_week)) + 
+  geom_violin() + geom_jitter() + 
+  facet_grid(~frequency) + 
+  xlab(NULL) + 
+  ylab("Breath methane (ppm)") + 
+  theme(legend.position = "none")
+```
+
+### Acetate
+```{r}
+scfa_long %>%
+  filter(study_week == "week1" | study_week == "week3", 
+         supplement_consumed == "BRMPS") %>% 
+  ggplot(aes(x = study_week, 
+             y = acetate_mean, 
+             color = study_week), 
+         frequency) + 
+  geom_violin() + geom_jitter() + 
+  facet_grid(~frequency) + 
+  xlab(NULL) + 
+  ylab("Acetate (mmol/kg)") + 
+  theme(legend.position = "none")
+
+scfa_long %>%
+  filter(study_week == "week1" | study_week == "week3", 
+         supplement_consumed == "BRMPS") %>% 
+  ggplot(aes(x = study_week, 
+             y = acetate_mean, 
+             color = study_week), 
+         frequency) + 
+  geom_violin() + geom_jitter() + 
+  xlab(NULL) + 
+  ylab("Acetate (mmol/kg)") + 
+  theme(legend.position = "none")
+```
+
+### Propionate
+```{r}
+scfa_long %>%
+  filter(study_week == "week1" | study_week == "week3", 
+         supplement_consumed == "BRMPS") %>% 
+  ggplot(aes(x = study_week, 
+             y = propionate_mean, 
+             color = study_week), 
+         frequency) + 
+  geom_violin() + geom_jitter() + 
+  facet_grid(~frequency) + 
+  xlab(NULL) + 
+  ylab("Propionate (mmol/kg)") + 
+  theme(legend.position = "none")
+
+scfa_long %>%
+  filter(study_week == "week1" | study_week == "week3", 
+         supplement_consumed == "BRMPS") %>% 
+  ggplot(aes(x = study_week, 
+             y = propionate_mean, 
+             color = study_week)) + 
+  geom_violin() + geom_jitter() + 
+  xlab(NULL) + 
+  ylab("Propionate (mmol/kg)") + 
+  theme(legend.position = "none")
+```
+
+### pH 
+```{r}
+# import data 
+pH_wkly <- read_delim("~/Box Sync/Schmidt_Lab/Bio201_teaching/Protocol_Rmd_docs/Lab5/curated_data/pH_wkly.txt", 
+                        delim = "\t", col_names = TRUE, trim_ws = TRUE, na = c("NA")) %>%
+  rename_all(tolower) %>%
+  mutate(semester = factor(semester,
+                           levels=c("Winter2015", "Fall2015", 
+                                    "Winter2016", "Fall2016", 
+                                    "Winter2017", "Fall2017", 
+                                    "Winter2018", "Fall2018", 
+                                    "Winter2019"), ordered = TRUE))
+# plot
+pH_wkly %>%
+  filter(study_week == "week1" | study_week == "week3", 
+         supplement_consumed == "BRMPS") %>% 
+  ggplot(aes(x = study_week, 
+             y = ph_mean, 
+             color = study_week), 
+         frequency) + 
+  geom_violin() + geom_jitter() + 
+  facet_grid(~frequency) + 
+  xlab(NULL) + 
+  ylab("pH") + 
+  theme(legend.position = "none")
+
+pH_wkly %>%
+  filter(study_week == "week1" | study_week == "week3", 
+         supplement_consumed == "BRMPS") %>% 
+  ggplot(aes(x = study_week, 
+             y = ph_mean, 
+             color = study_week)) + 
+  geom_violin() + geom_jitter() + 
+  xlab(NULL) + 
+  ylab("pH") + 
+  theme(legend.position = "none")
+```
+
+# Homework 5.3
+Check assumptions on data sets for individuals who consumed BRMPS: breath methane, pH, acetate, propionate
+### Methane
+```{r}
+# check sample size
+breath_wkly %>%
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>% 
+  group_by(frequency, study_week) %>% 
+  summarise(sample_size = n()) 
+
+# normal distribution 
+ch4_df <- breath_wkly %>%
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS")
+shapiro.test(ch4_df$ch4_mean) #p-value < 2.2e-16
+ggplot(ch4_df, aes(x=ch4_mean)) +
+  geom_histogram() 
+qqnorm(ch4_df$ch4_mean); qqline(ch4_df$ch4_mean)
+
+# variances
+# code to extract first group (1xdaily)
+once_grp <- ch4_df %>%
+  filter(study_week == "week3",
+         frequency == "1xdaily") 
+# code to extract second group (2xdaily)
+twice_grp <- ch4_df %>%
+  filter(study_week == "week3",
+         frequency == "2xdaily") 
+var.test(x = once_grp$ch4_mean, 
+         y = twice_grp$ch4_mean, 
+         alternative = "two.sided") #p-value = 0.001711
+
+# non-normal, unequal variances, use wilcoxon test 
+```
+
+### Acetate
+```{r}
+# sample size
+scfa_long %>%
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>% 
+  group_by(frequency, study_week) %>% 
+  summarise(sample_size = n()) 
+
+# normality
+ace_df <- scfa_long %>%
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>%
+  select(-starts_with("but"), -starts_with("pro"))
+
+shapiro.test(ace_df$acetate_mean) #p-value = 4.481e-11
+ggplot(ace_df, aes(x=acetate_mean)) +
+  geom_histogram() #histograms show the number of data points (count) at each value
+qqnorm(ace_df$acetate_mean); qqline(ace_df$acetate_mean)
+
+# variances
+once_grp <- scfa_long %>%
+  filter(study_week == "week3",
+         frequency == "1xdaily") 
+twice_grp <- scfa_long %>%
+  filter(study_week == "week3",
+         frequency == "2xdaily") 
+var.test(x = once_grp$acetate_mean, 
+         y = twice_grp$acetate_mean, 
+         alternative = "two.sided") #p-value = 0.1585
+
+# non-normal, equal variances
+```
+
+### Propionate
+```{r}
+# sample size
+scfa_long %>%
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>% 
+  group_by(frequency, study_week) %>% 
+  summarise(sample_size = n()) 
+
+# normality
+pro_df <- scfa_long %>%
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>%
+  select(-starts_with("ace"), -starts_with("but"))
+shapiro.test(pro_df$propionate_mean) #p-value = 2.014e-12
+ggplot(pro_df, aes(x=propionate_mean)) +
+  geom_histogram() #histograms show the number of data points (count) at each value
+qqnorm(pro_df$propionate_mean); qqline(pro_df$propionate_mean)
+
+# variances
+once_grp <- scfa_long %>%
+  filter(study_week == "week3",
+         frequency == "1xdaily") 
+twice_grp <- scfa_long %>%
+  filter(study_week == "week3",
+         frequency == "2xdaily") 
+var.test(x = once_grp$propionate_mean, 
+         y = twice_grp$propionate_mean, 
+         alternative = "two.sided") #p-value = 0.4277
+# non-normal, equal variances
+```
+
+### pH
+```{r}
+# check sample size
+pH_wkly %>%
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>% 
+  group_by(frequency, study_week) %>% 
+  summarise(sample_size = n()) 
+
+# normal distribution 
+pH_df <- pH_wkly %>%
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS")
+shapiro.test(pH_df$ph_mean) #p-value = 0.001192
+ggplot(pH_df, aes(x=ph_mean)) +
+  geom_histogram() 
+qqnorm(pH_df$ph_mean); qqline(pH_df$ph_mean)
+
+# variances
+once_grp <- pH_df %>%
+  filter(study_week == "week3",
+         frequency == "1xdaily") 
+twice_grp <- pH_df %>%
+  filter(study_week == "week3",
+         frequency == "2xdaily") 
+var.test(x = once_grp$ph_mean, 
+         y = twice_grp$ph_mean, 
+         alternative = "two.sided") #p-value = 0.0573
+
+# non-normal, unequal varainces 
+```
+
+
+# Homework 5.4
+Conduct the appropriate statistical tests to determine if patterns observed in plots are significant. Write your interpretations of the results as a comment after the statistical tests.
+### Methane
+```{r}
+df1 <- breath_wkly %>% 
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>%
+  select(participant_id, study_week, ch4_mean) %>%
+  spread(study_week, ch4_mean) %>%
+  na.omit()
+# non-normal, unequal variances, use wilcoxon test 
+wilcox.test(x = df1$week1, 
+            y = df1$week3, 
+            alternative = "less", paired = TRUE, var.equal = FALSE)
+```
+
+### Acetate
+```{r}
+df2 <- scfa_long %>% 
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>%
+  select(participant_id, study_week, acetate_mean) %>%
+  spread(study_week, acetate_mean) %>%
+  na.omit()
+
+# non-normal, equal variances, use wilcoxon test 
+wilcox.test(x = df2$week1, 
+            y = df2$week3, 
+            alternative = "less", paired = TRUE)
+```
+
+### Propionate
+```{r}
+df3 <- scfa_long %>% 
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>%
+  select(participant_id, study_week, propionate_mean) %>%
+  spread(study_week, propionate_mean) %>%
+  na.omit()
+
+# non-normal, equal variances, use wilcoxon test 
+wilcox.test(x = df3$week1, 
+            y = df3$week3, 
+            alternative = "less", paired = TRUE)
+```
+
+### pH
+```{r}
+# non-normal, unequal variances, use wilcoxon test 
+df4 <- pH_wkly %>% 
+  filter(study_week == "week1" | study_week == "week3",
+         supplement_consumed == "BRMPS") %>%
+  select(participant_id, study_week, ph_mean) %>%
+  spread(study_week, ph_mean) %>%
+  na.omit()
+
+# non-normal, equal variances, use wilcoxon test 
+wilcox.test(x = df4$week1, 
+            y = df4$week3, 
+            alternative = "greater", paired = TRUE)
+```
+
+# ANOVA 
+### Check assumptions
+```{r}
+# check normality of each group 
+s7 <- scfa_wide %>%
+  filter(supplement_consumed == "LOODAT") 
+shapiro.test(s7$delta_butyrate) #p-value = 0.6976
+
+s8 <- scfa_wide %>%
+  filter(supplement_consumed == "none") 
+shapiro.test(s8$delta_butyrate) #p-value = 0.009887
+
+s9 <- scfa_wide %>%
+  filter(supplement_consumed == "Psyllium")
+shapiro.test(s9$delta_butyrate) #p-value = 0.2783
+
+s10 <- scfa_wide %>%
+  filter(supplement_consumed == "Psyllium+BRMPS") 
+shapiro.test(s10$delta_butyrate) #p-value = 0.04406
+
+s11 <- scfa_wide %>%
+  filter(supplement_consumed == "transition_HiMaize") 
+shapiro.test(s11$delta_butyrate) #p-value = 0.06542
+
+```
+
+# Homework 5.5 
+Repeat the processing of checking assumptions to conduct ANOVA on delta acetate and propionate. Write your interpretations of the results as a comment after the statistical tests.
+
+### Acetate
+##### plot 
+```{r}
+scfa_wide %>%
+  ggplot(aes(x = supplement_consumed,
+             y = delta_acetate,
+             color = supplement_consumed)) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") + 
+  geom_violin() + 
+  geom_jitter() + 
+  xlab(NULL) +
+  ylab("Acetate mmol/kg (wk3 - wk1)") + 
+  theme(legend.position = "none",
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+```
+
+##### normality 
+```{r}
+s1 <- scfa_wide %>%
+  filter(supplement_consumed == "Accessible") 
+shapiro.test(s1$delta_acetate) #p-value = 0.674
+
+s2 <- scfa_wide %>%
+  filter(supplement_consumed == "Arabino") 
+shapiro.test(s2$delta_acetate) #p-value = 0.05369
+
+s3 <- scfa_wide %>%
+  filter(supplement_consumed == "BRMPS+Accessible")
+shapiro.test(s3$delta_acetate) #p-value = 0.8305
+
+s4 <- scfa_wide %>%
+  filter(supplement_consumed == "HiMaize") 
+shapiro.test(s4$delta_acetate) #p-value = 0.001526
+
+s5 <- scfa_wide %>%
+  filter(supplement_consumed == "HiMaize+BRMPS") 
+shapiro.test(s5$delta_acetate) #p-value = 0.3026
+
+s6 <- scfa_wide %>%
+  filter(supplement_consumed == "Inulin") 
+shapiro.test(s6$delta_acetate) #p-value = 0.9105
+
+s7 <- scfa_wide %>%
+  filter(supplement_consumed == "LOODAT") 
+shapiro.test(s7$delta_acetate) #p-value = 0.137
+
+s8 <- scfa_wide %>%
+  filter(supplement_consumed == "none") 
+shapiro.test(s8$delta_acetate) #p-value = 0.3468
+
+s9 <- scfa_wide %>%
+  filter(supplement_consumed == "Psyllium")
+shapiro.test(s9$delta_acetate) #p-value = 0.7713
+
+s10 <- scfa_wide %>%
+  filter(supplement_consumed == "Psyllium+BRMPS") 
+shapiro.test(s10$delta_acetate) #p-value = 0.9725
+
+s11 <- scfa_wide %>%
+  filter(supplement_consumed == "transition_HiMaize") 
+shapiro.test(s11$delta_acetate) #p-value = 0.6092
+
+```
+
+##### variances
+```{r}
+bartlett.test(delta_acetate ~ supplement_consumed, data = scfa_wide) #p-value = 1.167e-05
+```
+
+##### anova 
+```{r}
+# due to unequal variances we cannot use ANOVA 
+aov_results <- aov(delta_acetate ~ supplement_consumed, data = scfa_wide)
+summary(aov_results)
+```
+
+
+### Propionate
+
+##### plot
+```{r}
+scfa_wide %>%
+  ggplot(aes(x = supplement_consumed,
+             y = delta_propionate,
+             color = supplement_consumed)) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed") + 
+  geom_violin() + 
+  geom_jitter() + 
+  xlab(NULL) +
+  ylab("Propionate mmol/kg (wk3 - wk1)") + 
+  theme(legend.position = "none",
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+```
+
+##### normality 
+```{r}
+s1 <- scfa_wide %>%
+  filter(supplement_consumed == "Accessible") 
+shapiro.test(s1$delta_propionate) #p-value = 6.507e-05
+
+s2 <- scfa_wide %>%
+  filter(supplement_consumed == "Arabino") 
+shapiro.test(s2$delta_propionate) #sample size too small 
+
+s3 <- scfa_wide %>%
+  filter(supplement_consumed == "BRMPS+Accessible")
+shapiro.test(s3$delta_propionate) #p-value = 0.2266
+
+s4 <- scfa_wide %>%
+  filter(supplement_consumed == "HiMaize") 
+shapiro.test(s4$delta_propionate) #p-value = 0.2669
+
+s5 <- scfa_wide %>%
+  filter(supplement_consumed == "HiMaize+BRMPS") 
+shapiro.test(s5$delta_propionate) #p-value = 0.4316
+
+s6 <- scfa_wide %>%
+  filter(supplement_consumed == "Inulin") 
+shapiro.test(s6$delta_propionate) #p-value = 0.8973
+
+s7 <- scfa_wide %>%
+  filter(supplement_consumed == "LOODAT") 
+shapiro.test(s7$delta_propionate) #p-value = 0.8389
+
+s8 <- scfa_wide %>%
+  filter(supplement_consumed == "none") 
+shapiro.test(s8$delta_propionate) #p-value = 0.1025
+
+s9 <- scfa_wide %>%
+  filter(supplement_consumed == "Psyllium")
+shapiro.test(s9$delta_propionate) #p-value = 0.1115
+
+s10 <- scfa_wide %>%
+  filter(supplement_consumed == "Psyllium+BRMPS") 
+shapiro.test(s10$delta_propionate) #p-value = 0.6636
+
+s11 <- scfa_wide %>%
+  filter(supplement_consumed == "transition_HiMaize") 
+shapiro.test(s11$delta_propionate) #p-value = 0.4711
+
+```
+
+##### variances
+```{r}
+bartlett.test(delta_propionate ~ supplement_consumed, data = scfa_wide) #p-value = 0.00628
+```
+
+##### anova 
+```{r}
+# due to unequal variances we cannot use ANOVA 
+aov_results <- aov(delta_propionate ~ supplement_consumed, data = scfa_wide)
+summary(aov_results)
+```
+
+
+
+
+
+
