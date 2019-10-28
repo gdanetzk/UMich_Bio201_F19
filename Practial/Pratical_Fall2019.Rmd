@@ -1,0 +1,217 @@
+---
+title: "Practical Fall 2019"
+author: "Kristi Gdanetz MacCready"
+date: "10/28/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documents/UMich_Bio201_F19/")
+```
+
+As with each lab, add "completed" to the Rmd filename; update the name in the author line above; update the location of the working directory as necessary. 
+
+# Load packages
+```{r Load packages, eval=TRUE, echo=TRUE, message=FALSE, warning=FALSE, results='hide'}
+library(tidyverse)
+library(readxl)
+library(broom)
+library(cowplot)
+set.seed(7)
+```
+
+# Part 1 - concepts 
+Type the answers to questions 1-5 in the space below. 
+
+### Question 1
+
+Given vector v1 below, will it be read as character or numeric? Why does this happen? [1 point]
+```{r}
+v1 <- c("one", "2", "three", "4")
+```
+
+<type answer here> 
+
+### Question 2
+
+dataframe1 has 323 rows and dataframe2 has 345 rows. After an inner join the resulting data fame has 312 rows. Why does the result have fewer rows? [1 point]
+
+<type answer here> 
+
+### Question 3
+
+What are the three assumptions for a t-test? Explain what to do if the variance assumption is violated. Explain what to do if the normality assumption is violated. [3 points]
+
+<type answer here> 
+
+### Question 4
+
+You have a data frame (called butyrate_df) with the columns: "Participant_ID", "Study_week", "Semester", "Supplement_consumed", "Avg_butyrate". If this data frame is piped to each of the functions below, evaluate if the description of the results is true or false. [3 points]
+```{r eval=FALSE, include=FALSE}
+butyrate_df %>%
+  filter(Semester == "Fall2019")
+# Result1 = keeps only data from Fall 2019 semester
+
+butyrate_df %>%
+  filter(Avg_butyrate <= 47.0)
+# Result2 = keeps only values equal to 47 mmol/kg 
+
+butyrate_df %>%
+  group_by(Semester) %>%
+  summarize(New_column = median(Avg_butyrate))
+# Result3 = new_column contains the median of each participant 
+```
+
+<type answer here> 
+
+### Question 5
+
+something about NAs
+
+The data frame (called breath_df) has the columns: "Participant_ID", "Study_week", "Semester", "Supplement_consumed", "Methane", "Hydrogen", "Carbon_dioxide". This data frame is used for the code below, explain what will happen to any NAs in each of the shown calculations, and how the NAs will effect the underlying data. [2 points]
+```{r eval=FALSE, include=FALSE}
+# Option 1
+breath_df %>%
+  filter(!is.na(Methane)) %>% 
+  group_by(Participant_ID, Study_week) %>%
+  summarize(Avg_methane = mean(Methane))
+
+# Option 2
+breath_df %>%
+  group_by(Participant_ID, Study_week) %>%
+  summarize(Avg_methane = mean(Methane, na.rm = TRUE))
+```
+
+<type answer here> 
+
+# Part 2 - tidy data 
+
+### Question 6
+
+Find the data frame matching your unique name in the GitHub repository. Find the breath gas and taxa abundance data frames. Download and import all into RStudio and use these data frames to complete the rest of the practical. Name the dataframe to match your uniqname, name the breath gas data frame "breath", name the taxa abundance data frame "taxa". [1 point]
+```{r}
+# data import code 
+
+```
+
+Update column names in all files match the course conventions. [1 point]
+```{r}
+
+```
+
+View the supplement types in your semester. Are they all entered in the same style? If not update them to match. [1 point]
+```{r}
+
+```
+
+### Question 7
+
+What are the dimensions of each data frame? Write the results as a comment after the function. [1 point]
+```{r}
+
+```
+
+Select a join that will drop as few data points as possible. Join the data frame containing the participant data with the breath gas data. Name this "joined_df". [1 point]
+```{r}
+
+```
+
+What are the dimensions of the joined data frame? Write the results as a comment after the function. [1 point]
+```{r}
+
+```
+
+### Question 8
+
+Calculate the total SCFAs. [1 point]
+```{r}
+
+```
+
+Calculate the weekly mean of each SCFA of each participant. Calculate the weekly mean methane and hydrogen levels of each participant. [1 point]
+```{r}
+
+```
+
+What are the dimensions of the data frame with the avearges? Write the results as a comment after the function.
+```{r}
+
+```
+
+Join this data frame with the one called "taxa". Name the new data frame "all_data". What are the dimensions of this new data frame? [1 point]
+```{r}
+
+```
+
+Save all data frames generated to your GitHub page. [1 point]
+```{r}
+
+```
+
+# Part 3 - statistics & graphics 
+
+Update all axes labels and figure titles so they are informative and easy to read. Upload final plots to GitHub. When specified, conduct the appropriate tests, and write the statistic (p, F, R value) as a comment. 
+
+### Question 9
+
+If you have more than one type of supplement consumed in your semester, filter for one type to answer Question 9. Plot each SCFA with the study week (weeks 1 and 3 only) on the x-axis. Make each study week a different color. Hint: you may have to use facets, or create individual plots and combine them into a multi-panelled figure. [3 points]
+```{r}
+
+```
+
+Based on the data presented in the plot you generated above, identify which statistical test you would need to determine if there was a change in SCFA concentration between weeks 1 and 3 of the study. Check the assumptions appropriate for the test. [3 points]
+```{r}
+# assumptions
+
+# test 
+
+# result?
+```
+
+Based on the results of the test, conclude if there was a difference in SCFAs between weeks. 
+
+<type answer here> 
+
+### Question 10
+
+Is there a correlation between the abundace of hydrogen generators and breath hydrogen? Create a plot that shows the relationship and conduct the appropriate statistical test(s). [2 points]
+```{r}
+# plot
+
+# test
+
+# result?
+```
+
+What can you conclude from these results?
+
+<type answer here> 
+
+Is there a correlation between the abundace of hydrogen consumers and breath methane? Create a plot that shows the relationship and conduct the appropriate statistical test(s). [2 points]
+```{r}
+# plot
+
+# test
+
+# result?
+```
+
+What can you conclude from these results?
+
+<type answer here> 
+
+### Extra credit:
+
+Is the abundace of hydrogen producers and consumers related? Create a plot, check assumptions, conduct the appropriate statistical test(s), and interpret the results. [1 point]
+```{r}
+# plot
+
+# test(s)
+```
+
+<type answer here> 
+
+
+-----
+end
