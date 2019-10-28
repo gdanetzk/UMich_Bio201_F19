@@ -1,0 +1,249 @@
+---
+title: "Lab6 answers"
+author: "Kristi Gdanetz MacCready"
+date: "10/17/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Box Sync/Schmidt_Lab/Bio201_teaching/Protocol_Rmd_docs/")
+```
+
+# join
+
+```{r}
+#check number of rows
+nrow(taxa_cat_curated) #55138
+nrow(scfa_long) #1361
+
+#check number of participants 
+n_distinct(taxa_cat_curated$participant_id) #689
+n_distinct(scfa_long$participant_id) #584
+
+#identify shared columns = participant_id, study_week, semester
+colnames(taxa_cat_curated) 
+colnames(scfa_long)
+```
+
+```{r}
+tax_scfa <- inner_join(scfa_long, taxa_cat_curated,
+                 by = c("participant_id", "study_week", "semester")) %>%
+  mutate(semester = factor(semester,
+                           levels=c("Winter2015", "Fall2015", 
+                                    "Winter2016", "Fall2016", 
+                                    "Winter2017", "Fall2017", 
+                                    "Winter2018", "Fall2018", 
+                                    "Winter2019"), ordered = TRUE))
+View(tax_scfa)
+```
+
+```{r}
+nrow(tax_scfa) #26878
+n_distinct(tax_scfa$participant_id) #396
+colnames(tax_scfa)
+```
+
+### Homework 6.1
+* Write hypotheses to answer the question; do hydrogen breath levels differ between participants consuming fiber supplements? Create a plot of hydrogen levels:
+```{r}
+# hypothesis
+
+# plot
+breath_wkly %>%
+  ggplot(aes(x = supplement_consumed, 
+             y = h2_mean, 
+             color = supplement_consumed)) + 
+  geom_violin() + 
+  geom_jitter() + 
+  xlab(NULL) + 
+  ylab("Breath hydrogen (ppm)") + 
+  theme(legend.position = "none",
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+```
+
+* Which assumptions need checked for the statistical test(s)? Check the assumptions in the space below:
+```{r}
+# sample size 
+
+# normality
+
+# variance
+```
+
+* Which statistical test(s) would you use to answer the question? Conduct the appropriate statistical test(s):
+```{r}
+# anova
+
+# kruskall wallace 
+```
+
+* What is the answer to the question? Write your conclusion:
+```{r}
+# conclusion 
+```
+
+### Homework 6.2
+
+Use the `tax_scfa` data frame, calculate the ratio of each SCFA in a new column (scfa/total). Check that your ratios sum to 1. 
+
+```{r}
+scfa_ratio <- tax_scfa %>%
+  mutate(acetate_ratio = (acetate_mean / totalscfa_mean),
+         butyrate_ratio = (butyrate_mean / totalscfa_mean),
+         propionate_ratio = (propionate_mean / totalscfa_mean),
+         ratio_check = (acetate_ratio + butyrate_ratio + propionate_ratio))
+```
+
+Calculate the ratios of Firmicutes (Fr = F / F+B) and Bacteroidetes (Br = B / F+B), and the overall ratio (Fr/Br).
+
+```{r}
+# filter for firmicutes
+Fr <- scfa_ratio %>%
+  filter(phylum == "Firmicutes") %>% 
+  group_by(participant_id, study_week, frequency, 
+           semester, supplement_consumed, quantity_compliant) %>%
+  summarise(firmicutes_abund = sum(relative_abundance))
+
+# filter for Bacteroidetes
+Br <- scfa_ratio %>%
+  filter(phylum == "Bacteroidetes <phylum>") %>% 
+  group_by(participant_id, study_week, frequency, 
+           semester, supplement_consumed, quantity_compliant) %>%
+  summarise(bacteroidetes_abund = sum(relative_abundance)) 
+
+# join two subsetted data frames
+tax_ratio <- full_join(Fr, Br,
+                       by = c("participant_id", "study_week", "frequency", 
+                                "semester", "supplement_consumed", "quantity_compliant")) %>%
+  # calculate ratios
+  mutate(f_b_ratio = (firmicutes_abund / bacteroidetes_abund)) %>%
+  # join with scfa_ratio data frame
+  full_join(scfa_ratio, by = c("participant_id", "study_week", "frequency", 
+                                "semester", "supplement_consumed", "quantity_compliant"))
+```
+
+### Homework 6.3
+Determine if there is a relationship between the butyrate ratio and firmicutes (Fr). Conduct the statistical test and generate a plot. 
+```{r}
+# plot
+tax_ratio %>%
+  filter(phylum == "Firmicutes", #subset dataframe to firmicutes
+         study_week == "week3", #subset for week3
+         supplement_consumed == "BRMPS" | supplement_consumed == "LOODAT"
+         ) %>%
+  ggplot(aes(x = butyrate_ratio,
+             y = firmicutes_abund)) + 
+  geom_point() + #puts data points to match x and y coordinates
+  geom_smooth(method = "lm", #used to create a linear best fit line
+              se = FALSE) + #hides confidence interval around line 
+  xlab("Week 3 mean butyrate (mmol/kg)") + 
+  ylab("Firmicutes Abundance") 
+
+# correlation test 
+m63 <- tax_ratio %>%
+  filter(phylum == "Firmicutes", #subset dataframe to firmicutes
+         study_week == "week3", #subset for week3
+         supplement_consumed == "BRMPS" | supplement_consumed == "LOODAT") %>% 
+  lm(butyrate_ratio ~ firmicutes_abund, data = .) #test relationship
+summary(m63) #view results 
+```
+
+### Homework 6.4
+Determine if there is a relationship between the propionate ratio and Bacteroidetes abundance. Conduct the statistical test and generate a plot. 
+```{r}
+# plot
+tax_ratio %>%
+  filter(phylum == "Bacteroidetes <phylum>", 
+         study_week == "week3", #subset for week3
+         supplement_consumed == "BRMPS" | supplement_consumed == "LOODAT") %>%
+  ggplot(aes(x = propionate_ratio,
+             y = bacteroidetes_abund)) + 
+  geom_point() + #puts data points to match x and y coordinates
+  geom_smooth(method = "lm", #used to create a linear best fit line
+              se = FALSE) + #hides confidence interval around line 
+  xlab("Week 3 propionate ratio (mmol/kg)") + 
+  ylab("Bacteroidetes Abundance") 
+
+# test
+m64 <- tax_ratio %>%
+  filter(phylum == "Bacteroidetes <phylum>", 
+         study_week == "week3", #subset for week3
+         supplement_consumed == "BRMPS" | supplement_consumed == "LOODAT") %>% 
+  lm(propionate_ratio ~ bacteroidetes_abund, data = .) #test relationship
+summary(m64) #view results 
+```
+
+### Homework 6.5
+Determine if there is a relationship between total SCFAs and acetate. Conduct the statistical test and generate a plot. 
+```{r}
+# plot
+tax_ratio %>%
+  ggplot(aes(x = acetate_mean,
+             y = totalscfa_mean)) + 
+  geom_point() + #puts data points to match x and y coordinates
+  geom_smooth(method = "lm", #used to create a linear best fit line
+              se = FALSE) + #hides confidence interval around line 
+  xlab("Weekly mean acetate (mmol/kg)") + 
+  ylab("Weekly total SCFA (mmol/kg)") 
+
+#Total SCFA vs. acetate
+m65 <- tax_ratio %>%
+  lm(acetate_mean ~ totalscfa_mean, data = .) 
+summary(m65) 
+```
+
+### Homework 6.6
+Import the curated pH+BSS data you generated during Lab4. Update the path and file name below as necessary.
+```{r}
+# import
+pH_BSS_wkly <- read_delim(file = "~/Documents/UMich_Bio201_F19/Lab4/curated_data/pH_BSS_wkly.txt",
+                          delim = "\t", col_names = TRUE, trim_ws = TRUE, na = c("NA"))
+# join
+tax_scfa_pH <- full_join(tax_ratio, pH_BSS_wkly,
+           by = c("participant_id", "study_week")) %>%
+  na.omit(semester)
+```
+
+Determine if there is a relationship between total SCFAs and pH Conduct the statistical test and generate a plot. 
+```{r}
+# plot
+tax_scfa_pH %>%
+  ggplot(aes(x = totalscfa_mean,
+             y = pH_avg)) + 
+  geom_point() + #puts data points to match x and y coordinates
+  geom_smooth(method = "lm", #used to create a linear best fit line
+              se = FALSE) + #hides confidence interval around line 
+  xlab("Weekly total SCFA (mmol/kg)") + 
+  ylab("mean fecal pH") 
+
+#Total SCFA vs. pH
+m66 <- tax_scfa_pH %>%
+  lm(totalscfa_mean ~ pH_avg, data = .) 
+summary(m66) 
+```
+
+### Homework 6.7
+Determine if there is a relationship between butyrate and pH Conduct the statistical test and generate a plot. 
+```{r}
+# plot
+tax_scfa_pH %>%
+  ggplot(aes(x = butyrate_mean,
+             y = pH_avg)) + 
+  geom_point() + #puts data points to match x and y coordinates
+  geom_smooth(method = "lm", #used to create a linear best fit line
+              se = FALSE) + #hides confidence interval around line 
+  xlab("Weekly mean butyrate (mmol/kg)") + 
+  ylab("mean fecal pH") 
+
+# Butyrate vs. pH
+m67 <- tax_scfa_pH %>%
+  lm(butyrate_mean ~ pH_avg, data = .) 
+summary(m67)  
+```
+
+
+
+
+
+
