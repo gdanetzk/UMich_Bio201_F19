@@ -1,0 +1,211 @@
+---
+title: "Lab 7 - Alpha diversity metrics"
+author: "Kristi Gdanetz MacCready"
+date: "11/4/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documents/UMich_Bio201_F19/")
+```
+
+# Load packages
+```{r Load packages, eval=TRUE, echo=TRUE, message=FALSE, warning=FALSE, results='hide'}
+library(tidyverse)
+library(readxl)
+library(broom)
+library(cowplot)
+library(agricolae)
+library(phyloseq); packageVersion("phyloseq")
+set.seed(7)
+```
+
+
+# Import data
+
+### Sequence variants 
+Import shared/ESV/OTU table and format for phyloseq. Phyloseq works by matching rownames across matrix objects (This is similar to how we matched columns in joins of data frames). A two-dimensional matrix in R looks just like a data frame, however R matrices can be three-dimensional. A three-dimensional object is created when multiple two-dimensional objects are combined (we'll work through this in the upcoming sections). 
+```{r}
+myfunction <- function(x) {
+  x = round ( x * 1000 , digits = 0 )
+  }
+
+sv_table <- read_delim("~/Documents/UMich_Bio201_F19/raw_data/seq_variants_wide.csv",
+                            delim = ",", escape_double = FALSE, 
+                            trim_ws = TRUE, na=c("NA"),
+                            col_types = list()) %>%
+  rename(sample_id = X1) %>% #add missing column name 
+  mutate(sample_id = str_replace(sample_id, 
+                                 pattern = "-", 
+                                 replacement = "_")) %>% #replace hyphens with underscores in sample id column 
+  mutate_if(is.numeric, myfunction) %>% 
+  column_to_rownames(var = "sample_id") %>% #sample IDs need to be made into row names
+  as.matrix() %>% #convert data frame to matrix object
+  otu_table(., taxa_are_rows = FALSE) #specify type of phyloseq object
+```
+
+### Taxa 
+Import taxonomy table and format for phyloseq.
+```{r}
+taxa <- read_delim("~/Documents/UMich_Bio201_F19/raw_data/seqvar_classifications.csv",
+                            delim = ",", escape_double = FALSE, 
+                            trim_ws = TRUE, na=c("NA"),
+                            col_types = list()) %>%
+  column_to_rownames(var = "sv") %>% #sequence variants (OTUs) need to be made into row names 
+  as.matrix() %>%
+  tax_table(.)  #specify type of phyloseq object
+```
+
+### Participant data 
+Import sample data (where a sample is an individual microbiome sample) and format for phyloseq.
+```{r}
+all_data_indv <- read_delim("~/Documents/UMich_Bio201_F19/raw_data/all_data_indv.txt", 
+                            delim = "\t", escape_double = FALSE, 
+                            trim_ws = TRUE, 
+                            col_types = cols(Bristol_numeric = col_number(),
+                                             Bristol_score = col_character(), 
+                                             pH = col_number())) %>%
+  rename_all(tolower) %>% #make all column names lower case
+  distinct(., sample_id, .keep_all = TRUE) %>% #remove duplicate sample ids 
+  column_to_rownames(var = "sample_id") %>% #sample IDs need to be made into row names
+  sample_data(.) #specify type of phyloseq object
+```
+
+
+# Create phyloseq objects
+Phyloseq is an R package that has a suite of functions that make microbial community anaylsis a bit simpler. https://joey711.github.io/phyloseq/index.html It requires the data to be structured in three critical files (1) sequence variant (or OTU) table that contains counts of each sequence; (2) Taxanomic information that contains classifications from Phylum to species for each sequence variant; (3) sample information, which is the participant information we have been working with so far this semester. We imported these three files in the section above, now we have to combine them into one object. 
+```{r}
+physq_obj <- phyloseq(sv_table, taxa, all_data_indv) #combine three phyloseq objects created above 
+
+physq_obj #view dimentions of new object 
+```
+
+
+# Richness
+There are numerous alpha diversity metrics, however we are going to focus on number richness, evenness, and Simpson for our analyses. We will calculate, plot, extract information about alpha diversity with the plot_richness() funciton. 
+
+### Calculate richness
+```{r}
+samp_data <- read_delim("~/Documents/UMich_Bio201_F19/raw_data/all_data_indv.txt", 
+                            delim = "\t", escape_double = FALSE, 
+                            trim_ws = TRUE, 
+                            col_types = cols(Bristol_numeric = col_number(),
+                                             Bristol_score = col_character(), 
+                                             pH = col_number())) %>% #import sample data again
+  rename_all(tolower) %>% #make all column names lower case
+  distinct(., sample_id, .keep_all = TRUE) %>%
+  select(participant_id, sample_number, sample_id, study_week, 
+         semester, supplement_consumed, frequency) #drop extra columns 
+
+# Caculate richness
+richness_df <- physq_obj %>%
+  subset_samples(., semester != "Winter2015") %>% #subset for semesters of interest
+  subset_samples(., study_week == "week1" | study_week == "week3") %>% #subset for weeks of interest
+  estimate_richness(., split = TRUE,  measures = c("Observed")) %>% #calculate richness
+  rownames_to_column(var = "sample_id") %>% #reverse phyloseq object formatting
+  inner_join(samp_data, by = "sample_id") %>% #join with sample data imported above 
+  rename(richness = Observed) %>%
+  group_by(participant_id, study_week, semester, supplement_consumed) %>%
+  summarise(avg_richness = round(mean(richness), digits = 0)) #calculate average richness per person, per week 
+
+# save richness data 
+write_delim()
+```
+
+### Homework 7.1 
+
+We can use these alpha diversity metrics (richness, shannon, or others) in the same manner as any other measured characteristic. So, if we want to determine if the consumption of a supplement changed richness we would use the data frame created in the section above to conduct a paired t-test. 
+```{r}
+# check assumptions 
+
+# write code for paired t-test here 
+
+# p-value = ?
+```
+
+Did you conclude the richness changed from week 1 to week 3 in individuals who consumped BRMPS?
+
+### Plot richness
+
+```{r}
+# Plot richness
+rich1 <- physq_obj %>%
+  subset_samples(., semester != "Winter2015") %>% 
+  subset_samples(., study_week == "week1" | study_week == "week3") %>%
+  plot_richness(., "study_week", measures = c("Observed")) +
+  facet_grid("semester") +
+  ylab("Richness (Observed ESVs)") + xlab(NULL)
+rich1
+```
+
+This plot is pretty basic. Below we will update the plot with some of our preffered display settings. 
+```{r}
+rich1$layers <- rich1$layers[-1] #drop geom_point 
+
+rich2 <- rich1 +   
+  geom_violin(aes(color = study_week)) + #add violin in color
+  geom_jitter(aes(color = study_week)) +  #add individual points in color 
+  theme(legend.position = "none")
+rich2
+
+save_plot() #upload plot to your GitHub fork 
+```
+
+
+# Simpson 
+
+To calculate Simpson diveristy index we repeat the process above for calcuating richness, the only thing we have to change is the `measures = c("Simpson")` argument for the plot_richness() and estimate_richness() functions. 
+
+### Calculate simpson
+```{r}
+simpson_df <- physq_obj %>%
+  subset_samples(., semester != "Winter2015") %>% #subset for semesters of interest
+  subset_samples(., study_week == "week1" | study_week == "week3") %>% #subset for weeks of interest
+  estimate_richness(., split = TRUE,  measures = c("Simpson")) %>% #calculate Simpson Diversity
+  rownames_to_column(var = "sample_id") %>% #reverse phyloseq object formatting
+  inner_join(samp_data, by = "sample_id") %>% #join with sample data imported above 
+  rename(simpson = Simpson) %>%
+  group_by(participant_id, study_week, semester, supplement_consumed) %>%
+  #calculate average Simpson Diversity per person, per week
+  summarise(avg_richness = round(mean(simpson), digits = 2))  #use 2 digits since 0-1 scale 
+
+# save Simpson data 
+write_delim()
+```
+
+### Homework 7.2 
+Determine if Shannon Diversity differed significanty before vs. during supplement consumption. Write your conclusions in the space below.
+```{r}
+# check assumptions 
+
+# write code for paired t-test here 
+
+# p-value = ?
+```
+
+### Plot simpson 
+
+```{r}
+# Simpson 
+simp1 <- physq_obj %>%
+  subset_samples(., semester != "Winter2015") %>% 
+  subset_samples(., study_week == "week1" | study_week == "week3") %>%
+  plot_richness(., "study_week", measures = c("Simpson")) +
+  facet_grid("semester") +
+  ylab("Simpson 1-D") + xlab(NULL)
+
+simp1$layers <- simp1$layers[-1] #drop geom_point 
+
+simp2 <- simp1 +   
+  geom_violin(aes(color = study_week)) + #add violin in color
+  geom_jitter(aes(color = study_week)) +  #add individual points in color 
+  theme(legend.position = "none")
+simp2
+
+save_plot() #upload plot to your GitHub fork 
+```
+
+
+-----
+end
