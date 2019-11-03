@@ -1,0 +1,1350 @@
+sv,phylum,class,order,family,genus,species
+sv-1:U422-1_S251_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides vulgatus
+sv-2:U743-8_S148_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-3:U387-2_S367_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides dorei
+sv-4:U190-8_S323_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-5:U382-8_S361_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides stercoris
+sv-6:U796-7_S194_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides uniformis
+sv-7:U346-7_S318_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-8:U225-4_S283_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-9:U386-3_S375_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides xylanisolvens
+sv-10:U328-3_S374_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes putredinis
+sv-11:U582-4_S57_L001_001,Actinobacteria <actinobacteria>,Actinobacteria <high GC Gram+>,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium,Bifidobacterium adolescentis
+sv-12:U396-1_S234_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides uniformis
+sv-13:U480-3_S121_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-14:U371-7_S347_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides merdae
+sv-15:U383-8_S358_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia wexlerae
+sv-16:U177-6_S27_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides ovatus
+sv-17:U260-4_S251_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella excrementihominis
+sv-18:U551-5_S61_L001_001,Firmicutes,Negativicutes,Acidaminococcales,Acidaminococcaceae,Phascolarctobacterium,
+sv-19:U308-3_S307_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides faecichinchillae/thetaiotaomicron
+sv-20:U292-4_S143_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,
+sv-21:U291-4_S191_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides ovatus
+sv-22:U313-1_S331_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides massiliensis
+sv-23:U387-2_S367_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia faecis
+sv-24:U371-7_S347_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides caccae
+sv-25:U291-4_S191_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus bromii
+sv-26:U484-6_S194_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides plebeius
+sv-27:U476-1_S283_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-28:U344-4_S325_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Fusicatenibacter,Fusicatenibacter saccharivorans
+sv-29:U538-8_S48_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-30:U746-8_S351_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-31:U483-1_S92_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides fragilis
+sv-32:U370-7_S329_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus bicirculans
+sv-33:U312-3_S338_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes finegoldii/onderdonkii
+sv-34:U404-8_S253_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Gemmiger,
+sv-35:U295-6_S105_L001_001,Proteobacteria,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Haemophilus,Haemophilus parainfluenzae
+sv-36:U371-5_S343_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides coprocola
+sv-37:U243-7_S357_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia massiliensis
+sv-38:U465-2_S331_L001_001,Verrucomicrobia,Verrucomicrobiae,Verrucomicrobiales,Akkermansiaceae,Akkermansia,Akkermansia muciniphila
+sv-39:U375-6_S305_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-40:U628-1_S259_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia/Shigella,Escherichia_coli/Shigella_flexneri
+sv-41:U443-6_S80_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,Dialister invisus
+sv-42:U512-6_S229_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,Sutterella wadsworthensis
+sv-43:U565-6_S18_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-44:U188-8_S66_L001_001,Actinobacteria <actinobacteria>,Actinobacteria <high GC Gram+>,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium,Bifidobacterium longum
+sv-45:U257-3_S169_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides ovatus
+sv-46:U686-3_S181_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia obeum
+sv-47:U330-2_S297_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Odoribacter,Odoribacter splanchnicus
+sv-48:U080-7_S160_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Dorea,Dorea longicatena
+sv-49:U501-8_S23_L001_001,Actinobacteria <actinobacteria>,Actinobacteria <high GC Gram+>,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium,Bifidobacterium pseudocatenulatum
+sv-50:U539-1_S172_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-51:U388-1_S322_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-52:U797-3_S100_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Coriobacteriales,Coriobacteriaceae,Collinsella,Collinsella aerofaciens
+sv-53:U319-8_S365_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-54:U565-5_S45_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-55:U239-5_S54_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,Anaerobutyricum hallii
+sv-56:U484-6_S194_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia inulinivorans
+sv-57:U759-7_S381_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Erysipelatoclostridium/Massilimicrobiota,
+sv-58:U327-6_S311_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes shahii
+sv-59:U176-8_S132_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides cellulosilyticus
+sv-60:U371-7_S347_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Dysosmobacter,Dysosmobacter welbionis
+sv-61:U315-7_S315_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides uniformis
+sv-62:U167-7_S335_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-63:U274-5_S279_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus faecis
+sv-64:U257-4_S100_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-65:U464-6_S245_L001_001,Firmicutes,Negativicutes,Selenomonadales,Selenomonadaceae,Megamonas,Megamonas funiformis/rupellensis
+sv-66:U658-7_S191_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,
+sv-67:U604-4_S167_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-68:U442-7_S97_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-69:U218-4_S305_L001_001,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus salivarius/thermophilus
+sv-70:U250-2_S126_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Romboutsia,Romboutsia timonensis
+sv-71:U447-3_S209_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes finegoldii
+sv-72:U522-3_S256_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus comes
+sv-73:U583-3_S40_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides plebeius
+sv-74:U428-2_S51_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Massiliprevotella,
+sv-75:U468-1_S218_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-76:U479-8_S229_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-77:U482-3_S74_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-78:U662-7_S131_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Marseillibacter,
+sv-79:U661-4_S175_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Bilophila,Bilophila wadsworthia
+sv-80:U383-5_S355_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides vulgatus
+sv-81:U383-5_S355_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides vulgatus
+sv-82:U387-6_S238_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus bromii
+sv-83:U316-5_S342_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,
+sv-84:U583-6_S266_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Megasphaera,Megasphaera massiliensis
+sv-85:U327-6_S311_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-86:U441-1_S146_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,[Eubacterium] eligens
+sv-87:U526-5_S76_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] gnavus
+sv-88:U555-7_S170_L001_001,Verrucomicrobia,Verrucomicrobiae,Verrucomicrobiales,Akkermansiaceae,Akkermansia,Akkermansia muciniphila
+sv-89:U374-2_S319_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-90:U288-9_S320_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides dorei
+sv-91:U387-2_S367_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-92:U387-2_S367_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-93:U328-3_S374_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Flavonifractor,Flavonifractor plautii
+sv-94:U360-5_S366_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-95:U235-3_S10_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-96:U771-4_S141_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-97:U347-5_S383_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides stercoris
+sv-98:U642-1_S271_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Neglecta,
+sv-99:U102-3_S50_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,[Eubacterium] siraeum
+sv-100:U710-5_S262_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Agathobaculum,Agathobaculum butyriciproducens
+sv-101:U661-9_S34_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Paraprevotella,
+sv-102:U163-6_S74_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-103:U719-4_S59_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides eggerthii
+sv-104:U735-7_S284_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,
+sv-105:U098-4_S9_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides finegoldii
+sv-106:U390-3_S302_L001_001,Firmicutes,Negativicutes,Acidaminococcales,Acidaminococcaceae,Acidaminococcus,Acidaminococcus intestini
+sv-107:U743-1_S40_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-108:U570-4_S93_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-109:U344-4_S325_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,[Eubacterium] eligens
+sv-111:U711-6_S157_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-112:U238-1_S15_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] torques
+sv-113:U587-8_S260_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,,
+sv-114:U564-8_S158_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Dorea,Dorea formicigenerans
+sv-115:U461-2_S375_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-116:U323-3_S371_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides eggerthii
+sv-117:U424-5_S262_L001_001,Firmicutes,Negativicutes,Acidaminococcales,Acidaminococcaceae,Phascolarctobacterium,Phascolarctobacterium succinatutens
+sv-118:U200-7_S34_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides intestinalis
+sv-119:U339-8_S70_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] indolis/methoxybenzovorans
+sv-120:U526-2_S86_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Intestinibacter,Intestinibacter bartlettii
+sv-121:U280-7_S371_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae/Ruminococcaceae,Eubacterium,
+sv-122:NP2-7_S375_L001_001,Verrucomicrobia,Verrucomicrobiae,Verrucomicrobiales,Akkermansiaceae,Akkermansia,Akkermansia muciniphila
+sv-123:U634-4_S270_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Megasphaera,Megasphaera elsdenii
+sv-124:U334-3_S337_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-125:U387-2_S367_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia hominis
+sv-126:U477-8_S54_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes obesi
+sv-127:U272-4_S2_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-128:U269-5_S76_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus eutactus
+sv-129:U713-2_S51_L001_001,Firmicutes,,,,,
+sv-130:U387-2_S367_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,Eubacterium,
+sv-131:U268-3_S59_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-132:U370-7_S329_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-133:U157-3_S144_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-134:U628-3_S176_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Veillonella,Veillonella dispar
+sv-136:U109-8_S86_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-138:U379-6_S341_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus callidus
+sv-139:U127-8_S77_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,
+sv-140:U149-1_S207_L001_001,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,,
+sv-141:U506-6_S240_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-142:U685-2_S212_L001_001,Euryarchaeota,Methanobacteria,Methanobacteriales,Methanobacteriaceae,Methanobrevibacter,Methanobrevibacter smithii
+sv-143:U272-4_S2_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus catus
+sv-144:U713-2_S51_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-145:U249-6_S214_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides johnsonii
+sv-146:U390-3_S302_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Mesosutterella,Mesosutterella multiformis
+sv-147:U483-5_S285_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-148:f17-2-Zymo-c_S288_L001_001,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus faecalis/faecium
+sv-149:U242-8_S40_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,,
+sv-150:U168-4_S170_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Agathobaculum,Agathobaculum butyriciproducens
+sv-152:U763-7_S61_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-153:U327-6_S311_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-154:U622-2_S133_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-155:U529-2_S63_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-156:U371-5_S343_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium ramulus
+sv-157:U777-2_S97_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-158:U145-1_S174_L001_001,Firmicutes,Clostridia,Clostridiales,,Flintibacter,
+sv-159:U652-2_S261_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Holdemanella,Holdemanella biformis
+sv-160:U483-5_S285_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-161:U539-8_S339_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Veillonella,Veillonella parvula
+sv-162:U282-2_S368_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Enterobacter/Klebsiella,Enterobacter hormaechei
+sv-163:U148-1_S53_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] aldenense
+sv-164:U423-7_S165_L001_001,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,,
+sv-165:U151-5_S134_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium ventriosum
+sv-167:U614-4_S140_L001_001,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,,
+sv-168:U156-1_S89_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Turicibacter,Turicibacter sanguinis
+sv-169:U422-5_S203_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] clostridioforme
+sv-170:U169-2_S122_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus eutactus
+sv-171:U726-8_S140_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,
+sv-172:U627-6_S232_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-173:U432-6_S63_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-174:U532-8_S99_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-175:U628-6_S268_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Veillonella,Veillonella parvula/rogosae
+sv-176:U489-2_S275_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes finegoldii
+sv-177:U713-2_S51_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Catenibacterium,Catenibacterium mitsuokai
+sv-179:U464-8_S243_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus faecis
+sv-180:U093-6_S37_L001_001,Actinobacteria <actinobacteria>,Actinobacteria <high GC Gram+>,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium,Bifidobacterium bifidum
+sv-181:U328-3_S374_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,
+sv-182:U529-9_S105_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Barnesiella,Barnesiella intestinihominis
+sv-183:U756-8_S281_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Tyzzerella/Coprococcus,Coprococcus_phoceensis/Tyzzerella_nexilis
+sv-184:U387-2_S367_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-185:U305-1_S373_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides salyersiae
+sv-186:U135-7_S140_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Barnesiella,
+sv-187:U386-3_S375_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,
+sv-188:U627-7_S304_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides kribbi/ovatus
+sv-189:U650-4_S186_L001_001,Firmicutes,Clostridia,Clostridiales,,Lawsonibacter,Lawsonibacter asaccharolyticus
+sv-190:U557-4_S324_L001_001,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus parasanguinis
+sv-193:U385-2_S298_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,
+sv-194:U217-5_S374_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium disporicum
+sv-195:U746-4_S112_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,
+sv-196:U680-1_S58_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides coprophilus
+sv-197:U504-6_S49_L001_001,,,,,,
+sv-198:U426-2_S277_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Marseillibacter,
+sv-199:U436-1_S268_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia obeum
+sv-200:U781-5_S286_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,
+sv-201:U747-4_S9_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides vulgatus
+sv-203:U388-1_S322_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,,
+sv-205:U526-7_S293_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,[Clostridium] leptum
+sv-207:U392-1_S57_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-208:U448-4_S52_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae/Ruminococcaceae,,
+sv-209:U284-4_S260_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Barnesiella,
+sv-210:U740-4_S239_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-211:U137-1_S113_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Anaeromassilibacillus,
+sv-213:U316-4_S362_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus callidus
+sv-214:U366-1_S326_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-215:U650-2_S56_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-216:U583-8_S100_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Tyzzerella,
+sv-217:U238-1_S15_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruthenibacterium,Ruthenibacterium lactatiformans
+sv-218:U162-6_S86_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-219:U387-2_S367_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-220:U796-7_S194_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-221:U686-3_S181_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,
+sv-222:U676-6_S170_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,Fusobacterium mortiferum
+sv-223:U112-6_S193_L001_001,Firmicutes,Clostridia,Clostridiales,,Flintibacter,
+sv-224:U548-6_S255_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium coprostanoligenes
+sv-225:U622-4_S190_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-226:U420-1_S231_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Barnesiella,Barnesiella intestinihominis
+sv-227:U386-3_S375_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Holdemanella,Holdemanella biformis
+sv-228:U757-3_S373_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-229:U158-4_S167_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-230:U469-7_S49_L001_001,Firmicutes,Negativicutes,Acidaminococcales,Acidaminococcaceae,Acidaminococcus,Acidaminococcus fermentans
+sv-231:U157-3_S144_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium carnis
+sv-232:U763-8_S343_L001_001,Firmicutes,Clostridia,Clostridiales,,Monoglobus,Monoglobus pectinilyticus
+sv-233:U520-2_S323_L001_001,Firmicutes,Clostridia,Clostridiales,,Evtepia,
+sv-234:U625-4_S191_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-235:U661-9_S34_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Paraprevotella,
+sv-236:U481-1_S91_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-238:U795-1_S37_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-239:U391-5_S382_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-240:U475-7_S67_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Marseillibacter,
+sv-242:U777-2_S97_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-243:U391-7_S349_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus eutactus
+sv-244:U305-1_S373_L001_001,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,,
+sv-246:U625-4_S191_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus ruminis
+sv-247:U482-3_S74_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Desulfovibrio,
+sv-248:U289-4_S327_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] symbiosum
+sv-249:U316-3_S303_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Hungateiclostridiaceae,,
+sv-250:U266-4_S71_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Veillonella,Veillonella seminalis
+sv-251:U506-5_S286_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerotignum,
+sv-252:U438-2_S345_L001_001,Firmicutes/Actinobacteria_<actinobacteria>,Actinobacteria_<high_GC_Gram+>/Erysipelotrichia,Actinomycetales/Erysipelotrichales,Erysipelotrichaceae/Actinomycetaceae,Varibaculum/Massilimicrobiota,Massilimicrobiota_timonensis/Varibaculum_timonense
+sv-253:U312-3_S338_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Dysosmobacter,
+sv-254:U450-8_S206_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella,Klebsiella oxytoca
+sv-255:U628-8_S57_L001_001,Proteobacteria,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Haemophilus,Haemophilus parainfluenzae/pittmaniae
+sv-256:U314-7_S195_L001_001,Firmicutes,Negativicutes,Acidaminococcales,Acidaminococcaceae,Succiniclasticum,
+sv-258:U269-2_S26_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,,,
+sv-259:U196-8_S272_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,[Eubacterium] eligens
+sv-260:U284-1_S295_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes ihumii
+sv-261:U213-9_S303_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-262:U217-3_S317_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides uniformis
+sv-263:U269-9_S222_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-264:U135-6_S128_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,Eubacterium,
+sv-265:U514-2_S108_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,,
+sv-266:U618-8_S119_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Paraprevotella,Paraprevotella clara
+sv-267:U376-8_S254_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-268:U280-7_S371_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-270:U560-4_S10_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-271:U137-4_S175_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,
+sv-272:U238-1_S15_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Caproiciproducens,
+sv-273:U157-2_S163_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Paraprevotella,Paraprevotella clara
+sv-274:U328-3_S374_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Oscillibacter,
+sv-275:U168-6_S134_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides eggerthii
+sv-276:U650-8_S129_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia luti
+sv-277:U521-8_S44_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides clarus
+sv-278:U657-1_S255_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Butyrivibrio,
+sv-279:U386-3_S375_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium ventriosum
+sv-280:U416-4_S76_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides nordii
+sv-281:U048-6_S165_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Duodenibacillus,Duodenibacillus massiliensis
+sv-282:U744-2_S95_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Bilophila,Bilophila wadsworthia
+sv-283:U145-1_S174_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerotignum,Anaerotignum lactatifermentans
+sv-284:U145-1_S174_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia hansenii/hominis
+sv-285:U385-3_S306_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-286:U526-7_S293_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Ruminococcaceae,Sellimonas/Drancourtella,Drancourtella_massiliensis/Sellimonas_intestinalis
+sv-287:U615-2_S178_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-289:U564-3_S173_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Longicatena,Longicatena caecimuris
+sv-290:U328-3_S374_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-291:U404-5_S257_L001_001,Firmicutes,Clostridia,Clostridiales,,Flintibacter,
+sv-292:U122-5_S124_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides intestinalis
+sv-293:U424-1_S13_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,[Eubacterium] siraeum
+sv-295:U379-4_S378_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,[Eubacterium] eligens
+sv-296:U436-1_S268_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Duodenibacillus,Duodenibacillus massiliensis
+sv-298:U613-2_S187_L001_001,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,,
+sv-300:U526-2_S86_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Erysipelatoclostridium,Erysipelatoclostridium ramosum
+sv-301:U662-7_S131_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Barnesiella,Barnesiella intestinihominis
+sv-302:U432-5_S193_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-303:U400-4_S250_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides goldsteinii
+sv-304:U239-1_S39_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella excrementihominis
+sv-305:U787-4_S342_L001_001,,,,,,
+sv-306:U446-7_S135_L001_001,Firmicutes,Negativicutes,Acidaminococcales,Acidaminococcaceae,Acidaminococcus,Acidaminococcus timonensis
+sv-308:U626-8_S375_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-309:U709-6_S337_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,Butyricimonas faecihominis
+sv-310:U317-6_S363_L001_001,Firmicutes,Clostridia,Clostridiales,Hungateiclostridiaceae,,
+sv-313:U623-8_S258_L001_001,Lentisphaerae,Lentisphaeria,Victivallales,Victivallaceae,Victivallis,
+sv-314:U157-8_S170_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Porphyromonadaceae,Macellibacteroides,
+sv-316:U371-7_S347_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Erysipelatoclostridium,[Clostridium] spiroforme
+sv-318:U263-6_S110_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-319:U126-2_S112_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella stercorea
+sv-320:U524-4_S2_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-321:U527-5_S285_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-323:U280-7_S371_L001_001,Firmicutes,Clostridia,,,,
+sv-324:U536-3_S284_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Holdemanella,Holdemanella biformis
+sv-325:U235-6_S75_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-326:U379-4_S378_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium carnis
+sv-327:U622-9_S136_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,
+sv-328:U422-5_S203_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] asparagiforme/lavalense
+sv-330:U378-4_S47_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Clostridiaceae,,
+sv-331:U280-7_S371_L001_001,Firmicutes,Erysipelotrichia/Bacilli,Bacillales/Erysipelotrichales,Erysipelotrichaceae,Massilimicrobiota,Massilimicrobiota timonensis
+sv-332:U530-7_S301_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Paraprevotella,
+sv-333:U360-5_S366_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Barnesiella,Barnesiella intestinihominis
+sv-334:U078-2_S177_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-337:U141-6_S278_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,Raoultibacter,
+sv-339:U477-8_S54_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Coprobacter,Coprobacter fastidiosus
+sv-340:U763-8_S343_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,Adlercreutzia,Adlercreutzia equolifaciens
+sv-341:U108-6_S245_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-343:U623-3_S23_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,
+sv-344:U422-1_S251_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides vulgatus
+sv-346:U521-3_S87_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-347:U124-6_S313_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides oleiciplenus/stercorirosoris
+sv-348:U539-8_S339_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Faecalimonas,Faecalimonas umbilicata
+sv-349:U377-5_S326_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Marseillibacter,
+sv-350:U286-3_S238_L001_001,Firmicutes,Clostridia,Clostridiales,Defluviitaleaceae/Hungateiclostridiaceae,Vallitalea,
+sv-351:U387-2_S367_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-353:U733-4_S278_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Hungatella,Hungatella hathewayi
+sv-354:U743-5_S198_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Eisenbergiella,Eisenbergiella massiliensis
+sv-355:U570-3_S111_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-356:U538-9_S24_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides salyersiae
+sv-357:U162-7_S374_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Alloprevotella,
+sv-358:U650-5_S73_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-359:U180-1_S230_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Odoribacter,Odoribacter splanchnicus
+sv-360:U363-5_S114_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-361:U669-5_S257_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-362:U290-1_S121_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Dorea,
+sv-363:U468-7_S317_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,
+sv-364:U422-2_S167_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,,
+sv-365:U117-1_S35_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,Fusobacterium ulcerans
+sv-366:U187-2_S146_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-367:U603-1_S217_L001_001,Firmicutes,Clostridia,Clostridiales,,Flintibacter,
+sv-369:U134-4_S95_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,
+sv-372:U165-1_S218_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Paraprevotella,Paraprevotella clara
+sv-373:U445-8_S279_L001_001,Firmicutes,Clostridia,Clostridiales,Defluviitaleaceae/Hungateiclostridiaceae,Vallitalea,
+sv-374:U653-2_S139_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Paraprevotella,
+sv-375:U135-6_S128_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,Eubacterium,
+sv-376:U444-3_S326_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-377:U648-7_S142_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-378:U708-3_S340_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Turicibacter,Turicibacter sanguinis
+sv-379:U628-3_S176_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Veillonella,Veillonella atypica
+sv-380:U271-7_S135_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,
+sv-381:U662-7_S131_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,
+sv-382:U157-8_S170_L001_001,Firmicutes,Clostridia,,,,
+sv-385:U658-7_S191_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium disporicum
+sv-386:U437-1_S58_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-389:U776-7_S341_L001_001,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Lactococcus,Lactococcus lactis
+sv-390:U385-3_S306_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-391:U210-9_S362_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-392:U639-2_S49_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Fusicatenibacter,Fusicatenibacter saccharivorans
+sv-393:U138-6_S139_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Paraprevotella,Paraprevotella clara
+sv-394:U202-3_S321_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,
+sv-396:U552-9_S202_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Tidjanibacter,
+sv-397:U108-7_S208_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-400:U157-7_S32_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,,
+sv-401:U607-4_S242_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-402:U386-3_S375_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-403:U764-5_S86_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Mesosutterella,Mesosutterella multiformis
+sv-405:U188-8_S66_L001_001,Firmicutes,Clostridia,,,,
+sv-406:U509-6_S177_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Caecibacter,
+sv-407:U622-2_S133_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-408:U199-2_S263_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,
+sv-409:U285-4_S228_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-413:U281-8_S283_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Terrisporobacter,
+sv-414:U240-8_S134_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes putredinis
+sv-417:U531-5_S113_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides uniformis
+sv-419:U423-6_S23_L001_001,Firmicutes,Clostridia,Candidatus Borkfalkiales,Candidatus Borkfalkiaceae,Candidatus Borkfalkia,
+sv-420:U136-1_S125_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Gemmiger,
+sv-421:U042-8_S53_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes shahii
+sv-422:U546-7_S313_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,Anaerobutyricum hallii
+sv-423:U268-5_S82_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,
+sv-424:U515-6_S161_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Dorea,
+sv-425:U184-5_S258_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides intestinalis
+sv-427:U054-7_S185_L001_001,Firmicutes,Clostridia,Clostridiales,Hungateiclostridiaceae,,
+sv-428:U135-6_S128_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-430:U202-7_S366_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-431:U538-8_S48_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,Eggerthella,Eggerthella lenta
+sv-434:U657-1_S255_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,Eubacterium,
+sv-437:U682-7_S228_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Longibaculum,Longibaculum muris
+sv-438:U644-4_S169_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-439:U561-4_S315_L001_001,Firmicutes,Clostridia,Candidatus Borkfalkiales,Candidatus Borkfalkiaceae,Candidatus Borkfalkia,
+sv-441:U747-2_S100_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Holdemania,Holdemania filiformis
+sv-442:U213-8_S350_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,Dialister succinatiphilus
+sv-443:U664-5_S277_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides vulgatus
+sv-444:U463-1_S134_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Desulfovibrio,Desulfovibrio desulfuricans
+sv-445:U319-5_S90_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus acidophilus/crispatus
+sv-446:U177-4_S166_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Frisingicoccus,
+sv-447:U635-8_S104_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-449:U442-3_S363_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Raoultella/Citrobacter,Citrobacter freundii
+sv-451:U617-5_S188_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium oxidoreducens
+sv-453:U560-2_S341_L001_001,Firmicutes,Negativicutes,Selenomonadales,Selenomonadaceae,Mitsuokella,Mitsuokella jalaludinii
+sv-454:U530-7_S301_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides coprocola
+sv-455:U586-2_S344_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Hungatella,Hungatella hathewayi
+sv-456:U231-8_S263_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides coprocola
+sv-459:U296-9_S229_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,
+sv-460:U518-9_S368_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus mucosae
+sv-461:U315-7_S315_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Barnesiella,
+sv-462:U705-5_S227_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-463:U448-7_S338_L001_001,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus australis/infantis/peroris
+sv-464:U502-1_S4_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-465:U202-7_S366_L001_001,Actinobacteria <actinobacteria>,Actinobacteria <high GC Gram+>,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium,Bifidobacterium angulatum/merycicum
+sv-466:U778-5_S219_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-467:U395-4_S128_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-468:U556-4_S165_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium ramulus
+sv-469:U404-4_S197_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Flavonifractor,Flavonifractor plautii
+sv-471:U297-9_S230_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium neonatale
+sv-473:U621-6_S355_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,
+sv-474:U539-4_S332_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Paraburkholderia,
+sv-475:U753-1_S167_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,,
+sv-476:U133-3_S103_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Paraprevotella,Paraprevotella xylaniphila
+sv-477:U343-2_S104_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-479:U404-4_S197_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Pseudoflavonifractor,Pseudoflavonifractor capillosus
+sv-483:U625-4_S191_L001_001,Firmicutes,Clostridia,Clostridiales,,Intestinimonas,
+sv-484:U386-3_S375_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-485:U658-4_S287_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-486:U787-2_S50_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Sporobacter,
+sv-488:U379-6_S341_L001_001,Firmicutes,Clostridia,Clostridiales,,Colidextribacter,
+sv-489:U542-5_S326_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,Sutterella wadsworthensis
+sv-490:U757-3_S373_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes caccae
+sv-491:U797-1_S109_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Negativibacillus,
+sv-492:U659-7_S117_L001_001,Proteobacteria,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Haemophilus,Haemophilus parainfluenzae
+sv-494:U482-7_S286_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-496:U777-2_S97_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Erysipelatoclostridium,[Clostridium] innocuum
+sv-497:U570-5_S75_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Paraburkholderia,
+sv-498:U334-3_S337_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-500:U202-2_S371_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes indistinctus
+sv-501:U246-3_S199_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-502:U249-4_S226_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,,
+sv-503:U165-6_S102_L001_001,Firmicutes,Negativicutes,Selenomonadales,Selenomonadaceae,Mitsuokella,Mitsuokella multacida
+sv-504:U578-3_S297_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus apodemi/murinus
+sv-506:U519-2_S117_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Porphyromonadaceae,,
+sv-507:U342-8_S184_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,Fusobacterium varium
+sv-508:U570-2_S174_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-511:U301-6_S316_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-514:U737-7_S298_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides thetaiotaomicron
+sv-516:U201-7_S79_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-517:U569-3_S231_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,Casaltella,Casaltella massiliensis
+sv-518:U526-7_S293_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-519:U565-7_S225_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium disporicum
+sv-523:U235-3_S10_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-524:U689-2_S274_L001_001,Firmicutes,Erysipelotrichia/Bacilli,Bacillales/Erysipelotrichales,Erysipelotrichaceae/Bacillaceae,Massilimicrobiota,Massilimicrobiota timonensis
+sv-525:U067-1_S259_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides ovatus
+sv-526:U535-3_S157_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-528:U480-5_S82_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus ruminis
+sv-529:U707-6_S41_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,
+sv-530:U668-5_S85_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides johnsonii
+sv-531:U736-4_S33_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Megasphaera,Megasphaera micronuciformis
+sv-532:U678-4_S167_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae/Ruminococcaceae,,
+sv-533:U432-4_S141_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Desulfovibrio,Desulfovibrio piger
+sv-534:U777-2_S97_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Neglecta,
+sv-536:U791-7_S297_L001_001,,,,,,
+sv-537:U437-1_S58_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-539:U379-6_S341_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes senegalensis/timonensis
+sv-540:U235-4_S55_L001_001,Firmicutes,Clostridia,Clostridiales,,Colidextribacter,
+sv-541:U176-2_S143_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Neglecta,
+sv-542:U623-6_S155_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-543:U743-2_S181_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Anaeromassilibacillus,Anaeromassilibacillus senegalensis
+sv-545:U621-4_S291_L001_001,Firmicutes,Clostridia,,,,
+sv-546:U394-5_S123_L001_001,Firmicutes,Erysipelotrichia/Bacilli,Bacillales/Erysipelotrichales,Erysipelotrichaceae,Massilimicrobiota,Massilimicrobiota timonensis
+sv-548:U646-8_S143_L001_001,Tenericutes,Mollicutes,Anaeroplasmatales,Anaeroplasmataceae,,
+sv-551:U265-7_S306_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XII. Incertae Sedis,,
+sv-553:U062-8_S199_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella stercorea
+sv-554:U145-2_S76_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Negativibacillus,
+sv-555:U333-4_S301_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-559:U274-5_S279_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Bilophila,Bilophila wadsworthia
+sv-560:U551-8_S73_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] torques
+sv-561:U459-5_S129_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Romboutsia,[Clostridium] dakarense
+sv-565:U716-8_S364_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Eisenbergiella,Eisenbergiella tayi
+sv-566:U719-3_S105_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,Butyricimonas virosa
+sv-567:U452-8_S341_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-569:U613-1_S233_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] scindens
+sv-570:U360-5_S366_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-571:U519-2_S117_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Agathobaculum,Agathobaculum butyriciproducens
+sv-574:U607-7_S351_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium carnis
+sv-576:U437-8_S376_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Negativibacillus,Negativibacillus massiliensis
+sv-577:U463-6_S193_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-578:U622-2_S133_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] aldenense
+sv-579:U548-6_S255_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia wexlerae
+sv-585:U723-6_S62_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-586:U617-4_S359_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,
+sv-587:U763-8_S343_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,,
+sv-588:U434-4_S230_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Turicimonas,Turicimonas muris
+sv-589:U355-8_S283_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-590:U224-4_S158_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella secunda
+sv-593:U286-6_S232_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerotignum,
+sv-594:U174-4_S120_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium/Dorea,
+sv-596:U029-4X_S360_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-597:U319-6_S303_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-599:U126-2_S112_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella stercorea
+sv-600:U774-5_S348_L001_001,Firmicutes,Clostridia,Clostridiales,,Intestinimonas,Intestinimonas butyriciproducens
+sv-603:U501-6_S21_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides thetaiotaomicron
+sv-605:U737-7_S298_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-606:U309-1_S293_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium coprostanoligenes
+sv-607:U240-3_S127_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-608:U515-2_S278_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia hydrogenotrophica
+sv-609:U433-7_S352_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Raoultella,Raoultella planticola
+sv-610:U153-1_S19_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella excrementihominis
+sv-611:U577-8_S184_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Coriobacteriales,Coriobacteriaceae,Senegalimassilia,Senegalimassilia anaerobia
+sv-612:U615-1_S229_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-615:U177-4_S166_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Dielma,Dielma fastidiosa
+sv-617:U216-3_S318_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides uniformis
+sv-622:U538-6_S38_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-625:U152-8_S270_L001_001,Actinobacteria <actinobacteria>,Actinobacteria <high GC Gram+>,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium,Bifidobacterium animalis
+sv-626:U736-3_S285_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,
+sv-627:U685-2_S212_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Neglecta,Neglecta timonensis
+sv-629:U398-8_S329_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-631:U180-1_S230_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,Butyricimonas faecihominis
+sv-633:U422-5_S203_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,Fusobacterium nucleatum
+sv-634:U138-5_S127_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,
+sv-636:U684-2_S165_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus callidus
+sv-637:U749-7_S131_L001_001,Firmicutes,Negativicutes,Selenomonadales,Selenomonadaceae,Mitsuokella,Mitsuokella multacida
+sv-638:U238-6_S73_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,
+sv-641:U625-1_S90_L001_001,,,,,,
+sv-642:U688-4_S175_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia wexlerae
+sv-643:U516-5_S360_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-644:U628-1_S259_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Paraburkholderia,
+sv-645:U489-3_S126_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,,
+sv-646:UK9_S232_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-647:U582-6_S184_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Pediococcus,Pediococcus acidilactici
+sv-650:U670-2_S218_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerotignum,
+sv-651:U529-6_S363_L001_001,Firmicutes,Clostridia,Clostridiales,,Flintibacter,
+sv-653:U667-4_S159_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-655:U432-3_S98_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Hungatella,
+sv-657:U774-5_S348_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Dysosmobacter/Oscillibacter,Dysosmobacter welbionis
+sv-658:U112-8_S253_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-660:U310-5_S347_L001_001,Tenericutes,Mollicutes,,,,
+sv-664:U287-1_S338_L001_001,Firmicutes,Clostridia,Clostridiales,,Flintibacter,
+sv-666:U167-1_S294_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-667:U219-3_S337_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-669:U305-7_S340_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia faecis
+sv-670:U238-7_S41_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] gnavus
+sv-671:U635-3_S263_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,Anaerobutyricum hallii
+sv-672:U564-9_S315_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-674:U462-4_S42_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,,
+sv-676:U381-8_S233_L001_001,Firmicutes,Clostridia,Clostridiales,Christensenellaceae,,
+sv-677:U235-4_S55_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-678:U474-4_S66_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides cellulosilyticus
+sv-681:U346-7_S318_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-682:U302-2_S206_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,,
+sv-683:U762-1_S163_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides ovatus/xylanisolvens
+sv-687:U246-6_S202_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-692:U456-6_S157_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-693:U432-4_S141_L001_001,,,,,,
+sv-694:U286-9_S213_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-695:U631-7_S344_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides congonensis
+sv-697:U671-9_S287_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-698:U140-1_S138_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Turicimonas,Turicimonas muris
+sv-702:U398-8_S329_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-703:U319-8_S365_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Holdemania,
+sv-704:U373-8_S238_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-707:U771-4_S141_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-711:U761-1_S147_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,
+sv-712:U484-2_S181_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Phocea,Phocea massiliensis
+sv-716:U513-6_S80_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella disiens
+sv-720:U489-3_S126_L001_001,Firmicutes,Erysipelotrichia/Bacilli,Bacillales/Erysipelotrichales,Erysipelotrichaceae,Massilimicrobiota,Massilimicrobiota timonensis
+sv-721:U547-6_S42_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides ovatus
+sv-724:NP4-8_S132_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,Dialister succinatiphilus
+sv-726:U517-2_S261_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Odoribacter,Odoribacter splanchnicus
+sv-727:U586-2_S344_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Anaerotruncus,Anaerotruncus colihominis
+sv-728:U145-3_S162_L001_001,Firmicutes,Clostridia,Clostridiales,,Intestinimonas,Intestinimonas massiliensis
+sv-729:U249-2_S176_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-730:U737-5_S376_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,Emergencia,
+sv-732:U484-4_S1_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-734:U392-1_S57_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Faecalicoccus,
+sv-735:U462-4_S42_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,,
+sv-736:U280-7_S371_L001_001,Bacteroidetes <Bacteroidetes>,Flavobacteriia,Flavobacteriales,,,
+sv-737:U525-5_S302_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus casei
+sv-738:U564-8_S158_L001_001,Actinobacteria <actinobacteria>,Actinobacteria <high GC Gram+>,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium,Bifidobacterium dentium
+sv-740:U579-6_S338_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium paraputrificum
+sv-742:U557-6_S307_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,,
+sv-743:U342-6_S69_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Citrobacter,Citrobacter koseri
+sv-744:U347-5_S383_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Odoribacter,Odoribacter splanchnicus
+sv-748:U347-5_S383_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,,
+sv-750:U258-4_S97_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae/Ruminococcaceae,Pseudoflavonifractor/Clostridium,Pseudoflavonifractor capillosus
+sv-752:U328-8_S336_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,,
+sv-756:U637-1_S339_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Porphyromonadaceae/Barnesiellaceae,Coprobacter/Gabonia,Coprobacter_secundus/Gabonia_massiliensis
+sv-757:U569-3_S231_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,,
+sv-758:U373-8_S238_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Veillonella,Veillonella denticariosi/parvula
+sv-763:U356-1_S202_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus gasseri/johnsonii
+sv-764:U374-2_S319_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-765:U408-5_S371_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-766:U114-5_S167_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-767:U429-3_S4_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,,
+sv-768:U372-1_S311_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,Dialister propionicifaciens
+sv-770:U386-3_S375_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Dorea,
+sv-772:U539-4_S332_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-775:U635-5_S323_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Dysosmobacter,
+sv-776:U500-7_S293_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides vulgatus
+sv-777:U323-3_S371_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Odoribacter,Odoribacter splanchnicus
+sv-778:U442-4_S374_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerotignum,
+sv-779:U235-5_S65_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Angelakisella,
+sv-782:U249-5_S227_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella excrementihominis
+sv-783:U219-6_S363_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,Butyricimonas virosa
+sv-784:U560-3_S209_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-786:U700-8_S87_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-788:U108-6_S245_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Coriobacteriales,Coriobacteriaceae,Collinsella,Collinsella intestinalis/stercoris
+sv-789:U275-9_S340_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Coprobacter,Coprobacter fastidiosus
+sv-790:U420-4_S22_L001_001,Firmicutes,Clostridia,Candidatus Borkfalkiales,Candidatus Borkfalkiaceae,Candidatus Borkfalkia,
+sv-792:U616-4_S105_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus bromii
+sv-793:U588-4_S57_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-794:U394-6_S77_L001_001,Firmicutes,Clostridia/Erysipelotrichia,Clostridiales/Erysipelotrichales,Erysipelotrichaceae/Christensenellaceae,,
+sv-795:U689-2_S274_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-796:U763-8_S343_L001_001,Firmicutes,Clostridia,Clostridiales,Syntrophomonadaceae,,
+sv-798:U511-4_S301_L001_001,Firmicutes,Clostridia,,,,
+sv-800:U798-4_S270_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-801:U340-1_S333_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides vulgatus
+sv-803:U397-1_S195_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,
+sv-806:U454-4_S238_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,
+sv-808:U145-4_S152_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-810:U243-5_S274_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-811:U622-4_S190_L001_001,Proteobacteria,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Haemophilus,Haemophilus parainfluenzae
+sv-813:U534-5_S81_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,
+sv-815:U064-7_S13_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,,
+sv-816:U061-7_S174_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-817:U239-5_S54_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,,
+sv-819:U566-3_S102_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-820:U379-4_S378_L001_001,Firmicutes,Clostridia,Clostridiales,Hungateiclostridiaceae,,
+sv-825:U561-1_S25_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-826:U777-5_S152_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-827:U424-3_S38_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-828:U333-4_S301_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-832:U669-5_S257_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-833:U264-6_S122_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia wexlerae
+sv-837:U153-3_S34_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,,
+sv-838:U586-2_S344_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Coprobacillus,Coprobacillus cateniformis
+sv-840:U186-2_S240_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-841:U532-5_S43_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-848:U133-7_S62_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides stercoris
+sv-849:U563-6_S344_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella corporis
+sv-851:U452-5_S350_L001_001,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus mitis
+sv-852:U538-8_S48_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-853:U347-5_S383_L001_001,Firmicutes,Bacilli,Lactobacillales,Carnobacteriaceae,Granulicatella,Granulicatella adiacens
+sv-858:U796-3_S217_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides xylanisolvens
+sv-859:U369-2_S118_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-862:U567-7_S228_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] aldenense
+sv-863:U796-1_S157_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] aldenense
+sv-864:U176-2_S143_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-866:U184-6_S60_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-869:U145-1_S174_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Merdimonas,
+sv-871:U779-5_S39_L001_001,Firmicutes,Clostridia,Clostridiales,,Howardella,
+sv-874:U509-5_S351_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-877:U131-6_S324_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Barnesiella,Barnesiella intestinihominis
+sv-878:U259-9_S234_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,
+sv-880:U628-2_S43_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium perfringens
+sv-881:U171-4_S130_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-883:U178-1_S161_L001_001,Firmicutes,Clostridia,Clostridiales,,Intestinimonas,
+sv-884:U124-1_S237_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-886:U794-4_S242_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-887:U258-8_S284_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-889:U763-6_S113_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae/Clostridiales_Family_XIII._Incertae_Sedis,,
+sv-890:U432-6_S63_L001_001,Verrucomicrobia,Opitutae,Puniceicoccales,Puniceicoccaceae,,
+sv-892:U127-8_S77_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia faecis
+sv-893:U258-9_S210_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus comes
+sv-894:U387-2_S367_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-895:U650-8_S129_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Morganellaceae,Proteus <enterobacteria>,Proteus mirabilis
+sv-896:U564-1_S257_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia luti/massiliensis
+sv-897:U525-9_S194_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae/Ruminococcaceae,,
+sv-899:U685-2_S212_L001_001,Firmicutes,Clostridia,Clostridiales,Hungateiclostridiaceae,,
+sv-901:U243-7_S357_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia massiliensis
+sv-903:U487-7_S228_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,
+sv-904:U622-9_S136_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerotignum,
+sv-905:U280-7_S371_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-906:U211-5_S380_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,Slackia,Slackia isoflavoniconvertens
+sv-907:U233-7_S341_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-908:U635-3_S263_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-909:U622-9_S136_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides distasonis
+sv-910:U273-5_S126_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,,
+sv-913:U420-3_S174_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,Butyricimonas faecihominis
+sv-915:U447-4_S64_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,
+sv-916:U128-8_S244_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-917:U460-7_S271_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-919:U347-4_S381_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-922:U785-7_S359_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Porphyromonadaceae,Macellibacteroides,
+sv-924:U066-6_S234_L001_001,Lentisphaerae,Lentisphaeria,Victivallales,Victivallaceae,Victivallis,Victivallis vadensis
+sv-926:U290-1_S121_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Faecalicatena,Faecalicatena contorta
+sv-928:U360-2_S134_L001_001,,,,,,
+sv-929:U409-7_S346_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides sartorii
+sv-930:U503-2_S289_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides plebeius
+sv-931:U173-8_S119_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides cellulosilyticus
+sv-933:U763-7_S61_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium carnis
+sv-936:U374-1_S308_L001_001,Firmicutes,Tissierellia,Tissierellales,Peptoniphilaceae,Anaerococcus,Anaerococcus vaginalis
+sv-938:U466-7_S106_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-940:U741-2_S91_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerotignum,
+sv-941:U583-7_S306_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-942:U243-7_S357_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-943:U759-7_S381_L001_001,Proteobacteria,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Haemophilus,Haemophilus sputorum
+sv-944:U585-1_S131_L001_001,Actinobacteria <actinobacteria>,Actinobacteria <high GC Gram+>,Actinomycetales,Actinomycetaceae,Schaalia,Schaalia odontolytica
+sv-945:U112-6_S193_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Bilophila,Bilophila wadsworthia
+sv-946:U287-6_S329_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-948:U705-3_S187_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-949:U235-4_S55_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Oxalobacteraceae,Oxalobacter,Oxalobacter formigenes
+sv-950:U447-7_S143_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-957:U482-8_S40_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-963:U662-4_S30_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,Ihubacter,
+sv-964:U374-1_S308_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-965:U429-7_S304_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,,
+sv-973:U489-5_S93_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Massilimicrobiota,Massilimicrobiota timonensis
+sv-976:U668-5_S85_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Angelakisella,
+sv-977:U342-8_S184_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Glucerabacter,
+sv-984:U194-1_S10_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XII. Incertae Sedis,,
+sv-985:U528-3_S356_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,,
+sv-986:U640-2_S87_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-987:U067-6_S226_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus bicirculans
+sv-990:U562-2_S73_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-993:U471-6_S16_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-996:U464-4_S7_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides thetaiotaomicron
+sv-1000:U136-1_S125_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1003:U161-2_S245_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-1005:U265-8_S216_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1006:NP2-1_S365_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,
+sv-1007:U267-5_S334_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia wexlerae
+sv-1011:U296-5_S145_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,Dialister succinatiphilus
+sv-1017:U246-6_S202_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1019:U763-8_S343_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1024:U465-2_S331_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1027:U664-1_S281_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1029:U525-3_S182_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Frisingicoccus,Frisingicoccus caecimuris
+sv-1030:U249-3_S358_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1031:U175-6_S82_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,Ellagibacter,
+sv-1033:U161-8_S13_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,Dialister invisus
+sv-1035:U558-4_S342_L001_001,Tenericutes,Mollicutes,Mycoplasmatales,Mycoplasmataceae,Mycoplasma,
+sv-1036:U650-2_S56_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium butyricum
+sv-1038:U337-8_S304_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,Eubacterium,
+sv-1039:U153-6_S56_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Barnesiella,
+sv-1041:U463-7_S12_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1043:U275-1_S254_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia faecis
+sv-1044:U526-5_S76_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] gnavus
+sv-1045:U556-6_S338_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,
+sv-1047:U445-6_S123_L001_001,Firmicutes,Clostridia,Clostridiales,,Fenollaria,Fenollaria massiliensis/timonensis
+sv-1049:U620-5_S227_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,
+sv-1053:U215-9_S293_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1054:U646-9_S153_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1056:U269-5_S76_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus bicirculans
+sv-1064:U137-1_S113_L001_001,Firmicutes,Erysipelotrichia/Bacilli,Bacillales/Erysipelotrichales,Erysipelotrichaceae/Bacillaceae,Massilimicrobiota,Massilimicrobiota timonensis
+sv-1066:U674-7_S344_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1068:U228-8_S162_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides distasonis
+sv-1070:U127-1_S161_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] torques
+sv-1073:U614-7_S220_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-1075:U622-9_S136_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,
+sv-1077:U375-1_S317_L001_001,Firmicutes,Clostridia,Clostridiales,,Flintibacter,
+sv-1078:U682-3_S75_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium ramulus
+sv-1082:U648-6_S265_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus eutactus
+sv-1083:U329-6_S314_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-1085:U441-2_S257_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-1094:U300-1_S231_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides dorei
+sv-1095:U685-6_S70_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1098:U288-3_S263_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-1099:U622-3_S125_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Tyzzerella/Faecalicatena,
+sv-1101:U570-1_S176_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus flavefaciens
+sv-1106:U525-2_S248_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1107:U540-6_S149_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia faecis
+sv-1109:U725-4_S200_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-1112:U178-4_S159_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1113:U210-2_S323_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella timonensis
+sv-1114:U661-9_S34_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes shahii
+sv-1115:U268-1_S73_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides massiliensis
+sv-1118:U237-7_S170_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Gemmiger,
+sv-1119:U112-5_S119_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-1120:U762-1_S163_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides gordonii
+sv-1122:U445-6_S123_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella buccalis
+sv-1123:U218-3_S34_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Megasphaera,Megasphaera elsdenii
+sv-1125:U465-6_S21_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-1129:U525-2_S248_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Porphyromonadaceae,Gabonia,
+sv-1132:U315-7_S315_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1133:U713-2_S51_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,,
+sv-1135:U663-1_S79_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1138:U489-2_S275_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1139:U530-7_S301_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Barnesiellaceae,Barnesiella,
+sv-1140:U168-2_S23_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1143:U386-3_S375_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia glucerasea
+sv-1144:U360-5_S366_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides nordii
+sv-1147:U525-9_S194_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Oxalobacteraceae,Oxalobacter,Oxalobacter formigenes
+sv-1149:U211-3_S15_L001_001,Firmicutes,Clostridia,Clostridiales,Hungateiclostridiaceae,,
+sv-1150:U163-3_S26_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1155:U477-8_S54_L001_001,Tenericutes,Mollicutes,Anaeroplasmatales,Anaeroplasmataceae,,
+sv-1161:U177-4_S166_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1163:U300-7_S357_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Neglecta,
+sv-1164:U720-8_S88_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,Butyricimonas virosa
+sv-1168:U409-7_S346_L001_001,Proteobacteria,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Haemophilus,Haemophilus parainfluenzae
+sv-1169:U785-1_S231_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Desulfovibrio,Desulfovibrio legallii
+sv-1170:U570-1_S176_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1172:U404-1_S153_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Intestinibacillus,Intestinibacillus massiliensis
+sv-1173:U685-4_S188_L001_001,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus mutans
+sv-1174:U167-1_S294_L001_001,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus gallolyticus
+sv-1175:U633-5_S272_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1176:U750-6_S199_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,Anaerobutyricum hallii
+sv-1177:U263-4_S47_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides plebeius
+sv-1180:U421-3_S125_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,Fusobacterium periodonticum
+sv-1181:U501-3_S137_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides intestinalis
+sv-1182:U707-7_S359_L001_001,Firmicutes,Clostridia,Clostridiales,,Intestinimonas,
+sv-1183:U273-9_S138_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,Dialister succinatiphilus
+sv-1190:U176-8_S132_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Dorea,
+sv-1195:U334-3_S337_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium ramulus
+sv-1196:U086-8_S140_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus callidus
+sv-1201:U531-2_S186_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,Butyricimonas faecihominis
+sv-1202:U131-6_S324_L001_001,Tenericutes,Mollicutes,Anaeroplasmatales,Anaeroplasmataceae,,
+sv-1203:U562-2_S73_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1205:U143-5_S229_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1206:U516-8_S364_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1207:U272-3_S13_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium tertium
+sv-1209:U263-4_S47_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,
+sv-1211:U108-6_S245_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Absiella,Absiella argi
+sv-1213:U520-2_S323_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,Gordonibacter,Gordonibacter pamelaeae
+sv-1216:U503-5_S278_L001_001,Euryarchaeota,Methanobacteria,Methanobacteriales,Methanobacteriaceae,Methanosphaera,Methanosphaera stadtmanae
+sv-1223:U627-6_S232_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1224:U777-1_S18_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Tyzzerella,
+sv-1228:U092-4_S76_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-1229:U159-6_S197_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Desulfovibrio,Desulfovibrio desulfuricans
+sv-1233:U646-8_S143_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,Peptococcus,
+sv-1236:U337-8_S304_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1237:U622-7_S12_L001_001,Firmicutes,Clostridia,,,,
+sv-1238:U-11-1_S346_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1239:U374-1_S308_L001_001,Firmicutes,Tissierellia,Tissierellales,Peptoniphilaceae,Peptoniphilus,Peptoniphilus grossensis/harei
+sv-1240:U144-4_S86_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-1243:U713-2_S51_L001_001,Firmicutes,Clostridia,Clostridiales,,Intestinimonas,
+sv-1247:U134-4_S95_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,
+sv-1253:U472-5_S195_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1257:U290-2_S142_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1259:U145-1_S174_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Dysosmobacter,Dysosmobacter welbionis
+sv-1263:U781-7_S245_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1264:U520-2_S323_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Neglecta,
+sv-1270:U229-9_S163_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella excrementihominis
+sv-1271:U502-1_S4_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,
+sv-1272:U557-7_S150_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] asparagiforme
+sv-1273:U576-8_S144_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,,
+sv-1275:U525-1_S22_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,Emergencia,Emergencia timonensis
+sv-1276:U538-5_S60_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1277:U447-1_S284_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1280:U581-6_S239_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1282:U609-7_S249_L001_001,Firmicutes,Bacilli,Lactobacillales,Leuconostocaceae,Weissella,Weissella cibaria/confusa
+sv-1285:U482-1_S189_L001_001,Firmicutes,Clostridia,,,,
+sv-1286:U732-5_S336_L001_001,Tenericutes,Mollicutes,,,,
+sv-1289:U151-6_S285_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides distasonis
+sv-1294:U574-8_S317_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Megasphaera,
+sv-1299:U159-7_S37_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1300:U478-5_S281_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-1304:U152-7_S225_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1305:U413-2_S271_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1308:U217-5_S374_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1309:U300-8_S308_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium carnis
+sv-1310:U526-3_S346_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes finegoldii/onderdonkii
+sv-1312:U581-5_S51_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Terrisporobacter,
+sv-1316:U163-6_S74_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1319:U681-1_S234_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus champanellensis
+sv-1321:U563-6_S344_L001_001,Firmicutes,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus casseliflavus
+sv-1322:U526-7_S293_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium limosum
+sv-1332:U501-6_S21_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1337:U259-6_S330_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1341:U307-3_S350_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,
+sv-1342:U295-6_S105_L001_001,Proteobacteria,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Actinobacillus,[Actinobacillus]_rossii/Actinobacillus_porcinus
+sv-1348:U137-7_S24_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium paraputrificum
+sv-1351:U256-7_S310_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,Casaltella,Casaltella massiliensis
+sv-1360:U047-6_S142_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Catenibacterium,Catenibacterium mitsuokai
+sv-1363:U165-2_S168_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides plebeius
+sv-1364:U411-5_S244_L001_001,Firmicutes,Clostridia,Clostridiales,,Intestinimonas,
+sv-1370:U662-3_S326_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1372:U291-4_S191_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella excrementihominis
+sv-1374:U138-6_S139_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1378:U414-5_S115_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1387:U386-6_S197_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-1388:U460-7_S271_L001_001,Firmicutes,,,,,
+sv-1389:U749-3_S7_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Dysosmobacter/Oscillibacter,
+sv-1390:U217-6_S11_L001_001,Firmicutes,Bacilli,Lactobacillales,Leuconostocaceae,Leuconostoc,Leuconostoc garlicum/lactis
+sv-1391:U516-8_S364_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus pontis
+sv-1392:U371-7_S347_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] aldenense
+sv-1395:U029-4X_S360_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1397:U642-1_S271_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Erysipelatoclostridium/Massilimicrobiota,
+sv-1404:U176-2_S143_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Subdoligranulum,
+sv-1410:U622-9_S136_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Citrobacter,Citrobacter amalonaticus/murliniae
+sv-1415:U276-7_S278_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,Dialister invisus
+sv-1418:U235-3_S10_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia wexlerae
+sv-1422:U525-8_S168_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides stercoris
+sv-1425:U159-3_S264_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1432:U271-1_S62_L001_001,Tenericutes,Mollicutes,Mycoplasmatales,Mycoplasmataceae,Mycoplasma,
+sv-1438:U508-6_S74_L001_001,Proteobacteria,Epsilonproteobacteria,Campylobacterales,Campylobacteraceae,Campylobacter,Campylobacter gracilis
+sv-1440:U374-1_S308_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Porphyromonadaceae,Porphyromonas,Porphyromonas asaccharolytica/uenonis
+sv-1448:U588-5_S139_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,Butyricimonas virosa
+sv-1451:U367-5_S215_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,
+sv-1454:U315-1_S151_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Paraburkholderia,
+sv-1456:U201-3_S9_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia wexlerae
+sv-1462:U131-4_S145_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1463:U424-1_S13_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-1464:U529-2_S63_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1470:U379-4_S378_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,,
+sv-1471:U273-8_S185_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,Fusobacterium mortiferum/necrogenes
+sv-1472:U511-9_S322_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,
+sv-1474:U631-6_S132_L001_001,Firmicutes,Clostridia,Clostridiales,,Lawsonibacter,Lawsonibacter asaccharolyticus
+sv-1480:U746-8_S351_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-1486:U574-6_S345_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus eutactus
+sv-1488:U235-6_S75_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Hungateiclostridiaceae,,
+sv-1490:U508-8_S98_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus bromii
+sv-1496:U628-2_S43_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium disporicum
+sv-1501:U274-3_S266_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Tyzzerella,
+sv-1502:U367-5_S215_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,
+sv-1507:U794-4_S242_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,Ihubacter,
+sv-1508:U796-1_S157_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] aldenense
+sv-1509:U220-9_S331_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Fusicatenibacter,Fusicatenibacter saccharivorans
+sv-1510:U574-6_S345_L001_001,Verrucomicrobia,Opitutae,Puniceicoccales,Puniceicoccaceae,,
+sv-1511:U180-2_S104_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] torques
+sv-1513:U247-3_S70_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides goldsteinii
+sv-1515:U621-5_S2_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1524:U307-3_S350_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,
+sv-1531:U286-6_S232_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-1534:U261-4_S182_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-1538:U543-6_S365_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1539:U162-7_S374_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Alloprevotella,
+sv-1541:U274-1_S253_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1543:U514-3_S154_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1546:U343-4_S154_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1552:U564-6_S206_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Hafniaceae,Hafnia,
+sv-1554:U629-4_S75_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-1561:U291-8_S242_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1578:U188-8_S66_L001_001,Actinobacteria <actinobacteria>,Actinobacteria <high GC Gram+>,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium,Bifidobacterium gallinarum/saeculare
+sv-1580:U570-4_S93_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Oxalobacteraceae,Oxalobacter/Herbaspirillum,Oxalobacter_formigenes/Herbaspirillum_seropedicae
+sv-1581:U276-5_S193_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1586:U188-4_S31_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides mediterraneensis
+sv-1587:U097-8_S58_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus plantarum
+sv-1590:U344-4_S325_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,[Eubacterium] eligens
+sv-1593:U506-4_S366_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-1598:U184-5_S258_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1601:U247-3_S70_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides gallinarum
+sv-1610:U261-9_S240_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-1614:U248-5_S213_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides uniformis
+sv-1615:U164-3_S111_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1617:U519-5_S290_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-1623:U626-1_S206_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides intestinalis
+sv-1625:U376-3_S359_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1626:U187-1_S181_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides merdae
+sv-1630:U351-8_S306_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,,
+sv-1631:U188-4_S31_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,
+sv-1632:U633-9_S83_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Agathobaculum,Agathobaculum butyriciproducens
+sv-1644:U737-5_S376_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,,
+sv-1651:U133-3_S103_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Bilophila,Bilophila wadsworthia
+sv-1657:U249-2_S176_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,
+sv-1658:U373-2_S82_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Clostridioides,Clostridioides difficile
+sv-1660:U263-4_S47_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,
+sv-1662:U113-4_S71_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,Anaerobutyricum hallii
+sv-1663:U530-2_S280_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,[Eubacterium] eligens
+sv-1674:U521-3_S87_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-1675:U219-3_S337_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Gemmiger,
+sv-1680:U213-3_S307_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-1681:U130-4_S322_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,Sutterella wadsworthensis
+sv-1691:U153-4_S8_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides uniformis
+sv-1702:U247-1_S297_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-1704:U763-7_S61_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1706:U724-7_S175_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Bittarella,Bittarella massiliensis
+sv-1713:U141-5_S193_L001_001,Firmicutes,,,,,
+sv-1714:U376-3_S359_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1716:U447-1_S284_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae/Bacteroidaceae,Parabacteroides/Bacteroides,
+sv-1718:U132-7_S49_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-1719:U608-3_S136_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-1722:U628-1_S259_L001_001,Proteobacteria,Alphaproteobacteria,Holosporales,Caedimonadaceae,,
+sv-1727:U515-2_S278_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,,
+sv-1731:U326-3_S76_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-1734:U432-7_S347_L001_001,Firmicutes,Clostridia,Clostridiales,Defluviitaleaceae/Hungateiclostridiaceae,Vallitalea,
+sv-1737:U563-4_S373_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus faecis
+sv-1741:U658-2_S160_L001_001,Proteobacteria,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Haemophilus,Haemophilus parahaemolyticus
+sv-1742:U569-3_S231_L001_001,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus agalactiae
+sv-1744:U546-5_S50_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1748:U707-7_S359_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-1753:U263-4_S47_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides coprocola
+sv-1760:U324-5_S313_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Oscillibacter,
+sv-1767:U516-5_S360_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Dorea,
+sv-1769:U522-5_S317_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella excrementihominis
+sv-1777:U509-9_S128_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Gemmiger,
+sv-1780:U516-4_S244_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella stercorea
+sv-1784:U224-4_S158_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella bivia
+sv-1786:U029-4X_S360_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides caccae
+sv-1787:U523-7_S120_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides vulgatus
+sv-1795:U384-6_S106_L001_001,Actinobacteria <actinobacteria>,Actinobacteria <high GC Gram+>,Actinomycetales,Actinomycetaceae,Varibaculum,Varibaculum timonense
+sv-1796:U622-2_S133_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1798:U624-3_S50_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1799:U723-8_S75_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Paraburkholderia,
+sv-1813:U180-2_S104_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Pseudoflavonifractor,Pseudoflavonifractor capillosus
+sv-1816:U504-1_S179_L001_001,Firmicutes,Tissierellia/Clostridia,Tissierellales/Clostridiales,,,
+sv-1817:U503-2_S289_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-1818:U046-8_S77_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-1821:U432-6_S63_L001_001,Tenericutes,Mollicutes,Anaeroplasmatales,Anaeroplasmataceae,,
+sv-1828:U545-7_S253_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Veillonella,Veillonella dispar
+sv-1834:U223-6_S350_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-1836:U149-6_S203_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-1838:U374-1_S308_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,Peptococcus,
+sv-1840:U520-1_S320_L001_001,Firmicutes,Negativicutes,Acidaminococcales,Acidaminococcaceae,Phascolarctobacterium,
+sv-1846:U392-6_S318_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-1848:U161-2_S245_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-1852:U539-4_S332_L001_001,Proteobacteria,Alphaproteobacteria,Holosporales,Caedimonadaceae,,
+sv-1855:U511-6_S304_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-1861:U516-4_S244_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella stercorea
+sv-1871:U054-3_S170_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-1877:U625-4_S191_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,,
+sv-1882:U224-9_S31_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides salyersiae
+sv-1883:U261-4_S182_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia faecis
+sv-1884:U538-5_S60_L001_001,Firmicutes,Bacilli,Bacillales,,Gemella,Gemella haemolysans/morbillorum
+sv-1886:U687-4_S354_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-1887:U564-1_S257_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Tyzzerella,Tyzzerella nexilis
+sv-1893:U527-7_S269_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-1895:U235-7_S383_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,Anaerobutyricum hallii
+sv-1897:U541-2_S208_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1901:U474-2_S220_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Hespellia,
+sv-1905:U469-2_S223_L001_001,Firmicutes,Clostridia,,,,
+sv-1913:U750-6_S199_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-1914:U281-2_S131_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Fusicatenibacter,Fusicatenibacter saccharivorans
+sv-1916:U276-4_S166_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Fusicatenibacter,Fusicatenibacter saccharivorans
+sv-1917:U445-6_S123_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Leptotrichiaceae,,
+sv-1925:U532-8_S99_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Pseudoflavonifractor,Pseudoflavonifractor capillosus
+sv-1926:U216-1_S10_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-1927:U273-7_S86_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides nordii
+sv-1929:U574-1_S124_L001_001,Firmicutes,Negativicutes,Selenomonadales,Selenomonadaceae,Mitsuokella,Mitsuokella multacida
+sv-1932:U129-2_S65_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Yersiniaceae,Rahnella,
+sv-1935:U437-3_S166_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides distasonis
+sv-1939:U275-2_S334_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae/Ruminococcaceae,Oscillibacter,
+sv-1954:U750-2_S234_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides ovatus
+sv-1958:U787-2_S50_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Oscillibacter,
+sv-1959:U343-4_S154_L001_001,Firmicutes,Clostridia,Candidatus Borkfalkiales,Candidatus Borkfalkiaceae,Candidatus Borkfalkia,
+sv-1964:U535-1_S171_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-1966:U581-3_S133_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Fusicatenibacter,Fusicatenibacter saccharivorans
+sv-1971:U525-3_S182_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-1972:U516-2_S308_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Coriobacteriales,Coriobacteriaceae,Senegalimassilia,Senegalimassilia anaerobia
+sv-1975:U620-2_S254_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,,
+sv-1981:U518-5_S66_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Gemmiger,
+sv-1985:U092-4_S76_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-1986:U506-6_S240_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,Fusobacterium ulcerans
+sv-1987:U710-6_S11_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-1996:U152-3_S268_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia obeum
+sv-1997:U391-7_S349_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-2009:U535-3_S157_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-2018:U130-3_S348_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-2026:U255-3_S342_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-2030:U351-3_S177_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Merdibacter,
+sv-2045:U300-3_S353_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-2054:U708-1_S170_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Coriobacteriales,Atopobiaceae,Libanicoccus,Libanicoccus massiliensis
+sv-2059:U526-7_S293_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Erysipelatoclostridium,[Clostridium] innocuum
+sv-2064:U271-6_S123_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,
+sv-2065:U508-8_S98_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-2074:U213-9_S303_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Gemmiger,
+sv-2076:U273-9_S138_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-2079:U546-5_S50_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-2086:U763-7_S61_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-2088:U235-7_S383_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-2110:U127-8_S77_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,Anaerobutyricum hallii
+sv-2114:U462-8_S207_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-2121:U161-5_S228_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia wexlerae
+sv-2127:U149-1_S207_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides timonensis
+sv-2135:U128-3_S172_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-2136:U445-6_S123_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Porphyromonadaceae,Porphyromonas,
+sv-2137:U129-2_S65_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] gnavus
+sv-2139:U174-6_S183_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-2140:U614-7_S220_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella excrementihominis
+sv-2145:U574-6_S345_L001_001,Firmicutes,Clostridia,,,,
+sv-2147:U520-6_S107_L001_001,Euryarchaeota,Methanobacteria,Methanobacteriales,Methanobacteriaceae,Methanobrevibacter,Methanobrevibacter smithii
+sv-2149:U183-3_S154_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-2174:U542-2_S177_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium ventriosum
+sv-2175:U029-4X_S360_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,[Eubacterium] eligens
+sv-2195:U526-5_S76_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-2196:U261-4_S182_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-2199:U231-9_S234_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-2202:U512-3_S141_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides nordii
+sv-2203:U271-4_S54_L001_001,Firmicutes,Clostridia,Clostridiales,Hungateiclostridiaceae,,
+sv-2208:U525-8_S168_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-2209:U573-8_S183_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Bilophila,
+sv-2221:U159-6_S197_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-2231:U528-3_S356_L001_001,Firmicutes,Negativicutes,Acidaminococcales,Acidaminococcaceae,Phascolarctobacterium,
+sv-2232:U516-8_S364_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus pontis
+sv-2237:U247-8_S286_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-2238:U689-9_S341_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,Peptococcus,Peptococcus niger
+sv-2246:U661-1_S198_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-2249:U546-2_S332_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Neglecta,
+sv-2252:NP2-6_S209_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus phoceensis
+sv-2257:U588-4_S57_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia wexlerae
+sv-2263:U271-9_S224_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-2273:U677-5_S282_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Tyzzerella,
+sv-2279:U546-5_S50_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia wexlerae
+sv-2294:U234-1_S69_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-2299:U275-1_S254_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Erwiniaceae/Enterobacteriaceae,Erwinia/Kluyvera,Erwinia_iniecta/Kluyvera_georgiana
+sv-2304:U504-6_S49_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-2314:U132-8_S90_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus salivarius
+sv-2315:U475-5_S88_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella timonensis
+sv-2321:U685-2_S212_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,,
+sv-2322:U234-1_S69_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-2331:U525-5_S302_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-2341:U214-1_S146_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Veillonella,Veillonella atypica
+sv-2361:U532-8_S99_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Odoribacter,Odoribacter splanchnicus
+sv-2377:U516-2_S308_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus flavefaciens
+sv-2379:U393-5_S112_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae/Clostridiales_Family_XIII._Incertae_Sedis,,
+sv-2380:U540-2_S226_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-2390:U131-6_S324_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Muribaculaceae,,
+sv-2392:U522-3_S256_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-2403:U190-4_S355_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-2412:U419-5_S221_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-2413:U749-3_S7_L001_001,Firmicutes,Clostridia,Candidatus Borkfalkiales,Candidatus Borkfalkiaceae,Candidatus Borkfalkia,
+sv-2415:U210-2_S323_L001_001,Firmicutes,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus anginosus
+sv-2416:U178-2_S173_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-2417:U574-6_S345_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae/Ruminococcaceae,,
+sv-2426:U273-4_S72_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus albus
+sv-2432:U564-1_S257_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] scindens
+sv-2433:U423-8_S270_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-2437:U765-4_S222_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Ruminococcaceae,,
+sv-2445:U262-2_S124_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-2446:U522-3_S256_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-2449:U128-8_S244_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-2451:U163-6_S74_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae/Ruminococcaceae,,
+sv-2455:U280-2_S194_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,,
+sv-2456:U247-4_S141_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-2459:U538-8_S48_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-2469:U165-3_S117_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Dorea,Dorea longicatena
+sv-2473:U273-5_S126_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides caecigallinarum
+sv-2475:U543-6_S365_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-2481:U250-2_S126_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Romboutsia,Romboutsia timonensis
+sv-2501:U511-1_S267_L001_001,,,,,,
+sv-2508:U076-7_S158_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Peptostreptococcus,Peptostreptococcus stomatis
+sv-2512:U128-3_S172_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae/Ruminococcaceae,,
+sv-2519:U523-3_S211_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-2536:U375-2_S354_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Megasphaera,Megasphaera cerevisiae
+sv-2538:U277-1_S373_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides fragilis
+sv-2544:U276-4_S166_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Fusicatenibacter,Fusicatenibacter saccharivorans
+sv-2549:U319-3_S178_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Yersiniaceae,Rahnella/Serratia,
+sv-2551:U128-2_S185_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] asparagiforme/lavalense
+sv-2558:U300-7_S357_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-2568:U273-1_S206_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides plebeius
+sv-2580:U166-4_S370_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-2581:U286-1_S362_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-2585:U271-3_S111_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-2588:U588-3_S211_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-2592:U549-5_S92_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Negativibacillus,Negativibacillus massiliensis
+sv-2596:U269-8_S137_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Odoribacter,Odoribacter splanchnicus
+sv-2598:U532-1_S46_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella copri
+sv-2623:U276-3_S107_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-2633:U223-6_S350_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes shahii
+sv-2638:U224-1_S36_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,,
+sv-2646:U079-6_S168_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,,
+sv-2647:U528-9_S143_L001_001,Firmicutes,Clostridia,Clostridiales,,Evtepia,
+sv-2649:U501-7_S237_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-2651:U527-2_S365_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-2654:U185-1_S43_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-2660:U164-3_S111_L001_001,Firmicutes/Tenericutes,Mollicutes/Erysipelotrichia,Anaeroplasmatales/Erysipelotrichales,Erysipelotrichaceae/Anaeroplasmataceae,,
+sv-2670:U300-8_S308_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia inulinivorans
+sv-2689:U133-6_S47_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus bromii
+sv-2691:U283-4_S236_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Acetitomaculum,
+sv-2693:U129-7_S159_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-2700:U462-5_S137_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,
+sv-2703:U202-2_S371_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-2710:U166-6_S347_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Coriobacteriales,Coriobacteriaceae,Senegalimassilia,Senegalimassilia anaerobia
+sv-2727:U571-2_S275_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-2731:U564-8_S158_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,,
+sv-2739:U129-3_S5_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-2746:U184-6_S60_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-2753:U165-1_S218_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,
+sv-2754:U426-8_S362_L001_001,Cyanobacteria/Proteobacteria,Betaproteobacteria,Nostocales/Burkholderiales,Burkholderiaceae/Symphyonemataceae,Loriellopsis,Loriellopsis cavernicola
+sv-2757:U219-1_S305_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,,
+sv-2760:U263-1_S63_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Frisingicoccus,
+sv-2766:U708-3_S340_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Turicibacter,Turicibacter sanguinis
+sv-2768:U526-2_S86_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-2772:U479-7_S55_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,
+sv-2781:U151-6_S285_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,[Clostridium] aldenense
+sv-2784:U166-6_S347_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia obeum
+sv-2786:U522-8_S62_L001_001,Proteobacteria,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Haemophilus,Haemophilus parainfluenzae
+sv-2787:U184-3_S121_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,,
+sv-2790:U543-6_S365_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-2805:U131-4_S145_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-2820:U164-3_S111_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-2823:U535-6_S340_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Gemmiger,
+sv-2825:U156-1_S89_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Paeniclostridium,Paeniclostridium sordellii
+sv-2835:U166-2_S356_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-2838:U525-9_S194_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Fusicatenibacter,Fusicatenibacter saccharivorans
+sv-2842:U128-3_S172_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-2849:U255-7_S90_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Paraburkholderia,
+sv-2862:U166-6_S347_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,
+sv-2873:U529-5_S350_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-2889:U504-7_S83_L001_001,Firmicutes,Clostridia,Clostridiales,Hungateiclostridiaceae,Ruminiclostridium,Ruminiclostridium cellulolyticum/josui
+sv-2891:U535-1_S171_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-2905:U386-3_S375_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-2909:U501-4_S305_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-2914:U282-2_S368_L001_001,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Enterobacter/Leclercia,Enterobacter_hormaechei/Leclercia_adecarboxylata
+sv-2926:U247-4_S141_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Marseillibacter,
+sv-2934:U247-9_S321_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides gallinarum
+sv-2949:U615-9_S349_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Bariatricus,
+sv-2954:U186-2_S240_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella excrementihominis
+sv-2961:U134-4_S95_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides stercoris
+sv-2964:U501-9_S17_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium subterminale
+sv-2965:U164-3_S111_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia obeum
+sv-2977:U184-3_S121_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-2984:U263-4_S47_L001_001,Euryarchaeota,Methanobacteria,Methanobacteriales,Methanobacteriaceae,Methanobrevibacter,Methanobrevibacter smithii
+sv-2985:U621-3_S30_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-2992:U164-3_S111_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus eutactus
+sv-3001:U185-8_S221_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia massiliensis
+sv-3002:U276-4_S166_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-3018:U129-3_S5_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,Anaerobutyricum hallii
+sv-3020:U523-5_S299_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-3025:U277-4_S290_L001_001,Firmicutes,Bacilli,Lactobacillales,Leuconostocaceae,Leuconostoc,Leuconostoc gelidum/inhae
+sv-3027:U507-6_S329_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3029:U516-2_S308_L001_001,Firmicutes,Negativicutes,Selenomonadales,Selenomonadaceae,Megamonas,Megamonas funiformis/rupellensis
+sv-3031:U149-3_S211_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3032:U582-4_S57_L001_001,Firmicutes,Clostridia,Clostridiales,Peptostreptococcaceae,Romboutsia,Romboutsia timonensis
+sv-3060:U582-6_S184_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus kefiri/otakiensis
+sv-3062:U503-2_S289_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-3095:U128-1_S283_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-3105:U500-7_S293_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,
+sv-3107:U512-6_S229_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-3111:U219-3_S337_L001_001,Firmicutes,Clostridia,Clostridiales,,Flintibacter,
+sv-3112:U564-9_S315_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Harryflintia/Provencibacterium,Provencibacterium_massiliense/Harryflintia_acetispora
+sv-3117:U517-5_S264_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Tyzzerella,
+sv-3134:U186-4_S224_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-3138:U223-4_S121_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-3147:U151-4_S198_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides ovatus
+sv-3150:U581-9_S334_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella buccae
+sv-3186:U163-3_S26_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-3195:U248-1_S23_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-3198:U424-1_S13_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-3201:U029-4X_S360_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3202:U185-4_S326_L001_001,Tenericutes,Mollicutes,Mycoplasmatales,Mycoplasmataceae,Mycoplasma,
+sv-3219:U296-9_S229_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Mesosutterella,Mesosutterella multiformis
+sv-3238:U214-2_S158_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Leptotrichiaceae,,
+sv-3244:U509-9_S128_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-3249:U296-8_S266_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,
+sv-3263:U249-9_S133_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-3274:U525-3_S182_L001_001,Firmicutes,,,,,
+sv-3275:U543-7_S354_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3287:U200-4_S69_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-3291:U527-5_S285_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3307:U503-2_S289_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Megasphaera,Megasphaera massiliensis
+sv-3319:U526-2_S86_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3322:U507-1_S250_L001_001,Firmicutes,Clostridia,Clostridiales,,Flintibacter,
+sv-3329:U518-7_S209_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,Fusobacterium nucleatum
+sv-3338:U163-7_S372_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Oscillibacter,
+sv-3351:U188-2_S109_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Marseillibacter,
+sv-3354:U503-1_S359_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-3357:U737-2_S89_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-3359:U520-2_S323_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,,
+sv-3368:U545-9_S133_L001_001,Firmicutes,Tissierellia,Tissierellales,Peptoniphilaceae,Murdochiella,Murdochiella massiliensis
+sv-3374:U-11-1_S346_L001_001,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,,
+sv-3376:U250-6_S261_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-3383:U128-8_S244_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-3389:U263-1_S63_L001_001,Firmicutes,Clostridia,Clostridiales,Hungateiclostridiaceae,Thermoclostridium,
+sv-3390:U511-4_S301_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-3398:U545-9_S133_L001_001,Firmicutes,Tissierellia,Tissierellales,Peptoniphilaceae,Peptoniphilus,Peptoniphilus duerdenii
+sv-3409:U545-7_S253_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus catus
+sv-3418:U300-6_S366_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae/Ruminococcaceae,,
+sv-3437:U214-2_S158_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium ventriosum
+sv-3440:U516-5_S360_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-3465:U300-9_S332_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Dorea,Dorea longicatena
+sv-3489:U259-6_S330_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-3495:U271-6_S123_L001_001,Firmicutes/Actinobacteria_<actinobacteria>,Actinobacteria_<high_GC_Gram+>/Erysipelotrichia,Actinomycetales/Erysipelotrichales,Erysipelotrichaceae/Actinomycetaceae,Varibaculum/Massilimicrobiota,Massilimicrobiota_timonensis/Varibaculum_timonense
+sv-3497:U134-4_S95_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides faecis
+sv-3525:U133-1_S11_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,,
+sv-3540:U221-7_S122_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia intestinalis
+sv-3566:U219-7_S282_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia obeum
+sv-3574:U154-7_S113_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Dorea,Dorea longicatena
+sv-3578:U507-5_S309_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3595:U438-8_S154_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3606:U616-5_S179_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3610:U523-7_S120_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-3618:U506-7_S110_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Coprococcus,Coprococcus comes
+sv-3632:U165-3_S117_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,
+sv-3638:U538-5_S60_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,Casaltella,Casaltella massiliensis
+sv-3663:U250-7_S343_L001_001,Fusobacteria <Fusobacteria>,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,Fusobacterium nucleatum
+sv-3672:U163-3_S26_L001_001,Actinobacteria <actinobacteria>,,,,,
+sv-3683:U129-6_S236_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides stercoris
+sv-3706:U165-3_S117_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-3720:U162-6_S86_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-3732:U526-7_S293_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerotignum,
+sv-3742:U291-3_S103_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-3754:U582-7_S31_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,
+sv-3763:U185-1_S43_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-3772:U509-3_S191_L001_001,Firmicutes,,,,,
+sv-3808:U187-2_S146_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-3813:U502-1_S4_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus faecis
+sv-3817:U523-3_S211_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes obesi
+sv-3828:U639-3_S68_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-3842:U564-9_S315_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] gnavus
+sv-3843:U188-5_S48_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-3844:U165-3_S117_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Holdemanella,Holdemanella biformis
+sv-3845:U259-5_S160_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3859:U165-4_S178_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-3864:U588-4_S57_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-3873:U525-6_S125_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-3881:U527-1_S379_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella melaninogenica
+sv-3896:U540-9_S63_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-3913:U526-7_S293_L001_001,Firmicutes,Clostridia,Clostridiales,,Colidextribacter,
+sv-3925:U581-5_S51_L001_001,Firmicutes,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Turicibacter,Turicibacter sanguinis
+sv-3930:U273-8_S185_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides distasonis
+sv-3934:U-11-1_S346_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Odoribacteraceae,Butyricimonas,
+sv-3940:U184-6_S60_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-3951:U248-3_S208_L001_001,Actinobacteria <actinobacteria>,Coriobacteriia,Eggerthellales,Eggerthellaceae,,
+sv-3961:U487-7_S228_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Paraburkholderia,
+sv-3965:U276-3_S107_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,Anaerobutyricum hallii
+sv-3973:U162-8_S99_L001_001,Tenericutes,Mollicutes,Mycoplasmatales,Mycoplasmataceae,Mycoplasma,
+sv-3975:U504-6_S49_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Muribaculaceae,,
+sv-3988:U565-3_S347_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-4008:U300-8_S308_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] torques
+sv-4019:U273-9_S138_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-4027:U263-1_S63_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Roseburia,Roseburia faecis
+sv-4032:U263-1_S63_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,[Eubacterium] eligens
+sv-4058:U300-3_S353_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Anaeroglobus,Anaeroglobus geminatus
+sv-4060:U520-1_S320_L001_001,Proteobacteria,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Bilophila,Bilophila wadsworthia
+sv-4062:U129-7_S159_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,,
+sv-4074:U202-5_S25_L001_001,Firmicutes,Clostridia,Candidatus Borkfalkiales,Candidatus Borkfalkiaceae,Candidatus Borkfalkia,
+sv-4092:U129-8_S231_L001_001,Firmicutes,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus hokkaidonensis
+sv-4131:U525-8_S168_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-4141:U533-5_S376_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-4157:U545-3_S11_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,
+sv-4162:U517-2_S261_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-4164:U501-6_S21_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,
+sv-4165:U202-2_S371_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-4167:U224-8_S89_L001_001,Firmicutes,Negativicutes,Veillonellales,Veillonellaceae,Dialister,
+sv-4235:U535-3_S157_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,,
+sv-4248:U227-5_S51_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,
+sv-4263:U516-2_S308_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-4265:U153-7_S158_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-4268:U269-9_S222_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Parasutterella,Parasutterella excrementihominis
+sv-4269:U524-4_S2_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides uniformis
+sv-4272:U300-5_S255_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-4289:U131-3_S311_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae/Ruminococcaceae,,
+sv-4290:U249-9_S133_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Dysosmobacter,Dysosmobacter welbionis
+sv-4291:U250-3_S128_L001_001,Cyanobacteria/Proteobacteria,Betaproteobacteria,Nostocales/Burkholderiales,Burkholderiaceae/Symphyonemataceae,,
+sv-4305:U188-4_S31_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-4309:U202-6_S369_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,[Ruminococcus] gnavus
+sv-4314:U221-4_S9_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-4320:U223-7_S300_L001_001,Firmicutes,Clostridia,Clostridiales,Eubacteriaceae,Eubacterium,Eubacterium ramulus
+sv-4330:U161-1_S201_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus faecis
+sv-4333:U248-8_S235_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-4374:U263-4_S47_L001_001,Tenericutes,Mollicutes,Mycoplasmatales,Mycoplasmataceae,Mycoplasma,
+sv-4382:U273-2_S115_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Agathobaculum,Agathobaculum butyriciproducens
+sv-4386:U161-8_S13_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-4389:U519-7_S373_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides finegoldii/thetaiotaomicron
+sv-4402:U202-7_S366_L001_001,Firmicutes,Clostridia,Clostridiales,Oscillospiraceae,Marseillibacter,
+sv-4438:U162-1_S38_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,
+sv-4471:U254-9_S325_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,
+sv-4501:U296-9_S229_L001_001,Proteobacteria,Betaproteobacteria,Burkholderiales,Sutterellaceae,Mesosutterella,
+sv-4523:U273-9_S138_L001_001,Firmicutes,Clostridia,Clostridiales,,,
+sv-4524:U189-4_S36_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium edouardi
+sv-4530:U519-2_S117_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-4557:U518-3_S233_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-4570:U511-1_S267_L001_001,Firmicutes,Clostridia,Clostridiales,,Howardella,
+sv-4604:U185-8_S221_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,Anaerobutyricum hallii
+sv-4631:U185-4_S326_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia hydrogenotrophica
+sv-4632:U152-4_S81_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Agathobaculum,Agathobaculum butyriciproducens
+sv-4643:U185-5_S97_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerobutyricum,
+sv-4683:U261-7_S294_L001_001,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium chauvoei
+sv-4730:U029-4X_S360_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,,
+sv-4731:U273-1_S206_L001_001,Bacteroidetes <Bacteroidetes>,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,Parabacteroides distasonis
+sv-4741:U163-6_S74_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,,
+sv-4750:U511-5_S352_L001_001,Firmicutes,Clostridia,Clostridiales,Defluviitaleaceae/Hungateiclostridiaceae,Vallitalea,
+sv-4766:U164-3_S111_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,Anaerostipes hadrus
+sv-4814:U506-3_S217_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae/Eubacteriaceae,Eubacterium,
+sv-4828:U276-1_S219_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Gemmiger,
+sv-4833:U188-4_S31_L001_001,Firmicutes,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii
+sv-4834:U248-3_S208_L001_001,Firmicutes,Negativicutes,Acidaminococcales,Acidaminococcaceae,Phascolarctobacterium,
+sv-4855:U221-3_S237_L001_001,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Tyzzerella,
