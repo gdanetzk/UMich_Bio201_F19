@@ -1,0 +1,306 @@
+---
+title: "Lab 8 - Beta diversity metrics"
+author: "Kristi Gdanetz MacCready"
+date: "11/11/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documents/UMich_Bio201_F19/")
+```
+
+# Load packages
+```{r Load packages, eval=TRUE, echo=TRUE, message=FALSE, warning=FALSE, results='hide'}
+library(tidyverse)
+library(readxl)
+library(broom)
+library(cowplot)
+library(agricolae)
+library(phyloseq); packageVersion("phyloseq")
+library(vegan)
+set.seed(7)
+```
+
+# Import data
+
+If not already imported into the global environment, import the sequence variant, taxa, and participant data files from Lab 7. We use the same information for calculating both alpha and beta diversity metrics.
+
+```{r}
+# custom function for rounding
+myfunction <- function(x) {
+  x = round ( x * 1000 , digits = 0 )
+}
+
+# sequence variant information 
+sv_table <- read_delim("~/Documents/UMich_Bio201_F19/Lab7/seq_variants_wide.csv",
+                            delim = ",", escape_double = FALSE, 
+                            trim_ws = TRUE, na=c("NA"),
+                            col_types = list()) %>%
+  rename(sample_id = X1) %>% #add missing column name 
+  mutate(sample_id = str_replace(sample_id, 
+                                 pattern = "-", 
+                                 replacement = "_")) %>% #replace hyphens with underscores in sample id column 
+  mutate_if(is.numeric, myfunction) %>% 
+  column_to_rownames(var = "sample_id") %>% #sample IDs need to be made into row names
+  as.matrix() %>% #convert data frame to matrix object
+  otu_table(., taxa_are_rows = FALSE) #specify type of phyloseq object
+
+# taxanimc classifications 
+taxa <- read_delim("~/Documents/UMich_Bio201_F19/Lab7/seqvar_classifications.csv",
+                            delim = ",", escape_double = FALSE, 
+                            trim_ws = TRUE, na=c("NA"),
+                            col_types = list()) %>%
+  column_to_rownames(var = "sv") %>% #sequence variants (OTUs) need to be made into row names 
+  as.matrix() %>%
+  tax_table(.)  #specify type of phyloseq object
+
+# participant and sample information 
+all_data_indv <- read_delim("~/Documents/UMich_Bio201_F19/Lab7/all_data_indv.txt", 
+                            delim = "\t", escape_double = FALSE, 
+                            trim_ws = TRUE, 
+                            col_types = cols(Bristol_numeric = col_number(),
+                                             Bristol_score = col_character(), 
+                                             pH = col_number())) %>%
+  rename_all(tolower) %>% #make all column names lower case
+  distinct(., sample_id, .keep_all = TRUE) %>% #remove duplicate sample ids 
+  column_to_rownames(var = "sample_id") %>% #sample IDs need to be made into row names
+  sample_data(.) #specify type of phyloseq object
+
+# merge all three data frames into phyloseq object
+physq_obj <- phyloseq(sv_table, taxa, all_data_indv) 
+physq_obj 
+```
+
+### Format data
+
+As in lab 7 we are not using the Winter 2015 data, and we are only interested in semesters that have week 1 and week 3. We will make a subset of the phyloseq object then use that going forward. 
+```{r}
+physq_sub <- physq_obj %>%
+  subset_samples(semester != "Winter2015") %>%
+  subset_samples(quantity_compliant == "yes") %>%
+  subset_samples(study_week == "week1" | study_week == "week3")
+physq_sub
+```
+
+# Evenness
+
+To determine if a community is even or uneven, we use stacked bar plots as a relative measure. Before generating the plot, we have to transform our abundance values from sequence counts to a percentage.
+
+### Data transformation
+
+The first step of the transformation process involves summarizing taxa at whatever rank (phylum through species) we plan to plot the data. We know from the previous code block we have 1349 taxa. #e will agglomerate (sum) the counts for ESVs which are members of the same phyla. Then we can view the number of taxa, and you should note how it is reduced compared to the starting data (1349 vs. 12).
+```{r}
+tmp1 <- physq_sub %>%
+  tax_glom(taxrank = "phylum")
+tmp1
+```
+
+After we have our taxa aggregated at the taxanomic level of interest we need to convert the sequence counts to relative abundance. Relative abundance is represented in the literature sometimes as a percent (1-100%) or as a ratio (0-1). Either is acceptable, they convey the same information, it really is a matter of personal preference. Below we will write an in-line custom function to calculate relative abundance. Then we will use some phyloseq functions to view the transformed counts of our data to make sure the function behaved as expected. 
+```{r}
+tmp2 <- tmp1 %>%
+  transform_sample_counts(function(x) { (x/sum(x)) * 100 } )
+tmp2
+
+head(as.data.frame(otu_table(tmp2))) #otu table extract the counts, as.data.frame converts back to data frame class, head gives a preview of the data frame 
+```
+
+To improve computer performance remove any large objects you will not use downstream. 
+```{r}
+rm(tmp1)
+rm(tmp2)
+```
+
+As you know ggplot requires a long-format data frame. In the code blocks above we are working with phyloseq data, which is matrix-derived and actually its own class of object, i.e., not a data frame! The phyloseq package contains a function, psmelt(), that takes a phyloseq object and converts it to a long-format data frame for us. We are going to pipe that function after the glom and transformation functions to create a data frame that is compatiable with ggplot(). Be carefule when using the psmelt() function, the new columns it creates do not follow the same column name style conventions we use in this course. 
+```{r}
+physq_long <- physq_sub %>%
+  tax_glom(taxrank = "phylum") %>% #agglomerate at phylum level               
+  transform_sample_counts(function(x) {x/sum(x)} ) %>% #calculate rel abund
+  psmelt() %>% #melt to long format for ggplot
+  rename_all(tolower) %>% #make new columns match style conventions 
+  select(-sample_number, -quantity_compliant, -use_data, 
+         -ends_with("_mm"), -ends_with("_mmol_kg"), 
+         -starts_with("bristol"), -ph) %>% #drop columns not using
+  filter(abundance > 0.001) %>% #remove low abund taxa
+  arrange(phylum) #sort alphabetically by taxa
+```
+
+### Generate plot 
+
+Now we are ready to make our plot. The same prinicples apply, we are just using a new ggplot function, geom_col(). 
+```{r}
+ggplot(data = physq_long, 
+       aes(x = study_week, #specify the arguments for each axis
+           y = abundance, 
+           fill = phylum)) + #set fill to the taxa rank
+  geom_col() + #plot type for bars 
+  facet_grid(~semester) + #panel for each semester
+  xlab(NULL) + 
+  theme(axis.text.x = element_text(angle = 90,
+                                   vjust = 0.5)) + #clean up x-axis labels 
+  ylab("Relative Abundance (Phyla > 0.1%)")
+```
+
+The plot above shows the relative abundace of phyla in participants who consumed BRMPS. Notice the legend has some odd formatting. We can use another ggplot function, scale_fill_manual(), to improve the readability, we will also use the scale_fill_manual function to update the colors of the plot.  
+
+Next week when you begin data analysis for the group project, we will use a consistent color for each taxa. To do this we have to manually change the colors in the plots; create a vector from hex codes for colors, then call that vector in scale_fill_manual() or scale_color_manual() to update the default ggplot colors. An example of this concept is show below. This website is a useful color palette generating tool: https://medialab.github.io/iwanthue/ 
+```{r}
+# vector of color hex codes 
+taxa_colors <- c('#ff7f7f','#33b5e5',
+                '#ffbb33','#aa66cc',
+                '#ff3298', '#99cc00',
+                '#cc0000','#007299',
+                '#cc6c00','#6b238e',
+                '#b20058', '#436500',
+                '#ff4444','#0099cc',
+                '#ff8800','#9933cc',
+                '#e50072', '#669900',
+                '#7f0000','#004c66',
+                '#995100','#3c1451',
+                '#660033', '#2c4c00',
+                '#8ed5f0','#ffb2b2',
+                '#bc93d1','#ffe564',
+                '#d2fe4c','#ff7fbf')
+```
+
+The crucial arguments to note in scale_file_manual() are breaks and labels. The arguments given to 'breaks' are the current legend labels. The arguments given to 'labels' are the new legend labels. Be careful when providing the arugments to labels, as they will be used to rename in the order typed If you swap the order as you are typing in the arguments, the new labels in your plot will be incorrect. Updated code for the plot: 
+```{r}
+ggplot(data = physq_long, 
+       aes(x = study_week, #specify the arguments for each axis
+           y = abundance, 
+           fill = phylum)) + #set fill to the taxa rank
+  geom_col() + #plot type for bars 
+  facet_grid(~semester) + #panel for each semester
+  xlab(NULL) + 
+  theme(axis.text.x = element_text(angle = 90,
+                                   vjust = 0.5)) + #clean up x-axis labels 
+  ylab("Relative Abundance (Phyla > 0.1%)") + #improve y-axis labels 
+  # improve plot legend readability 
+  scale_fill_manual(name = "Phyla", #change name for legend
+                    values = taxa_colors, #indicate colors from vector of custom colors 
+                    #current legend labels
+                    breaks = c("Actinobacteria <actinobacteria>",
+                              "Bacteroidetes <Bacteroidetes>",
+                              "Cyanobacteria/Proteobacteria",
+                              "Euryarchaeota",
+                              "Firmicutes",
+                              "Firmicutes/Actinobacteria_<actinobacteria>",
+                              "Fusobacteria <Fusobacteria>",
+                              "Lentisphaerae",
+                              "Proteobacteria",
+                              "Tenericutes",
+                              "Verrucomicrobia"),
+                    #new legend labels 
+                    labels = c("Actinobacteria",
+                              "Bacteroidetes",
+                              "Cyanobacteria/Proteobacteria",
+                              "Euryarchaeota",
+                              "Firmicutes",
+                              "Firmicutes/Actinobacteria",
+                              "Fusobacteria",
+                              "Lentisphaerae",
+                              "Proteobacteria",
+                              "Tenericutes",
+                              "Verrucomicrobia"))
+```
+
+### Homework 8.1 
+Generate a bar plot at the genus level, create and save the plot to a figures folder. 
+```{r}
+
+```
+
+### Homework 8.2
+Generate a bar plot at the order level, create and save the plot to a figures folder. 
+```{r}
+
+```
+
+
+# Beta diveristy
+
+### Conduct ordination analysis
+
+This step calculates the diveristy index (using Bray Curtis in the example below), and does the ranking process of the diveristy indices to generate the information necessary to create a two-dimensional plot. Notice the arguments in the ordinate function; to calculate Bray Curtis or Jaccard you specifiy in the distance agurment, with either of these metrics we will use method = NMDS. The place were you might want to make some modifications is the k (this should be somewhere between 1-3), the maximum number of iterations (more than 100 will take several minutes to calcaulte), and the inital number of interations to try (50 in the example below). These can be modified to reduce the stress, with the goal of a number less than 20 (the lower the better). 
+```{r}
+physq_bc <- ordinate(physq_sub, 
+                      method = "NMDS", 
+                      k=2, maxit=100, try=50,
+                      distance = "bray")
+```
+
+### Homework 8.3
+Conduct the ordination analysis using Jaccard index.
+```{r}
+physq_j <- ordination()
+```
+
+### Plot results
+
+For these plots we will use a phyloseq function plot_ordination() instead of ggplot(). 
+```{r}
+ordplot1 <- plot_ordination(physeq = physq_sub, 
+                     ordination = physq_bc, 
+                     type = "samples", 
+                     color = "semester", 
+                     shape = "study_week")
+print(ordplot1)
+```
+
+### Modifications of ordination plots
+
+The phyloseq plot functions work nicely with ggplot layers. They can modified with ggplot functions you already know. The process to save these plots is the same, use save_plot(). 
+
+See this website for color options: http://sape.inf.usi.ch/quick-reference/ggplot2/colour 
+And this website for shape options: http://sape.inf.usi.ch/quick-reference/ggplot2/shape 
+```{r}
+ordplot2 <- ordplot1 + geom_point(size=3) + #increase point size
+  scale_color_manual(name = "Semester",
+                     values = c("coral3", "skyblue3", "goldenrod3"),
+                     labels = c("Fall 2016",
+                                "Winter 2016", 
+                                "Winter 2018"))  + #change default color palette 
+  scale_shape_manual(name = "Study week",
+                     values = c(7, 8),
+                     labels = c("week 1", "week 3")) #change default shapes 
+print(ordplot2)
+```
+
+### Homework 8.4
+Plot the results of the Jaccard ordination. Use colors and shapes different than those in the figure above. Clean up axis labels where necessary. Save the plot to figures folder. 
+```{r}
+
+```
+
+### Statistical test
+
+If you observe a pattern (separation of points from different groups) in your ordination plot, we can determine if that is to a significant level with analysis of similarities (ANOSIM). Using the ordination object from the section above, we run the test with the anosim() function, which is part of the vegan package. 
+```{r}
+#start with same phyloseq object as above 
+dat_bray <- phyloseq::distance(physq_sub, method = "bray") #calculate BC index 
+
+sampledf <- physq_sub %>% 
+  sample_data(.) %>% #extract sample data from phyloseq object 
+  as(., "data.frame") #convert to data frame from adonis()
+
+# run test
+adn_res <- adonis(formula = dat_bray ~ semester * study_week, 
+                  data = sampledf)
+
+# view results 
+print(adn_res)
+```
+
+Review the output from the adonis function, this format should be slightly familar to you now; we are interested in the R-squared (R2) and the p-value (Pr(>F)) columns. The p-value indicates the groups are statistically significant. The R-squared value can be interpretd as the effect size, it shows the percentage of variation explained by the grouping categories (here study week and semester). For this test, an R-squared value close to 1 indicaates dissimilarity between the groups, while an R value near 0 indicates no significant dissimilarity between the groups. 
+
+In our results above, the p-values of 0.001 indicate that the groupings of samples by semester or by study week is statistically significant. The R value of 0.025 and 0.008 are fairly close to 0, indicating that the grouping of samples based by semester or study week are weak. When this occurs (low p and low R), the variation of samples in the groups likely is influencing the results of the test. 
+
+### Homework 8.5
+Conduct an ADONIS test on a distance matrix calculated with the Jaccard index. Write your interpretations of the data below, be sure to explicity state the calculated R- and p-values. 
+```{r}
+
+```
+
+
+-----
+end
