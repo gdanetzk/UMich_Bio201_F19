@@ -16,15 +16,14 @@ library(tidyverse)
 library(readxl)
 library(broom)
 library(cowplot)
-library(agricolae)
-library(phyloseq); packageVersion("phyloseq")
+library(phyloseq)
 library(vegan)
 set.seed(7)
 ```
 
 # Import data
 
-If not already imported into the global environment, import the sequence variant, taxa, and participant data files from Lab 7. We use the same information for calculating both alpha and beta diversity metrics.
+If not already loaded into the global environment, import the sequence variant, taxa, and participant data files from Lab 7. We use the same information for calculating both alpha and beta diversity metrics.
 
 ```{r}
 # custom function for rounding
@@ -33,7 +32,7 @@ myfunction <- function(x) {
 }
 
 # sequence variant information 
-sv_table <- read_delim("~/Documents/UMich_Bio201_F19/Lab7/seq_variants_wide.csv",
+sv_table <- read_delim("Lab7/seq_variants_wide.csv",
                             delim = ",", escape_double = FALSE, 
                             trim_ws = TRUE, na=c("NA"),
                             col_types = list()) %>%
@@ -47,7 +46,7 @@ sv_table <- read_delim("~/Documents/UMich_Bio201_F19/Lab7/seq_variants_wide.csv"
   otu_table(., taxa_are_rows = FALSE) #specify type of phyloseq object
 
 # taxanimc classifications 
-taxa <- read_delim("~/Documents/UMich_Bio201_F19/Lab7/seqvar_classifications.csv",
+taxa <- read_delim("Lab7/seqvar_classifications.csv",
                             delim = ",", escape_double = FALSE, 
                             trim_ws = TRUE, na=c("NA"),
                             col_types = list()) %>%
@@ -56,7 +55,7 @@ taxa <- read_delim("~/Documents/UMich_Bio201_F19/Lab7/seqvar_classifications.csv
   tax_table(.)  #specify type of phyloseq object
 
 # participant and sample information 
-all_data_indv <- read_delim("~/Documents/UMich_Bio201_F19/Lab7/all_data_indv.txt", 
+all_data_indv <- read_delim("Lab7/all_data_indv.txt", 
                             delim = "\t", escape_double = FALSE, 
                             trim_ws = TRUE, 
                             col_types = cols(Bristol_numeric = col_number(),
@@ -74,7 +73,7 @@ physq_obj
 
 ### Format data
 
-As in lab 7 we are not using the Winter 2015 data, and we are only interested in semesters that have week 1 and week 3. We will make a subset of the phyloseq object then use that going forward. 
+As in lab 7 we are not using the Winter 2015 data, and we are only interested in semesters data from week 1 and week 3. We will make a subset of the phyloseq object then use that going forward. 
 ```{r}
 physq_sub <- physq_obj %>%
   subset_samples(semester != "Winter2015") %>%
@@ -89,7 +88,7 @@ To determine if a community is even or uneven, we use stacked bar plots as a rel
 
 ### Data transformation
 
-The first step of the transformation process involves summarizing taxa at whatever rank (phylum through species) we plan to plot the data. We know from the previous code block we have 1349 taxa. #e will agglomerate (sum) the counts for ESVs which are members of the same phyla. Then we can view the number of taxa, and you should note how it is reduced compared to the starting data (1349 vs. 12).
+The first step of the transformation process involves summarizing taxa at whatever rank (phylum through species) we plan to plot the data. We know from the previous code block we have 1349 taxa. We will agglomerate (sum) the counts for ESVs which are members of the same phyla. View the phyloseq object to determine the number of taxa; note how it is reduced compared to the starting data (1349 vs 12).
 ```{r}
 tmp1 <- physq_sub %>%
   tax_glom(taxrank = "phylum")
@@ -102,22 +101,25 @@ tmp2 <- tmp1 %>%
   transform_sample_counts(function(x) { (x/sum(x)) * 100 } )
 tmp2
 
-head(as.data.frame(otu_table(tmp2))) #otu table extract the counts, as.data.frame converts back to data frame class, head gives a preview of the data frame 
+# otu_table() extracts the counts
+# as.data.frame() converts back to data frame class
+# head() gives a preview of the data frame
+head(as.data.frame(otu_table(tmp2))) 
 ```
 
-To improve computer performance remove any large objects you will not use downstream. 
+To improve computer speed and performance remove any large objects from the global environment you will not use downstream. 
 ```{r}
 rm(tmp1)
 rm(tmp2)
 ```
 
-As you know ggplot requires a long-format data frame. In the code blocks above we are working with phyloseq data, which is matrix-derived and actually its own class of object, i.e., not a data frame! The phyloseq package contains a function, psmelt(), that takes a phyloseq object and converts it to a long-format data frame for us. We are going to pipe that function after the glom and transformation functions to create a data frame that is compatiable with ggplot(). Be carefule when using the psmelt() function, the new columns it creates do not follow the same column name style conventions we use in this course. 
+As you know ggplot requires a long-format data frame. In the code blocks above we are working with phyloseq data, which is matrix-derived and actually its own class of object (i.e., not a data frame!). The phyloseq package contains a function, psmelt(), that takes a phyloseq object and converts it to a long-format data frame for us. We are going to pipe that function after the glom and transformation functions to create a data frame that is compatable with ggplot(). Be careful when using the psmelt() function, the new columns created do not follow the same column name style conventions we use in this course. 
 ```{r}
 physq_long <- physq_sub %>%
   tax_glom(taxrank = "phylum") %>% #agglomerate at phylum level               
   transform_sample_counts(function(x) {x/sum(x)} ) %>% #calculate rel abund
   psmelt() %>% #melt to long format for ggplot
-  rename_all(tolower) %>% #make new columns match style conventions 
+  rename_all(tolower) %>% #update new columns to match style conventions 
   select(-sample_number, -quantity_compliant, -use_data, 
          -ends_with("_mm"), -ends_with("_mmol_kg"), 
          -starts_with("bristol"), -ph) %>% #drop columns not using
@@ -132,7 +134,7 @@ Now we are ready to make our plot. The same prinicples apply, we are just using 
 ggplot(data = physq_long, 
        aes(x = study_week, #specify the arguments for each axis
            y = abundance, 
-           fill = phylum)) + #set fill to the taxa rank
+           fill = phylum)) + #set fill to the taxa rank used for glom
   geom_col() + #plot type for bars 
   facet_grid(~semester) + #panel for each semester
   xlab(NULL) + 
@@ -141,9 +143,9 @@ ggplot(data = physq_long,
   ylab("Relative Abundance (Phyla > 0.1%)")
 ```
 
-The plot above shows the relative abundace of phyla in participants who consumed BRMPS. Notice the legend has some odd formatting. We can use another ggplot function, scale_fill_manual(), to improve the readability, we will also use the scale_fill_manual function to update the colors of the plot.  
+The plot above shows the relative abundace of phyla in participants who consumed BRMPS. Notice the legend has some odd formatting. We can use another ggplot function, scale_fill_manual(), to improve the readability, we will also use the scale_fill_manual() function to update the colors of the plot.  
 
-Next week when you begin data analysis for the group project, we will use a consistent color for each taxa. To do this we have to manually change the colors in the plots; create a vector from hex codes for colors, then call that vector in scale_fill_manual() or scale_color_manual() to update the default ggplot colors. An example of this concept is show below. This website is a useful color palette generating tool: https://medialab.github.io/iwanthue/ 
+Next week when you begin data analysis for the group project, we will use a consistent color for each taxa. To do this we have to manually change the colors in the plots; create a vector from hex codes for colors, then call that vector in scale_fill_manual() or scale_color_manual() to update the default ggplot colors. An example of this concept is show below. 
 ```{r}
 # vector of color hex codes 
 taxa_colors <- c('#ff7f7f','#33b5e5',
@@ -162,8 +164,9 @@ taxa_colors <- c('#ff7f7f','#33b5e5',
                 '#bc93d1','#ffe564',
                 '#d2fe4c','#ff7fbf')
 ```
+This following website is a useful color palette generating tool: https://medialab.github.io/iwanthue/ 
 
-The crucial arguments to note in scale_file_manual() are breaks and labels. The arguments given to 'breaks' are the current legend labels. The arguments given to 'labels' are the new legend labels. Be careful when providing the arugments to labels, as they will be used to rename in the order typed If you swap the order as you are typing in the arguments, the new labels in your plot will be incorrect. Updated code for the plot: 
+The crucial arguments to note in scale_file_manual() are breaks and labels. The arguments given to 'breaks' are the *current* legend labels. The arguments given to 'labels' are the *new* legend labels. Be careful when providing the arugments to labels, as they will be used to rename in the order typed. If you swap the order as you are typing in the arguments, the new labels in your plot will be incorrect. Updated code for the plot: 
 ```{r}
 ggplot(data = physq_long, 
        aes(x = study_week, #specify the arguments for each axis
@@ -221,23 +224,24 @@ Generate a bar plot at the order level, create and save the plot to a figures fo
 
 ### Conduct ordination analysis
 
-This step calculates the diveristy index (using Bray Curtis in the example below), and does the ranking process of the diveristy indices to generate the information necessary to create a two-dimensional plot. Notice the arguments in the ordinate function; to calculate Bray Curtis or Jaccard you specifiy in the distance agurment, with either of these metrics we will use method = NMDS. The place were you might want to make some modifications is the k (this should be somewhere between 1-3), the maximum number of iterations (more than 100 will take several minutes to calcaulte), and the inital number of interations to try (50 in the example below). These can be modified to reduce the stress, with the goal of a number less than 20 (the lower the better). 
+This step calculates the diveristy index (using Bray Curtis in the example below), and does the ranking process of the diveristy indices to generate the information necessary to create a two-dimensional plot. Notice the arguments in the ordinate function; the index, Bray Curtis ("bray") or Jaccard ("jaccard"), is specified in the distance agurment, and with either of these metrics we will use method = "NMDS". The place were you might want to make some modifications is the k (this should be somewhere between 1-3), the maximum number of iterations (more than 100 will take several minutes to calcaulte), and the inital number of interations to try (50 in the example below). These can be modified to reduce the stress, with the goal of a number less than 0.20 (the lower the better). 
 ```{r}
 physq_bc <- ordinate(physq_sub, 
                       method = "NMDS", 
                       k=2, maxit=100, try=50,
                       distance = "bray")
+physq_bc
 ```
 
 ### Homework 8.3
-Conduct the ordination analysis using Jaccard index.
+Conduct an ordination analysis using Jaccard index. Record the stress value. 
 ```{r}
 physq_j <- ordination()
 ```
 
 ### Plot results
 
-For these plots we will use a phyloseq function plot_ordination() instead of ggplot(). 
+For these plots we will use the phyloseq function plot_ordination() instead of ggplot(). Grouping variables can we assigned to color and shape, here they are differnet (study week and semester) but sometimes you may want them to be the same. 
 ```{r}
 ordplot1 <- plot_ordination(physeq = physq_sub, 
                      ordination = physq_bc, 
@@ -252,14 +256,17 @@ print(ordplot1)
 The phyloseq plot functions work nicely with ggplot layers. They can modified with ggplot functions you already know. The process to save these plots is the same, use save_plot(). 
 
 See this website for color options: http://sape.inf.usi.ch/quick-reference/ggplot2/colour 
-And this website for shape options: http://sape.inf.usi.ch/quick-reference/ggplot2/shape 
+And this site for shape options: http://sape.inf.usi.ch/quick-reference/ggplot2/shape 
 ```{r}
-ordplot2 <- ordplot1 + geom_point(size=3) + #increase point size
+ordplot2 <- ordplot1 +
+  geom_point(size=3) + #increase point size
   scale_color_manual(name = "Semester",
-                     values = c("coral3", "skyblue3", "goldenrod3"),
+                     values = c("coral3", 
+                                "skyblue3", 
+                                "goldenrod3"),
                      labels = c("Fall 2016",
                                 "Winter 2016", 
-                                "Winter 2018"))  + #change default color palette 
+                                "Winter 2018")) + #change default color palette 
   scale_shape_manual(name = "Study week",
                      values = c(7, 8),
                      labels = c("week 1", "week 3")) #change default shapes 
@@ -274,14 +281,14 @@ Plot the results of the Jaccard ordination. Use colors and shapes different than
 
 ### Statistical test
 
-If you observe a pattern (separation of points from different groups) in your ordination plot, we can determine if that is to a significant level with analysis of similarities (ANOSIM). Using the ordination object from the section above, we run the test with the anosim() function, which is part of the vegan package. 
+If you observe a pattern (separation of points from different groups) in your ordination plot, we can determine if that is to a significant level with analysis of similarities using distance matrices (ANOSIM or ADONIS). Using the ordination object from the section above, we run the test with the adonis() function, which is part of the vegan package. 
 ```{r}
 #start with same phyloseq object as above 
-dat_bray <- phyloseq::distance(physq_sub, method = "bray") #calculate BC index 
+dat_bray <- phyloseq::distance(physq_sub, method = "bray") #calculate BC index, get distance matrix
 
 sampledf <- physq_sub %>% 
   sample_data(.) %>% #extract sample data from phyloseq object 
-  as(., "data.frame") #convert to data frame from adonis()
+  as(., "data.frame") #convert to data frame for adonis()
 
 # run test
 adn_res <- adonis(formula = dat_bray ~ semester * study_week, 
@@ -293,7 +300,7 @@ print(adn_res)
 
 Review the output from the adonis function, this format should be slightly familar to you now; we are interested in the R-squared (R2) and the p-value (Pr(>F)) columns. The p-value indicates the groups are statistically significant. The R-squared value can be interpretd as the effect size, it shows the percentage of variation explained by the grouping categories (here study week and semester). For this test, an R-squared value close to 1 indicaates dissimilarity between the groups, while an R value near 0 indicates no significant dissimilarity between the groups. 
 
-In our results above, the p-values of 0.001 indicate that the groupings of samples by semester or by study week is statistically significant. The R value of 0.025 and 0.008 are fairly close to 0, indicating that the grouping of samples based by semester or study week are weak. When this occurs (low p and low R), the variation of samples in the groups likely is influencing the results of the test. 
+In our results above, the p-values of 0.001 indicate that the groupings of samples by semester or by study week is statistically significant. The R value of 0.025 and 0.008 are fairly close to 0, indicating that the grouping of samples based by semester or study week are weak. When this occurs (low p and low R), the variation of the samples in the tested groups likely is influencing the results of the test. 
 
 ### Homework 8.5
 Conduct an ADONIS test on a distance matrix calculated with the Jaccard index. Write your interpretations of the data below, be sure to explicity state the calculated R- and p-values. 
