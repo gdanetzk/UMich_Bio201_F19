@@ -1,0 +1,715 @@
+Participant_ID	Use_Data	Sex	Age	Race_ethnicity	Weight_kg	Height_meters	BMI
+U001	yes	Male	19	Caucasian/white	NA	NA	NA
+U002	yes	Female	20	Caucasian/white	NA	NA	NA
+U003	yes	Male	19	Caucasian/white	NA	NA	NA
+U004	yes	Male	19	Caucasian/white	NA	NA	NA
+U005	yes	Female	18	Caucasian/white	NA	NA	NA
+U006	yes	Male	18	Caucasian/white	NA	NA	NA
+U007	yes	Female	19	Caucasian/white	NA	NA	NA
+U008	yes	Female	18	Latino/a or Hispanic	NA	NA	NA
+U009	yes	Female	19	Caucasian/white	NA	NA	NA
+U010	yes	Male	18	Caucasian/white	NA	NA	NA
+U011	yes	Male	19	Caucasian/white	NA	NA	NA
+U013	yes	Male	19	Caucasian/white	NA	NA	NA
+U014	yes	Male	19	Asian or Pacific Islander	NA	NA	NA
+U015	yes	Male	20	Caucasian/white	NA	NA	NA
+U016	yes	Female	20	Caucasian/white	NA	NA	NA
+U017	yes	Female	18	Caucasian/white	NA	NA	NA
+U018	yes	Male	20	Caucasian/white	NA	NA	NA
+U019	yes	Female	20	Caucasian/white	NA	NA	NA
+U020	yes	Female	19	Black American	NA	NA	NA
+U021	yes	Female	18	Caucasian/white	NA	NA	NA
+U022	yes	NA	NA	NA	NA	NA	NA
+U023	yes	Female	20	Caucasian/white	NA	NA	NA
+U024	yes	Female	19	Caucasian/white	NA	NA	NA
+U025	yes	Female	19	Black American	NA	NA	NA
+U026	yes	Male	19	Black American	NA	NA	NA
+U027	yes	Female	18	Caucasian/white	NA	NA	NA
+U028	yes	Male	19	Caucasian/white	NA	NA	NA
+U029	yes	Male	20	Black American	NA	NA	NA
+U030	yes	Female	19	Caucasian/white	NA	NA	NA
+U031	yes	Male	19	Other	NA	NA	NA
+U032	yes	Female	19	Other	NA	NA	NA
+U033	yes	Female	19	Caucasian/white	NA	NA	NA
+U034	yes	Female	18	Caucasian/white	NA	NA	NA
+U035	yes	Female	19	Caucasian/white	NA	NA	NA
+U036	yes	Male	19	Asian or Pacific Islander	NA	NA	NA
+U037	yes	Male	18	Asian or Pacific Islander	NA	NA	NA
+U041	yes	Male	19	Asian or Pacific Islander	67.5	1.75	22.040816326530614
+U042	yes	Male	19	Caucasian/white	73.1	1.737333	24.21872294144776
+U042	yes	Male	19	Caucasian/white	73.1	1.737333	24.21872294144776
+U043	yes	Male	19	Asian or Pacific Islander	61.1	1.691	21.367513895004024
+U044	yes	Male	18	Other	85.5	1.72	28.9007571660357
+U045	yes	Female	19	Other	62.1	1.63	23.37310399337574
+U046	yes	Male	19	Caucasian/white	95.8	1.7666	30.69651389752945
+U047	yes	Male	21	Caucasian/white	72.2	1.711	24.66250455590242
+U048	yes	Female	20	Asian or Pacific Islander	76.8	1.59	30.37854515248605
+U049	yes	Female	19	Caucasian/white	62.2	1.621	23.671422389892683
+U050	yes	Female	19	Asian or Pacific Islander	63.6333	1.59466	25.023511013975053
+U051	yes	Female	19	Asian or Pacific Islander	81.8	1.633	30.674743099026546
+U052	yes	Male	20	Caucasian/white	72.8	1.807	22.295390029979337
+U053	yes	Female	19	Other	48.1	1.691	16.821234342875506
+U054	yes	Male	22	Caucasian/white	63.1	1.73	21.08323031173778
+U055	yes	Female	20	Caucasian/white	59.3	1.683	20.935650588581275
+U056	yes	Female	21	Asian or Pacific Islander	46.133	1.568	18.763747527072052
+U057	yes	Male	19	Caucasian/white	68.4	1.72333333333333	23.031250818402643
+U058	yes	Male	20	Caucasian/white	74.63	1.7763	23.652704715625127
+U059	yes	Female	18	Asian or Pacific Islander	49.9	1.616	19.108114400548963
+U060	yes	Male	18	Asian or Pacific Islander	85.6	1.857	24.822753649539255
+U061	yes	Female	19	Latino/a or Hispanic	67.5	1.72067	22.798622059753665
+U062	yes	NA	NA	NA	59	1.741	19.46500274984403
+U063	yes	Female	18	Other	57.23	1.67	20.520635375954676
+U064	yes	Male	20	Caucasian/white	63.49	1.7737	20.181107464352745
+U065	yes	NA	NA	NA	NA	NA	NA
+U066	yes	Female	19	Caucasian/white	59.8	1.664	21.59705528846154
+U067	yes	Female	19	Caucasian/white	64.4	1.62	24.538942234415483
+U068	yes	Male	20	Latino/a or Hispanic	66.2	1.77	21.130581888984647
+U069	yes	Male	19	Asian or Pacific Islander	74.53	1.757	24.1427978629429
+U070	yes	Female	19	Asian or Pacific Islander	48.1	1.576	19.365675487644616
+U071	yes	NA	NA	NA	NA	NA	NA
+U072	yes	Female	19	Caucasian/white	56.2	1.585	22.37060772820906
+U073	yes	Male	19	Native American	82	1.8597	23.709809808608952
+U074	yes	Male	19	Caucasian/white	100	1.803	30.761573503703232
+U075	yes	Male	19	Caucasian/white	83.1	1.823	25.005047649510477
+U076	yes	Female	20	Other	57.73	1.68	20.454223356009074
+U077	yes	Female	19	Caucasian/white	53.5	1.655	19.532497877894503
+U078	yes	Male	19	Latino/a or Hispanic	82.5	1.75	26.93877551020408
+U080	yes	Male	18	Asian or Pacific Islander	57.4	1.671	20.55696481786493
+U081	yes	Female	19	Caucasian/white	46.5	1.53	19.864154812251698
+U082	yes	Female	20	Asian or Pacific Islander	41.7	1.54	17.58306628436499
+U083	yes	Female	19	Asian or Pacific Islander	52.13	1.65	19.14784205693297
+U084	yes	Male	20	Caucasian/white	72.3	1.702	24.958540515685563
+U085	yes	Female	21	Caucasian/white	56.8	1.56	23.339907955292567
+U086	yes	Male	20	Caucasian/white	86.2	1.88	24.38886373924853
+U087	yes	Male	19	Caucasian/white	89.2	1.816	27.047875953346658
+U088	yes	Female	19	Caucasian/white	63.86	1.586	25.3876526797371
+U089	yes	Female	18	Caucasian/white	50.1	1.5697	20.333138052684976
+U090	yes	Male	20	Caucasian/white	76.8	1.787	24.049835769057697
+U091	yes	Female	19	Other	43.3	1.596	16.998951011614245
+U092	yes	Female	25	Caucasian/white	73.8	1.664	26.653222078402358
+U093	yes	Female	19	Caucasian/white	58.4	1.573	23.602358457585876
+U094	yes	Female	19	Caucasian/white	81.2	1.786	25.45617337284265
+U095	yes	NA	NA	NA	72.97	1.6843	25.72204235103077
+U096	yes	Female	18	Caucasian/white	50.6	1.54266	21.26229206026941
+U097	yes	Female	18	Asian or Pacific Islander	47.6	1.57	19.311128240496572
+U098	yes	Female	20	Caucasian/white	49.4	1.55	20.56191467221644
+U099	yes	Male	20	Asian or Pacific Islander	52.1	1.715	17.713707723822555
+U100	yes	Female	19	Asian or Pacific Islander	49.9	1.59	19.73814326964914
+U101	yes	Female	19	Caucasian/white	57.7	1.5756	23.242555083324845
+U102	yes	Female	19	Caucasian/white	61.26	1.72	20.70713899405084
+U103	yes	NA	NA	NA	57.4	1.613	22.061912491078186
+U104	yes	Female	19	Caucasian/white	52.5	1.6193	20.021871587426922
+U105	yes	Male	18	Caucasian/white	69.167	1.71	23.6541157963134
+U106	yes	Male	18	Asian or Pacific Islander	62.1	1.755	20.162174008327856
+U107	yes	Male	19	Other	97.1	1.761	31.311258090219635
+U108	yes	NA	NA	NA	NA	NA	NA
+U109	yes	Male	19	Caucasian/white	78.47	1.785	24.627890371835008
+U110	yes	Male	18	Caucasian/white	87.6	1.877	24.86426128591942
+U111	yes	Male	18	Caucasian/white	71.83	1.78	22.670748642848125
+U112	yes	Male	19	Asian or Pacific Islander	75	1.761	24.18480285032413
+U113	yes	Female	18	Caucasian/white	69.9	1.729	23.382297894489305
+U114	yes	Female	20	Asian or Pacific Islander	52.8	1.55	21.97710718002081
+U115	yes	Female	19	Black American	80.7	1.6	31.523437499999996
+U116	yes	Female	18	Caucasian/white	60.9	1.65	22.369146005509645
+U117	yes	Female	18	Caucasian/white	79.6	1.629	29.99652176010244
+U118	yes	Female	19	Caucasian/white	73.3	1.64	27.253123140987512
+U119	yes	Male	23	Caucasian/white	78.7	1.89	22.03185801069399
+U120	yes	Male	17	Caucasian/white	70.43	1.75	22.997551020408167
+U121	yes	Male	19	Caucasian/white	NA	NA	NA
+U122	yes	Female	20	Latino/a or Hispanic	NA	NA	NA
+U123	yes	NA	NA	NA	NA	NA	NA
+U124	yes	Male	20	Caucasian/white	NA	NA	NA
+U125	yes	Female	18	Caucasian/white	NA	NA	NA
+U126	yes	Female	18	Asian or Pacific Islander	NA	NA	NA
+U127	yes	Female	19	Caucasian/white	NA	NA	NA
+U128	yes	Female	20	Caucasian/white	NA	NA	NA
+U129	yes	Female	18	Asian or Pacific Islander	NA	NA	NA
+U130	yes	NA	NA	NA	NA	NA	NA
+U131	yes	Female	22	Latino/a or Hispanic	NA	NA	NA
+U132	yes	Female	18	Asian or Pacific Islander	NA	NA	NA
+U133	yes	Female	19	Caucasian/white	NA	NA	NA
+U134	yes	Female	19	Caucasian/white	NA	NA	NA
+U135	yes	Female	19	Caucasian/white	NA	NA	NA
+U136	yes	NA	NA	NA	NA	NA	NA
+U137	yes	Female	19	Caucasian/white	NA	NA	NA
+U138	yes	NA	NA	NA	NA	NA	NA
+U139	yes	Female	18	Caucasian/white	NA	NA	NA
+U140	yes	Female	19	Caucasian/white	NA	NA	NA
+U141	yes	Male	18	Caucasian/white	NA	NA	NA
+U142	yes	Female	18	Asian or Pacific Islander	NA	NA	NA
+U143	yes	Female	18	Caucasian/white	NA	NA	NA
+U144	yes	NA	NA	NA	NA	NA	NA
+U145	yes	Female	20	Caucasian/white	NA	NA	NA
+U146	yes	Male	18	Asian or Pacific Islander	NA	NA	NA
+U147	yes	Female	19	Caucasian/white	NA	NA	NA
+U148	yes	Male	20	Asian or Pacific Islander	NA	NA	NA
+U149	yes	Female	18	Asian or Pacific Islander	NA	NA	NA
+U150	yes	Female	20	Caucasian/white	NA	NA	NA
+U151	yes	Male	18	Asian or Pacific Islander	NA	NA	NA
+U152	yes	Female	19	Caucasian/white	NA	NA	NA
+U153	yes	NA	NA	NA	NA	NA	NA
+U154	yes	Male	19	Caucasian/white	NA	NA	NA
+U155	yes	Male	19	Asian or Pacific Islander	NA	NA	NA
+U156	yes	Female	18	Asian or Pacific Islander	NA	NA	NA
+U157	yes	Male	18	Caucasian/white	NA	NA	NA
+U158	yes	Female	19	Caucasian/white	NA	NA	NA
+U159	yes	Female	19	Caucasian/white	NA	NA	NA
+U160	yes	Male	21	Other	NA	NA	NA
+U161	yes	Male	18	Asian or Pacific Islander	NA	NA	NA
+U162	yes	NA	NA	NA	NA	NA	NA
+U163	yes	Female	19	Caucasian/white	NA	NA	NA
+U164	yes	Female	19	Asian or Pacific Islander	NA	NA	NA
+U165	yes	Male	18	Asian or Pacific Islander	NA	NA	NA
+U166	yes	Female	20	Caucasian/white	NA	NA	NA
+U167	yes	Male	18	Asian or Pacific Islander	NA	NA	NA
+U168	yes	Female	22	Asian or Pacific Islander	NA	NA	NA
+U169	yes	Female	18	Caucasian/white	NA	NA	NA
+U170	yes	NA	NA	NA	NA	NA	NA
+U171	yes	Male	20	Caucasian/white	NA	NA	NA
+U172	yes	Female	19	Latino/a or Hispanic	NA	NA	NA
+U174	yes	Male	-0.167123287671233	Caucasian/white	NA	NA	NA
+U175	yes	Female	20	Caucasian/white	NA	NA	NA
+U176	yes	Female	19	Caucasian/white	NA	NA	NA
+U177	yes	Female	21	Asian or Pacific Islander	NA	NA	NA
+U178	yes	Female	19	Caucasian/white	NA	NA	NA
+U179	yes	Male	19	Caucasian/white	NA	NA	NA
+U180	yes	Female	20	Asian or Pacific Islander	NA	NA	NA
+U181	yes	Female	18	Asian or Pacific Islander	NA	NA	NA
+U182	yes	Female	18	Asian or Pacific Islander	NA	NA	NA
+U183	yes	Female	19	Caucasian/white	NA	NA	NA
+U184	yes	Female	20	Caucasian/white	NA	NA	NA
+U185	yes	Female	17	Latino/a or Hispanic	NA	NA	NA
+U186	yes	Male	18	Caucasian/white	NA	NA	NA
+U187	yes	Male	19	Caucasian/white	NA	NA	NA
+U188	yes	Male	20	Caucasian/white	NA	NA	NA
+U189	yes	NA	NA	NA	NA	NA	NA
+U190	yes	Male	18	Other	NA	NA	NA
+U191	yes	NA	NA	NA	NA	NA	NA
+U192	yes	NA	NA	NA	NA	NA	NA
+U193	yes	Male	18	Asian or Pacific Islander	NA	NA	NA
+U194	yes	Female	19	Caucasian/white	NA	NA	NA
+U195	yes	Male	18	Asian or Pacific Islander	NA	NA	NA
+U196	yes	Male	19	Caucasian/white	NA	NA	NA
+U197	yes	NA	NA	NA	NA	NA	NA
+U198	yes	Male	19	Asian or Pacific Islander	NA	NA	NA
+U199	yes	Male	19	Caucasian/white	NA	NA	NA
+U200	yes	Male	20	Latino/a or Hispanic	NA	NA	NA
+U201	yes	Female	19	Caucasian/white	NA	NA	NA
+U202	yes	Female	21	Caucasian/white	NA	NA	NA
+U203	yes	Female	18	Caucasian/white	NA	NA	NA
+U210	yes	Female	NA	NA	NA	NA	NA
+U211	yes	Female	NA	Caucasian/white	NA	NA	NA
+U212	yes	Female	NA	NA	NA	NA	NA
+U213	yes	Female	NA	NA	NA	NA	NA
+U214	yes	Female	NA	Caucasian/white	NA	NA	NA
+U215	yes	Female	NA	Black American	NA	NA	NA
+U216	yes	Male	NA	Asian	NA	NA	NA
+U217	yes	Female	NA	Asian	NA	NA	NA
+U218	yes	Female	NA	NA	NA	NA	NA
+U219	yes	Male	NA	Asian	NA	NA	NA
+U220	yes	Male	NA	Caucasian/white	NA	NA	NA
+U221	yes	Female	NA	Caucasian/white	NA	NA	NA
+U222	yes	Female	NA	Asian	NA	NA	NA
+U223	yes	Female	NA	Caucasian/white	NA	NA	NA
+U224	yes	Female	NA	Latino/a or Hispanic	NA	NA	NA
+U225	yes	Female	NA	Caucasian/white	NA	NA	NA
+U226	yes	Male	NA	Other	NA	NA	NA
+U227	yes	Female	NA	Caucasian/white	NA	NA	NA
+U228	yes	Female	NA	Caucasian/white	NA	NA	NA
+U229	yes	Female	NA	Caucasian/white	NA	NA	NA
+U230	yes	Female	NA	NA	NA	NA	NA
+U231	yes	NA	NA	NA	NA	NA	NA
+U232	yes	Female	NA	Caucasian/white	NA	NA	NA
+U233	yes	Female	NA	Asian	NA	NA	NA
+U234	yes	Female	NA	2 or more ethnicities	NA	NA	NA
+U235	yes	Female	NA	NA	NA	NA	NA
+U236	yes	NA	NA	NA	NA	NA	NA
+U237	yes	Female	NA	Asian	NA	NA	NA
+U238	yes	Female	NA	Latino/a or Hispanic	NA	NA	NA
+U241	yes	Female	NA	Asian	NA	NA	NA
+U242	yes	Female	NA	Native American	NA	NA	NA
+U243	yes	Female	NA	Caucasian/white	NA	NA	NA
+U246	yes	Male	NA	Latino/a or Hispanic	NA	NA	NA
+U247	yes	Male	NA	Caucasian/white	NA	NA	NA
+U248	yes	Female	NA	Caucasian/white	NA	NA	NA
+U249	yes	Male	NA	Caucasian/white	NA	NA	NA
+U250	yes	Female	NA	Asian	NA	NA	NA
+U251	yes	NA	NA	NA	NA	NA	NA
+U252	yes	Female	NA	Asian	NA	NA	NA
+U253	yes	Male	NA	Asian	NA	NA	NA
+U254	yes	Female	NA	Asian	NA	NA	NA
+U255	yes	Male	NA	Caucasian/white	NA	NA	NA
+U256	yes	Female	NA	Caucasian/white	NA	NA	NA
+U257	yes	Female	NA	Caucasian/white	NA	NA	NA
+U258	yes	Male	NA	NA	NA	NA	NA
+U259	yes	Female	NA	Caucasian/white	NA	NA	NA
+U260	yes	Female	NA	2 or more ethnicities	NA	NA	NA
+U261	yes	Female	NA	Caucasian/white	NA	NA	NA
+U262	yes	Female	NA	2 or more ethnicities	NA	NA	NA
+U263	yes	Female	NA	Latino/a or Hispanic	NA	NA	NA
+U264	yes	Male	NA	NA	NA	NA	NA
+U265	yes	Female	NA	Caucasian/white	NA	NA	NA
+U266	yes	Male	NA	Hawaiian or Pacific Islander	NA	NA	NA
+U267	yes	Female	NA	Caucasian/white	NA	NA	NA
+U268	yes	Female	NA	Caucasian/white	NA	NA	NA
+U269	yes	Male	NA	Caucasian/white	NA	NA	NA
+U270	yes	Female	NA	Caucasian/white	NA	NA	NA
+U271	yes	Female	NA	Caucasian/white	NA	NA	NA
+U272	yes	Female	NA	Caucasian/white	NA	NA	NA
+U273	yes	Male	NA	Asian	NA	NA	NA
+U274	yes	Male	NA	Caucasian/white	NA	NA	NA
+U275	yes	Female	NA	Caucasian/white	NA	NA	NA
+U276	yes	Female	NA	Caucasian/white	NA	NA	NA
+U277	yes	Male	NA	Caucasian/white	NA	NA	NA
+U279	yes	Male	NA	Caucasian/white	NA	NA	NA
+U280	yes	Male	NA	Caucasian/white	NA	NA	NA
+U281	yes	NA	NA	NA	NA	NA	NA
+U282	yes	Male	NA	Asian	NA	NA	NA
+U283	yes	Male	NA	Middle Eastern or North African (MENA)	NA	NA	NA
+U284	yes	Female	NA	Caucasian/white	NA	NA	NA
+U285	yes	Male	NA	NA	NA	NA	NA
+U286	yes	Male	NA	Caucasian/white	NA	NA	NA
+U287	yes	NA	NA	NA	NA	NA	NA
+U288	yes	Female	NA	Asian	NA	NA	NA
+U290	yes	Female	NA	Caucasian/white	NA	NA	NA
+U291	yes	Male	NA	Caucasian/white	NA	NA	NA
+U292	yes	Female	NA	Caucasian/white	NA	NA	NA
+U294	yes	Female	NA	Asian	NA	NA	NA
+U295	yes	NA	NA	NA	NA	NA	NA
+U296	yes	Female	NA	Asian	NA	NA	NA
+U297	yes	Female	NA	Caucasian/white	NA	NA	NA
+U299	yes	Female	NA	Asian	NA	NA	NA
+U300	yes	Female	NA	2 or more ethnicities	NA	NA	NA
+U301	yes	Female	NA	Latino/a or Hispanic	NA	NA	NA
+U302	yes	Female	NA	Asian	NA	NA	NA
+np1	yes	NA	NA	NA	NA	NA	NA
+np2	yes	NA	NA	NA	NA	NA	NA
+np3	yes	NA	NA	NA	NA	NA	NA
+U310	yes	NA	NA	NA	NA	NA	NA
+U311	yes	NA	NA	Caucasian/white	NA	NA	NA
+U312	yes	NA	NA	Caucasian/white	NA	NA	NA
+U314	yes	NA	NA	Caucasian/white	NA	NA	NA
+U315	yes	NA	NA	Caucasian/white	NA	NA	NA
+U316	yes	NA	NA	Middle Eastern or North African (MENA)	NA	NA	NA
+U317	yes	NA	NA	Caucasian/white	NA	NA	NA
+U318	yes	NA	NA	Caucasian/white	NA	NA	NA
+U319	yes	NA	NA	2 or more ethnicities	NA	NA	NA
+U320	yes	NA	NA	Caucasian/white	NA	NA	NA
+U321	yes	NA	NA	Caucasian/white	NA	NA	NA
+U322	yes	NA	NA	Caucasian/white	NA	NA	NA
+U323	yes	NA	NA	Caucasian/white	NA	NA	NA
+U325	yes	NA	NA	Caucasian/white	NA	NA	NA
+U326	yes	NA	NA	NA	NA	NA	NA
+U327	yes	NA	NA	Caucasian/white	NA	NA	NA
+U328	yes	NA	NA	Caucasian/white	NA	NA	NA
+U329	yes	NA	NA	Caucasian/white	NA	NA	NA
+U330	yes	NA	NA	Caucasian/white	NA	NA	NA
+U331	yes	NA	NA	NA	NA	NA	NA
+U332	yes	NA	NA	Asian	NA	NA	NA
+U333	yes	NA	NA	Caucasian/white	NA	NA	NA
+U334	yes	NA	NA	Caucasian/white	NA	NA	NA
+U335	yes	NA	NA	Caucasian/white	NA	NA	NA
+U336	yes	NA	NA	Caucasian/white	NA	NA	NA
+U337	yes	NA	NA	Asian	NA	NA	NA
+U338	yes	NA	NA	Asian	NA	NA	NA
+U339	yes	NA	NA	Caucasian/white	NA	NA	NA
+U340	yes	NA	NA	Asian	NA	NA	NA
+U341	yes	NA	NA	Asian	NA	NA	NA
+U342	yes	NA	NA	Asian	NA	NA	NA
+U343	yes	NA	NA	Black non-American	NA	NA	NA
+U344	yes	NA	NA	Caucasian/white	NA	NA	NA
+U345	yes	NA	NA	Caucasian/white	NA	NA	NA
+U346	yes	NA	NA	Asian	NA	NA	NA
+U347	yes	NA	NA	Caucasian/white	NA	NA	NA
+U348	yes	NA	NA	Caucasian/white	NA	NA	NA
+U349	yes	NA	NA	Middle Eastern or North African (MENA)	NA	NA	NA
+U350	yes	NA	NA	Caucasian/white	NA	NA	NA
+U351	yes	NA	NA	Caucasian/white	NA	NA	NA
+U352	yes	NA	NA	Caucasian/white	NA	NA	NA
+U353	yes	NA	NA	Caucasian/white	NA	NA	NA
+U354	yes	NA	NA	Caucasian/white	NA	NA	NA
+U355	yes	NA	NA	Caucasian/white	NA	NA	NA
+U356	yes	NA	NA	NA	NA	NA	NA
+U357	yes	NA	NA	2 or more ethnicities	NA	NA	NA
+U358	yes	NA	NA	Caucasian/white	NA	NA	NA
+U360	yes	NA	NA	Caucasian/white	NA	NA	NA
+U362	yes	NA	NA	NA	NA	NA	NA
+U363	yes	NA	NA	Caucasian/white	NA	NA	NA
+U364	yes	NA	NA	Asian	NA	NA	NA
+U365	yes	NA	NA	Caucasian/white	NA	NA	NA
+U366	yes	NA	NA	Asian	NA	NA	NA
+U367	yes	NA	NA	2 or more ethnicities	NA	NA	NA
+U368	yes	NA	NA	Asian	NA	NA	NA
+U369	yes	NA	NA	Caucasian/white	NA	NA	NA
+U370	yes	NA	NA	Caucasian/white	NA	NA	NA
+U371	yes	NA	NA	Caucasian/white	NA	NA	NA
+U372	yes	NA	NA	Caucasian/white	NA	NA	NA
+U373	yes	NA	NA	2 or more ethnicities	NA	NA	NA
+U375	yes	NA	NA	Caucasian/white	NA	NA	NA
+U376	yes	NA	NA	Caucasian/white	NA	NA	NA
+U377	yes	NA	NA	Asian	NA	NA	NA
+U378	yes	NA	NA	Black non-American	NA	NA	NA
+U379	yes	NA	NA	Asian	NA	NA	NA
+U380	yes	NA	NA	Latino/a or Hispanic	NA	NA	NA
+U381	yes	NA	NA	Middle Eastern or North African (MENA)	NA	NA	NA
+U382	yes	NA	NA	Caucasian/white	NA	NA	NA
+U383	yes	NA	NA	Middle Eastern or North African (MENA)	NA	NA	NA
+U384	yes	NA	NA	Caucasian/white	NA	NA	NA
+U385	yes	NA	NA	2 or more ethnicities	NA	NA	NA
+U386	yes	NA	NA	Caucasian/white	NA	NA	NA
+U387	yes	NA	NA	Caucasian/white	NA	NA	NA
+U387	yes	NA	NA	Caucasian/white	NA	NA	NA
+U388	yes	NA	NA	Asian	NA	NA	NA
+U389	yes	NA	NA	Asian	NA	NA	NA
+U390	yes	NA	NA	Caucasian/white	NA	NA	NA
+U391	yes	NA	NA	NA	NA	NA	NA
+U392	yes	NA	NA	Asian	NA	NA	NA
+U393	yes	NA	NA	Caucasian/white	NA	NA	NA
+U394	yes	NA	NA	Caucasian/white	NA	NA	NA
+U395	yes	NA	NA	Asian	NA	NA	NA
+U396	yes	NA	NA	Caucasian/white	NA	NA	NA
+U397	yes	NA	NA	Caucasian/white	NA	NA	NA
+U398	yes	NA	NA	Asian	NA	NA	NA
+U399	yes	NA	NA	Middle Eastern or North African (MENA)	NA	NA	NA
+U400	yes	NA	NA	NA	NA	NA	NA
+U401	yes	NA	NA	NA	NA	NA	NA
+U402	yes	NA	NA	NA	NA	NA	NA
+U404	yes	NA	NA	NA	NA	NA	NA
+U405	yes	NA	NA	NA	NA	NA	NA
+U406	yes	NA	NA	NA	NA	NA	NA
+U407	yes	NA	NA	NA	NA	NA	NA
+U408	yes	NA	NA	NA	NA	NA	NA
+U410	yes	NA	NA	NA	NA	NA	NA
+U411	yes	NA	NA	NA	NA	NA	NA
+U412	yes	NA	NA	NA	NA	NA	NA
+U413	yes	NA	NA	NA	NA	NA	NA
+U414	yes	NA	NA	NA	NA	NA	NA
+U415	yes	NA	NA	NA	NA	NA	NA
+U416	yes	NA	NA	NA	NA	NA	NA
+U417	yes	NA	NA	NA	NA	NA	NA
+U418	yes	NA	NA	NA	NA	NA	NA
+U419	yes	NA	NA	NA	NA	NA	NA
+U420	yes	NA	NA	NA	NA	NA	NA
+U421	yes	NA	NA	NA	NA	NA	NA
+U422	yes	NA	NA	NA	NA	NA	NA
+U423	yes	NA	NA	NA	NA	NA	NA
+U424	yes	NA	NA	NA	NA	NA	NA
+U425	yes	NA	NA	NA	NA	NA	NA
+U426	yes	NA	NA	NA	NA	NA	NA
+U427	yes	NA	NA	NA	NA	NA	NA
+U428	yes	NA	NA	NA	NA	NA	NA
+U429	yes	NA	NA	NA	NA	NA	NA
+U430	yes	NA	NA	NA	NA	NA	NA
+U431	yes	NA	NA	NA	NA	NA	NA
+U432	yes	NA	NA	NA	NA	NA	NA
+U433	yes	NA	NA	NA	NA	NA	NA
+U434	yes	NA	NA	NA	NA	NA	NA
+U436	yes	NA	NA	NA	NA	NA	NA
+U437	yes	NA	NA	NA	NA	NA	NA
+U438	yes	NA	NA	NA	NA	NA	NA
+U439	yes	NA	NA	NA	NA	NA	NA
+U441	yes	NA	NA	NA	NA	NA	NA
+U442	yes	NA	NA	NA	NA	NA	NA
+U443	yes	NA	NA	NA	NA	NA	NA
+U444	yes	NA	NA	NA	NA	NA	NA
+U445	yes	NA	NA	NA	NA	NA	NA
+U446	yes	NA	NA	NA	NA	NA	NA
+U447	yes	NA	NA	NA	NA	NA	NA
+U448	yes	NA	NA	NA	NA	NA	NA
+U449	yes	NA	NA	NA	NA	NA	NA
+U450	yes	NA	NA	NA	NA	NA	NA
+U452	yes	NA	NA	NA	NA	NA	NA
+U453	yes	NA	NA	NA	NA	NA	NA
+U454	yes	NA	NA	NA	NA	NA	NA
+U455	yes	NA	NA	NA	NA	NA	NA
+U456	yes	NA	NA	NA	NA	NA	NA
+U457	yes	NA	NA	NA	NA	NA	NA
+U458	yes	NA	NA	NA	NA	NA	NA
+U459	yes	NA	NA	NA	NA	NA	NA
+U460	yes	NA	NA	NA	NA	NA	NA
+U461	yes	NA	NA	NA	NA	NA	NA
+U462	yes	NA	NA	NA	NA	NA	NA
+U463	yes	NA	NA	NA	NA	NA	NA
+U464	yes	NA	NA	NA	NA	NA	NA
+U465	yes	NA	NA	NA	NA	NA	NA
+U466	yes	NA	NA	NA	NA	NA	NA
+U467	yes	NA	NA	NA	NA	NA	NA
+U468	yes	NA	NA	NA	NA	NA	NA
+U469	yes	NA	NA	NA	NA	NA	NA
+U470	yes	NA	NA	NA	NA	NA	NA
+U471	yes	NA	NA	NA	NA	NA	NA
+U472	yes	NA	NA	NA	NA	NA	NA
+U473	yes	NA	NA	NA	NA	NA	NA
+U474	yes	NA	NA	NA	NA	NA	NA
+U475	yes	NA	NA	NA	NA	NA	NA
+U476	yes	NA	NA	NA	NA	NA	NA
+U477	yes	NA	NA	NA	NA	NA	NA
+U478	yes	NA	NA	NA	NA	NA	NA
+U479	yes	NA	NA	NA	NA	NA	NA
+U480	yes	NA	NA	NA	NA	NA	NA
+U481	yes	NA	NA	NA	NA	NA	NA
+U482	yes	NA	NA	NA	NA	NA	NA
+U483	yes	NA	NA	NA	NA	NA	NA
+U484	yes	NA	NA	NA	NA	NA	NA
+U485	yes	NA	NA	NA	NA	NA	NA
+U486	yes	NA	NA	NA	NA	NA	NA
+U487	yes	NA	NA	NA	NA	NA	NA
+U488	yes	NA	NA	NA	NA	NA	NA
+U489	yes	NA	NA	NA	NA	NA	NA
+U500	yes	Female	NA	Asian	56.69962805044	1.5748031496063	NA
+U501	yes	Female	NA	Asian	56.69962805044	1.70180340360681	NA
+U502	yes	Male	NA	Caucasian/white	70.3075387825456	1.95580391160782	NA
+U503	yes	Male	NA	Caucasian/white	98.8841513199673	1.82880365760732	NA
+U504	yes	Female	NA	Caucasian/white	67.1323596117209	1.70180340360681	NA
+U506	yes	Female	NA	Caucasian/white	58.9676131724576	1.70180340360681	NA
+U507	yes	Female	NA	Caucasian/white	58.9676131724576	1.6256032512065	NA
+U508	yes	Female	NA	Asian	45.359702440352	1.5494030988062	NA
+U509	yes	Female	NA	Asian	54.4316429284224	1.67640335280671	NA
+U510	yes	Female	NA	Caucasian/white	127.007166832986	1.6510033020066	NA
+U511	yes	Female	NA	Caucasian/white	49.8956726843872	1.6256032512065	NA
+U512	yes	Female	NA	Caucasian/white	84.8226435634582	1.67640335280671	NA
+U513	yes	Female	NA	Asian	50.8028667331942	1.5494030988062	NA
+U514	yes	Female	NA	Prefer not to say	65.7715685385104	1.67640335280671	NA
+U516	yes	Female	NA	Asian	52.6172548308083	1.6002032004064	NA
+U517	yes	Male	NA	Caucasian/white	63.5035834164928	1.80340360680721	NA
+U518	yes	Female	NA	Caucasian/white	65.7715685385104	1.6510033020066	NA
+U519	yes	Female	NA	Caucasian/white	58.9676131724576	1.75260350520701	NA
+U520	yes	Female	NA	Caucasian/white	70.3075387825456	1.72720345440691	NA
+U521	yes	Female	NA	Asian	42.6381202939309	1.49860299720599	NA
+U522	yes	Male	NA	Prefer not to say	81.6474643926336	1.77800355600711	NA
+U523	yes	Male	NA	Black American	72.5755239045632	1.82880365760732	NA
+U524	yes	Male	NA	Caucasian/white	79.379479270616	1.82880365760732	NA
+U525	yes	Female	NA	Asian	56.69962805044	1.67640335280671	NA
+U526	yes	Male	NA	Caucasian/white	81.6474643926336	1.82880365760732	NA
+U527	yes	Female	NA	Black American	73.4827179533702	1.6002032004064	NA
+U528	yes	Male	NA	Latino/a or Hispanic	114.306450149687	1.85420370840742	NA
+U529	yes	Female	NA	Caucasian/white	58.9676131724576	1.5494030988062	NA
+U530	yes	Female	NA	Middle Eastern or North African (MENA)	68.039553660528	1.72720345440691	NA
+U531	yes	Female	NA	Caucasian/white	68.4931506849315	1.6256032512065	NA
+U532	yes	Male	NA	Caucasian/white	115.667241222898	1.85420370840742	NA
+U533	yes	Male	NA	2 or more ethnicities	76.2043000997913	1.75260350520701	NA
+U534	yes	Female	NA	NA	51.2564637575977	1.58750317500635	NA
+U535	yes	Female	NA	Caucasian/white	68.039553660528	1.67640335280671	NA
+U536	yes	Female	NA	Caucasian/white	74.8435090265808	1.72720345440691	NA
+U540	yes	Female	NA	Caucasian/white	55.3388369772294	1.67640335280671	NA
+U541	yes	Male	NA	Asian	72.5755239045632	1.75260350520701	NA
+U542	yes	Male	NA	Caucasian/white	81.6474643926336	1.82880365760732	NA
+U543	yes	Female	NA	Caucasian/white	63.5035834164928	1.75260350520701	NA
+U544	yes	Female	NA	NA	58.9676131724576	1.6002032004064	NA
+U545	yes	Female	NA	Caucasian/white	64.4107774652998	1.72720345440691	NA
+U546	yes	Male	NA	Caucasian/white	65.7715685385104	1.82880365760732	NA
+U547	yes	Female	NA	Asian	47.6276875623696	1.5748031496063	NA
+U548	yes	Female	NA	Caucasian/white	44.4525083915449	1.6002032004064	NA
+U549	yes	Female	NA	Native American	56.2460310260365	1.5748031496063	NA
+U550	yes	Male	NA	Caucasian/white	90.719404880704	1.90500381000762	NA
+U551	yes	Female	NA	Black American	61.2355982944752	1.5748031496063	NA
+U552	yes	Male	NA	Black American	72.5755239045632	1.85420370840742	NA
+U553	yes	Female	NA	Caucasian/white	58.9676131724576	1.67640335280671	NA
+U554	yes	Female	NA	Caucasian/white	56.69962805044	1.90500381000762	NA
+U555	yes	Female	NA	Caucasian/white	58.9676131724576	1.67640335280671	NA
+U556	yes	Female	NA	Middle Eastern or North African (MENA)	67.1323596117209	1.5748031496063	NA
+U557	yes	Female	NA	Caucasian/white	58.9676131724576	1.6256032512065	NA
+U558	yes	Female	NA	Caucasian/white	68.039553660528	1.6256032512065	NA
+U559	yes	Female	NA	NA	74.8435090265808	1.6256032512065	NA
+U561	yes	Male	NA	Middle Eastern or North African (MENA)	61.2355982944752	1.75260350520701	NA
+U562	yes	Female	NA	Caucasian/white	54.4316429284224	1.6002032004064	NA
+U563	yes	Female	NA	Middle Eastern or North African (MENA)	70.7611358069491	1.6256032512065	NA
+U564	yes	Female	NA	Caucasian/white	65.7715685385104	1.67640335280671	NA
+U565	yes	Female	NA	Caucasian/white	56.2460310260365	1.5748031496063	NA
+U566	yes	Male	NA	Asian	74.8435090265808	1.85420370840742	NA
+U567	yes	Female	NA	Caucasian/white	54.4316429284224	1.73990347980696	NA
+U568	yes	Male	NA	Caucasian/white	95.2553751247392	1.87960375920752	NA
+U569	yes	Female	NA	Caucasian/white	58.9676131724576	1.6510033020066	NA
+U570	yes	Female	NA	Caucasian/white	58.9676131724576	1.6510033020066	NA
+U571	yes	Female	NA	Caucasian/white	56.69962805044	1.6510033020066	NA
+U572	yes	Female	NA	Asian	48.9884786355802	1.5748031496063	NA
+U573	yes	Female	NA	Middle Eastern or North African (MENA)	86.1834346366688	1.6002032004064	NA
+U574	yes	Female	NA	Asian	63.5035834164928	1.70180340360681	NA
+U575	yes	Male	NA	Black American	78.4722852218089	1.85420370840742	NA
+U576	yes	Male	NA	Caucasian/white	72.5755239045632	2.00660401320803	NA
+U577	yes	Female	NA	Latino/a or Hispanic	48.5348816111766	1.49860299720599	NA
+U578	yes	Male	NA	Asian	78.9258822462125	1.82880365760732	NA
+U579	yes	Female	NA	Caucasian/white	49.8956726843872	1.5494030988062	NA
+U580	yes	Female	NA	Latino/a or Hispanic	58.9676131724576	1.5748031496063	NA
+U581	yes	Female	NA	Caucasian/white	63.5035834164928	1.72720345440691	NA
+U582	yes	Female	NA	Caucasian/white	56.69962805044	1.5748031496063	NA
+U583	yes	Female	NA	Caucasian/white	56.69962805044	1.72720345440691	NA
+U584	yes	Female	NA	Caucasian/white	58.9676131724576	1.5494030988062	NA
+U585	yes	Male	NA	Caucasian/white	68.039553660528	1.75260350520701	NA
+U586	yes	Female	NA	Black American	55.3388369772294	1.5748031496063	NA
+U587	yes	Male	NA	Prefer not to say	67.1323596117209	1.70180340360681	NA
+U588	yes	Female	NA	Asian	49.8956726843872	1.6	NA
+U589	yes	Female	NA	Caucasian/white	61.2355982944752	1.6510033020066	NA
+U600	yes	Female	19	2 or more ethnicities	56.6893424036281	NA	NA
+U602	yes	Female	20	Black American	59.8639455782313	NA	NA
+U603	yes	Female	20	Caucasian/white	65.7596371882086	NA	NA
+U605	yes	Female	19	2 or more ethnicities	76.1904761904762	NA	NA
+U606	yes	Female	20	Caucasian/white	69.8412698412698	NA	NA
+U607	yes	Female	19	2 or more ethnicities	63.4920634920635	NA	NA
+U608	yes	Female	20	Caucasian/white	58.9569160997732	NA	NA
+U610	yes	Female	19	Other	63.0385487528345	NA	NA
+U611	yes	Female	19	Black American	81.6326530612245	NA	NA
+U612	yes	Male	19	Asian	49.8866213151927	NA	NA
+U613	yes	Female	19	Asian	48.0725623582766	NA	NA
+U615	yes	Male	19	Caucasian/white	74.8299319727891	NA	NA
+U616	yes	Female	19	Caucasian/white	55.328798185941	NA	NA
+U617	yes	Female	20	Caucasian/white	77.0975056689342	NA	NA
+U618	yes	Female	19	Caucasian/white, Other	49.8866213151927	NA	NA
+U619	yes	Male	19	Caucasian/white	70.2947845804989	NA	NA
+U620	yes	Male	18	Caucasian/white	81.6326530612245	NA	NA
+U621	yes	Female	19	Caucasian/white	74.8299319727891	NA	NA
+U622	yes	Female	19	Caucasian/white	61.2244897959184	NA	NA
+U623	yes	Female	19	Caucasian/white	56.2358276643991	NA	NA
+U624	yes	Female	20	Asian	54.421768707483	NA	NA
+U625	yes	Female	19	Asian	61.2244897959184	NA	NA
+U626	yes	Female	20	Asian	47.6190476190476	NA	NA
+U627	yes	Male	20	Black American	95.2380952380952	NA	NA
+U628	yes	Male	19	Asian	94.3310657596372	NA	NA
+U629	yes	Female	21	Asian	49.8866213151927	NA	NA
+U630	yes	Male	19	Asian	68.0272108843537	NA	NA
+U631	yes	Female	19	Caucasian/white	54.421768707483	NA	NA
+U633	yes	Male	19	2 or more ethnicities	83.9002267573696	NA	NA
+U634	yes	Male	19	Asian	62.5850340136054	NA	NA
+U635	yes	Female	19	2 or more ethnicities	63.4920634920635	NA	NA
+U636	yes	Female	19	Caucasian/white	53.5147392290249	NA	NA
+U637	yes	Male	20	2 or more ethnicities	81.6326530612245	NA	NA
+U638	yes	Male	19	Prefer not to say	70.2947845804989	NA	NA
+U639	yes	Female	20	Caucasian/white	71.6553287981859	NA	NA
+U640	yes	Female	19	Asian	43.9909297052154	NA	NA
+U642	yes	Female	21	Caucasian/white	58.0498866213152	NA	NA
+U643	yes	Female	19	2 or more ethnicities	58.9569160997732	NA	NA
+U644	yes	Male	19	2 or more ethnicities	65.7596371882086	NA	NA
+U645	yes	Female	20	Caucasian/white	65.7596371882086	NA	NA
+U646	yes	Female	22	Caucasian/white	92.5170068027211	NA	NA
+U648	yes	Female	19	Asian	60.3174603174603	NA	NA
+U649	yes	Male	19	Caucasian/white	86.1678004535147	NA	NA
+U650	yes	Female	19	Asian	61.2244897959184	NA	NA
+U651	yes	Female	19	Caucasian/white	65.7596371882086	NA	NA
+U652	yes	Female	18	Asian	56.2358276643991	NA	NA
+U653	yes	Female	19	Caucasian/white	56.6893424036281	NA	NA
+U654	yes	Male	20	Caucasian/white	79.3650793650794	NA	NA
+U655	yes	Female	20	Black American	71.2018140589569	NA	NA
+U656	yes	Male	19	Caucasian/white	101.133786848073	NA	NA
+U658	yes	Female	19	Asian	59.4104308390023	NA	NA
+U660	yes	Male	20	Asian	88.4353741496599	NA	NA
+U661	yes	Male	20	Caucasian/white	90.702947845805	NA	NA
+U662	yes	Female	20	Other	54.421768707483	NA	NA
+U663	yes	Female	20	Asian	58.5034013605442	NA	NA
+U664	yes	Female	18	Caucasian/white	54.421768707483	NA	NA
+U665	yes	Female	19	Asian	48.0725623582766	NA	NA
+U666	yes	Male	20	Caucasian/white	74.8299319727891	NA	NA
+U667	yes	Male	19	Black American	81.6326530612245	NA	NA
+U668	yes	Female	20	Caucasian/white	54.421768707483	NA	NA
+U669	yes	Female	20	Prefer not to say	55.7823129251701	NA	NA
+U670	yes	Female	19	Asian	53.5147392290249	NA	NA
+U671	yes	Female	19	Caucasian/white	48.0725623582766	NA	NA
+U672	yes	Female	21	Asian	61.2244897959184	NA	NA
+U673	yes	Female	19	Caucasian/white	57.5963718820862	NA	NA
+U674	yes	Female	21	2 or more ethnicities	54.875283446712	NA	NA
+U676	yes	Female	20	Asian	46.7120181405896	NA	NA
+U677	yes	Female	20	Caucasian/white	77.0975056689342	NA	NA
+U678	yes	Female	19	Caucasian/white	65.7596371882086	NA	NA
+U679	yes	Female	19	2 or more ethnicities	58.9569160997732	NA	NA
+U680	yes	Female	18	Prefer not to say	92.0634920634921	NA	NA
+U681	yes	Female	20	Caucasian/white	54.421768707483	NA	NA
+U682	yes	Female	21	Other	61.2244897959184	NA	NA
+U683	yes	Female	19	Asian	45.3514739229025	NA	NA
+U685	yes	Female	19	Latino/a or Hispanic	72.562358276644	NA	NA
+U686	yes	Female	19	Asian	78.9115646258503	NA	NA
+U687	yes	Female	19	Caucasian/white	63.9455782312925	NA	NA
+U688	yes	Female	20	Caucasian/white	67.1201814058957	NA	NA
+U689	yes	Female	19	Black American	54.421768707483	NA	NA
+U691	yes	NA	NA	NA	NA	NA	NA
+U700	yes	Male	19	Asian	61.224489795918366	1.7018034036068073	NA
+U701	yes	Female	19	Asian	58.956916099773238	1.7018034036068073	NA
+U702	yes	Female	19	Caucasian/white	81.632653061224488	1.6510033020066042	NA
+U703	yes	Female	19	Caucasian/white	63.492063492063487	1.7018034036068073	NA
+U704	yes	Male	18	Asian	68.027210884353735	1.727203454406909	NA
+U705	yes	Female	18	Caucasian/white	63.492063492063487	1.7780035560071121	NA
+U706	yes	Female	18	Middle Eastern or North African (MENA)	66.666666666666671	1.6764033528067057	NA
+U707	yes	Female	18	Caucasian/white	70.29478458049887	1.6764033528067057	NA
+U708	yes	Male	19	Middle Eastern or North African (MENA)	65.759637188208615	1.7526035052070106	NA
+U709	yes	Male	20	Caucasian/white	83.900226757369609	1.854203708407417	NA
+U710	yes	Female	18	Black American	58.956916099773238	1.6002032004064008	NA
+U711	yes	Male	20	Middle Eastern or North African (MENA)	87.528344671201808	1.7653035306070612	NA
+U712	yes	Female	19	Caucasian/white	59.863945578231288	1.6510033020066042	NA
+U713	yes	Female	18	2 or more ethnicities	61.224489795918366	1.7018034036068073	NA
+U714	yes	Male	18	Asian	58.956916099773238	1.7018034036068073	NA
+U715	yes	Male	18	Asian	76.643990929705211	1.7526035052070106	NA
+U716	yes	Male	18	2 or more ethnicities	74.37641723356009	1.727203454406909	NA
+U717	yes	Female	20	Caucasian/white	55.328798185941039	1.6002032004064008	NA
+U719	yes	Female	18	Asian	56.689342403628117	1.6002032004064008	NA
+U720	yes	Female	21	Asian	68.027210884353735	1.6510033020066042	NA
+U721	yes	Female	21	Caucasian/white	61.224489795918366	1.6256032512065026	NA
+U722	yes	Female	19	Caucasian/white	58.956916099773238	1.6510033020066042	NA
+U723	yes	Female	20	Hawaiian or Pacific Islander	50.793650793650791	1.6510033020066042	NA
+U724	yes	Female	18	Caucasian/white	69.841269841269835	1.6510033020066042	NA
+U725	yes	Female	18	Asian	56.235827664399089	1.6002032004064008	NA
+U726	yes	Male	20	Asian	95.238095238095241	1.8034036068072137	NA
+U727	yes	Male	20	2 or more ethnicities	86.167800453514729	1.8796037592075185	NA
+U728	yes	Male	19	Middle Eastern or North African (MENA)	68.027210884353735	1.854203708407417	NA
+U729	yes	Male	19	Asian	95.238095238095241	1.7780035560071121	NA
+U730	yes	Female	20	2 or more ethnicities	58.956916099773238	1.6764033528067057	NA
+U731	yes	Female	19	Middle Eastern or North African (MENA)	67.573696145124714	1.7018034036068073	NA
+U732	yes	Female	24	Middle Eastern or North African (MENA)	74.829931972789112	1.5240030480060962	NA
+U733	yes	Male	18	Caucasian/white	63.492063492063487	1.8288036576073152	NA
+U734	yes	Male	20	Middle Eastern or North African (MENA)	68.027210884353735	1.8288036576073152	NA
+U735	yes	Male	19	Middle Eastern or North African (MENA)	76.19047619047619	1.7526035052070106	NA
+U736	yes	NA	"NA"	-	"NA"	"NA"	NA
+U738	yes	Female	19	Caucasian/white	54.42176870748299	1.5748031496062993	NA
+U739	yes	Female	19	Caucasian/white	72.562358276643991	1.7780035560071121	NA
+U740	yes	Female	18	Asian	56.689342403628117	1.6002032004064008	NA
+U741	yes	Female	18	Asian	56.235827664399089	1.6764033528067057	NA
+U743	yes	Female	18	2 or more ethnicities	52.60770975056689	1.6764033528067057	NA
+U744	yes	Female	18	Asian	49.886621315192741	1.5240030480060962	NA
+U745	yes	Male	19	Asian	66.666666666666671	1.7780035560071121	NA
+U746	yes	Male	19	Middle Eastern or North African (MENA)	88.435374149659864	1.8288036576073152	NA
+U747	yes	Female	18	Caucasian/white	54.42176870748299	1.7018034036068073	NA
+U749	yes	Male	29	Black non-American	54.42176870748299	1.727203454406909	NA
+U750	yes	Female	18	Latino/a or Hispanic	113.37868480725623	1.7526035052070106	NA
+U751	yes	Female	19	Caucasian/white	65.759637188208615	1.8034036068072137	NA
+U752	yes	Female	19	Asian	64.852607709750558	1.5748031496062993	NA
+U753	yes	Female	19	Caucasian/white	48.52607709750567	1.6764033528067057	NA
+U754	yes	Female	19	Caucasian/white	47.165532879818592	1.4986029972059944	NA
+U755	yes	Female	20	Caucasian/white	63.492063492063487	1.6510033020066042	NA
+U756	yes	Female	18	Caucasian/white	70.748299319727892	1.5748031496062993	NA
+U757	yes	Female	19	Caucasian/white	47.61904761904762	1.5494030988061978	NA
+U758	yes	Male	19	Asian	80.725623582766431	1.727203454406909	NA
+U759	yes	Female	22	Asian	49.886621315192741	1.5748031496062993	NA
+U760	yes	Male	20	Asian	65.759637188208615	1.7018034036068073	NA
+U761	yes	Female	19	Asian	49.886621315192741	1.6002032004064008	NA
+U762	yes	Male	18	Asian	77.097505668934232	1.8288036576073152	NA
+U763	yes	Male	19	Caucasian/white	65.759637188208615	1.8288036576073152	NA
+U764	yes	Female	18	Asian	63.492063492063487	1.6764033528067057	NA
+U766	yes	Female	18	Asian	58.956916099773238	1.6510033020066042	NA
+U767	yes	Female	19	Asian	72.562358276643991	1.5748031496062993	NA
+U768	yes	NA	NA	NA	NA	NA	NA
+U769	yes	Female	18	Latino/a or Hispanic	86.167800453514729	1.7018034036068073	NA
+U770	yes	Female	19	Asian	54.42176870748299	1.6764033528067057	NA
+U771	yes	Female	18	Asian	54.42176870748299	1.6256032512065026	NA
+U772	yes	Female	18	Caucasian/white	52.154195011337869	1.5748031496062993	NA
+U773	yes	Female	19	Caucasian/white	67.120181405895693	1.6764033528067057	NA
+U774	yes	Female	18	Black American	56.689342403628117	1.6510033020066042	NA
+U775	yes	Male	19	Caucasian/white	84.807256235827666	1.7780035560071121	NA
+U776	yes	Male	20	Middle Eastern or North African (MENA)	66.213151927437636	1.7018034036068073	NA
+U777	yes	Female	20	Caucasian/white	49.886621315192741	1.5748031496062993	NA
+U778	yes	Female	19	Asian	61.224489795918366	1.5494030988061978	NA
+U779	yes	Male	21	2 or more ethnicities	106.57596371882086	1.8288036576073152	NA
+U780	yes	Female	19	Caucasian/white	56.689342403628117	1.6256032512065026	NA
+U781	yes	Female	21	Caucasian/white	54.42176870748299	1.5494030988061978	NA
+U783	yes	Female	19	Caucasian/white	52.154195011337869	1.6002032004064008	NA
+U784	yes	Male	21	Asian	81.632653061224488	1.8034036068072137	NA
+U785	yes	Female	19	Caucasian/white	52.154195011337869	1.5748031496062993	NA
+U786	yes	Male	19	Caucasian/white	81.632653061224488	1.7780035560071121	NA
+U787	yes	Female	18	Asian	49.43310657596372	1.6637033274066548	NA
+U788	yes	Male	18	Caucasian/white	64.399092970521536	1.727203454406909	NA
+U789	yes	Male	20	Middle Eastern or North African (MENA)	82.993197278911566	1.8796037592075185	NA
+U790	yes	Female	26	Caucasian/white	63.492063492063487	1.6764033528067057	NA
+U791	yes	Female	19	2 or more ethnicities	68.027210884353735	1.6002032004064008	NA
+U792	yes	Female	20	Caucasian/white	58.049886621315189	1.6764033528067057	NA
+U793	yes	Female	18	Caucasian/white	60.770975056689338	1.5748031496062993	NA
+U794	yes	Female	19	Latino/a or Hispanic	56.689342403628117	1.6256032512065026	NA
+U796	yes	Female	20	Caucasian/white	65.759637188208615	1.7526035052070106	NA
+U797	yes	Female	19	2 or more ethnicities	72.562358276643991	1.6764033528067057	NA
+U798	yes	Female	20	Caucasian/white	72.562358276643991	1.6764033528067057	NA
+U799	yes	Male	18	Middle Eastern or North African (MENA)	70.29478458049887	1.8796037592075185	NA
